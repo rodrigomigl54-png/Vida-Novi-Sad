@@ -2,7 +2,7 @@
 import { $, $$, loadJSON, lockScroll, unlockScroll, trapFocus, reducedMotion, escapeHtml } from "./util.js";
 import { initI18n, onLangChange, t, L, getLang, missing } from "./i18n.js";
 import { initOpenStatus } from "./open-status.js";
-import { initTimeOfDay } from "./time-of-day.js";
+import { initTimeOfDay, startHeroVideos } from "./time-of-day.js";
 import { initMenu } from "./menu.js";
 import { initMood } from "./mood.js";
 import { initCart } from "./cart.js";
@@ -140,7 +140,7 @@ async function main() {
   initOpenStatus(site);
   initCart(site);
   await initMenu(menu, site.githubPages);
-  initTimeOfDay(site, menu, gallery);
+  initTimeOfDay(site, menu);
   if (site.features.moodFilter) initMood();
   if (site.features.bowlBuilder) {
     const [{ initBowl }, bowl] = await Promise.all([import("./bowl-builder.js"), loadJSON("data/bowl.json")]);
@@ -153,7 +153,7 @@ async function main() {
   initMap(site);
   renderSiteTexts(site);
   onLangChange(() => renderSiteTexts(site));
-  introDone.then(initReveal);
+  introDone.then(() => { initReveal(); startHeroVideos(); });
 
   window.__vida = { site, menu, missing, ready: true };
   document.documentElement.classList.add("is-ready");

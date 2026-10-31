@@ -3,8 +3,12 @@
     "title": "Vida Novi Sad — The Feel Good Place | zdrava hrana, brunch i kafa",
     "description": "Vida Novi Sad — The Feel Good Place od 2016. Brunch, healthy bowls, coconut smoothie bowls, wrapovi, ceđeni sokovi, matcha i kafa. Rumenačka 148a, svaki dan 07–23h. Poruči ili rezerviši sto."
   },
-  "a11y": { "skip": "Preskoči na sadržaj" },
-  "intro": { "skip": "Preskoči" },
+  "a11y": {
+    "skip": "Preskoči na sadržaj"
+  },
+  "intro": {
+    "skip": "Preskoči"
+  },
   "nav": {
     "label": "Glavna navigacija",
     "menu": "Meni",
@@ -20,14 +24,30 @@
     "open": "Otvoreno sada · zatvara se u {time}",
     "closed": "Zatvoreno · otvara se u {time}"
   },
-  "cta": { "order": "Poruči", "reserve": "Rezerviši sto", "wolt": "Poruči preko Wolt-a" },
+  "cta": {
+    "order": "Poruči",
+    "reserve": "Rezerviši sto",
+    "wolt": "Poruči preko Wolt-a"
+  },
   "hero": {
     "eyebrow": "Novi Sad · od 2016.",
     "suggested": "Preporuka za sada",
-    "morning": { "eyebrow": "Jutro u Vidi · 07–11h", "lead": "Dobro jutro. Kafa, doručak i brunch — polako, uz sunce." },
-    "lunch": { "eyebrow": "Ručak · 11–17h", "lead": "Vreme za ručak: healthy bowls, wrapovi i obrok salate." },
-    "evening": { "eyebrow": "Veče · 17–23h", "lead": "Veče na terasi: spritz, coconut smoothie bowls i topla čokolada." },
-    "closed": { "eyebrow": "Trenutno zatvoreno", "lead": "Vidimo se od 07:00. Porudžbinu možeš da pripremiš već sada." }
+    "morning": {
+      "eyebrow": "Jutro u Vidi · 07–11h",
+      "lead": "Dobro jutro. Kafa, doručak i brunch — polako, uz sunce."
+    },
+    "lunch": {
+      "eyebrow": "Ručak · 11–17h",
+      "lead": "Vreme za ručak: healthy bowls, wrapovi i obrok salate."
+    },
+    "evening": {
+      "eyebrow": "Veče · 17–23h",
+      "lead": "Veče na terasi: spritz, coconut smoothie bowls i topla čokolada."
+    },
+    "closed": {
+      "eyebrow": "Trenutno zatvoreno",
+      "lead": "Vidimo se od 07:00. Porudžbinu možeš da pripremiš već sada."
+    }
   },
   "mood": {
     "eyebrow": "Meni po raspoloženju",
@@ -205,7 +225,11 @@
     "loadMap": "Prikaži mapu",
     "mapTitle": "Mapa — Vida, Rumenačka 148a, Novi Sad"
   },
-  "footer": { "hours": "Radno vreme", "links": "Linkovi", "madeBy": "Izrada:" },
+  "footer": {
+    "hours": "Radno vreme",
+    "links": "Linkovi",
+    "madeBy": "Izrada:"
+  },
   "wa": {
     "orderTitle": "Nova porudžbina — Vida",
     "items": "Stavke",
@@ -220,5 +244,11 @@
     "celTitle": "Upit za proslavu — Vida",
     "cake": "Cela torta",
     "budget": "Budžet po osobi"
+  },
+  "call": {
+    "label": "Pozovi",
+    "closed": "Zovi od {time}",
+    "aria": "Pozovi Vidu: 069 533 2067",
+    "orCall": "Radije pozovi · 069 533 2067"
   }
 }

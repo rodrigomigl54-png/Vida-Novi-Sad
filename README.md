@@ -47,7 +47,7 @@ Na GitHub Pages fotografije jela se pronalaze preko GitHub API-ja (dovoljno je u
 | Kontakt, radno vreme, linkovi, uključivanje/isključivanje delova sajta | `data/site.json` |
 | Svi tekstovi na sajtu (srpski / engleski) | `data/i18n/sr.json`, `data/i18n/en.json` |
 | Sastojci za „Napravi svoj bowl“ | `data/bowl.json` |
-| Redosled i podešavanja intro-a | `data/intro.json` |
+| Montaža intro-a i videa na početnoj | `tools/video-edit.json` (+ `data/intro.json`) |
 | Fotografije galerije (opisi) | `tools/prepare-assets.py` → `GALLERY_META` |
 
 JSON fajlove menjaj u običnom editoru (npr. VS Code ili File Manager → Edit). Pazi na **zareze i navodnike**. Ako sajt posle izmene ne radi, proveri fajl na <https://jsonlint.com>.
@@ -135,33 +135,36 @@ U `site.json` ne pišu se komentari (`//`). Gore su samo radi objašnjenja.
 
 ---
 
-## 5. Intro — zamena ili promena redosleda fotografija
+## 5. Intro i video na početnoj strani
 
-1. Stavi fotografije u **`assets/source/intro/`**. Najbolje je da imena počinju brojem: `01-ulica.jpg`, `02-ulaz.jpg`, … `05-sank.jpg`. Poslednja mora biti **šank**, jer se na njemu pojavljuje logo.
-2. Redosled, tip kadra i tačka fokusa su u **`data/intro.json` → `order`**:
-   ```json
-   { "file": "01-ulica.jpg", "type": "exterior", "manualFocus": [0.40, 0.50], "zoom": 1.6 }
-   ```
-   - `type`: `"exterior"` (spolja; menja se sivo nebo u plavo) ili `"interior"`.
-   - `manualFocus`: tačka ka kojoj „kamera“ ide (0–1 po širini i visini; `[0.5, 0.5]` je centar). Koristi se kad automatsko poravnanje ne uspe.
-   - `zoom`: koliko se približava (1.3–1.8).
-   - `"skyReplace": false`: isključuje zamenu neba za taj kadar.
-   - `"skip": true`: preskače kadar.
-3. Pokreni obradu (na računaru sa Python-om 3):
-   ```bash
-   pip install opencv-python-headless numpy pillow
-   python3 tools/prepare-intro.py
-   ```
-   Skripta pravi optimizovane fotografije u `assets/img/intro/` (landscape + portrait, WebP + JPG) i upisuje rezultat u `data/intro.json`.
-4. Ostala podešavanja u `data/intro.json`:
-   - `durationMs`: trajanje „hoda“ (npr. `5200` = 5,2 s)
-   - `logoHoldMs`: koliko logo stoji na kraju
-   - `playMode`: `"session"` (jednom po poseti) ili `"visitor"` (samo prvi put zauvek)
-   - `enabled`: `false` isključuje intro
+Intro i hero („početna“) su **montirani video snimci** napravljeni od Vida reels snimaka.
 
-**Galerija i logo:** fotografije za galeriju stavi u `assets/source/gallery/`, logo u `assets/source/logo/`, pa pokreni `python3 tools/prepare-assets.py`. Skripta pravi galeriju, favicon i OG sliku za deljenje na mrežama.
+- **Telefon:** vertikalni intro 1080×1920 (`assets/video/intro-mobile.*`), AI-uveličan sa 720p.
+- **Računar:** „triptih“ — tri vertikalna panela, 1920×1080 (`assets/video/intro-desktop.*`).
+- **Početna:** video petlja po dobu dana (jutro / podne / veče / zatvoreno), `assets/video/hero-<doba>-main|side.*`.
 
----
+**Montaža** (koji snimak, od koje do koje sekunde, redosled, prelazi) je u **`tools/video-edit.json`**.
+Posle izmene:
+
+```bash
+# izvorni snimci idu u assets/source/video/ (01-matilda-torta.mp4, 02-disneyland-spritz.mp4, …)
+pip install torch opencv-python-headless numpy pillow
+# AI model (Real-ESRGAN, ~5 MB) u tools/models/:
+curl -L -o tools/models/realesr-general-x4v3.pth https://github.com/xinntao/Real-ESRGAN/releases/download/v0.2.5.0/realesr-general-x4v3.pth
+python3 tools/build-video.py hero      # petlje za početnu
+python3 tools/build-video.py desktop   # intro za računar
+python3 tools/build-video.py mobile    # intro za telefon (AI, ~20–60 min)
+```
+
+U `data/intro.json`:
+- `logoAt`: sekunda videa kada se pojavljuje logo (telefon / računar posebno)
+- `playMode`: `"session"` (jednom po poseti) ili `"visitor"` (samo prvi put)
+- `skipIfLoadingLongerThanMs`: ako se video ne učita za 3 s (spora mreža), intro se preskače
+- `enabled`: `false` isključuje intro
+
+Na sporoj mreži, sa „Save-Data“ ili kad posetilac u telefonu isključi animacije, početna prikazuje fotografiju (poster) umesto videa.
+
+**Galerija i logo:** fotografije za galeriju stavi u `assets/source/gallery/`, logo u `assets/source/logo/`, pa pokreni `python3 tools/prepare-assets.py` (pravi galeriju, favicon i OG sliku za deljenje na mrežama).
 
 ## 6. Porudžbine, rezervacije i proslave
 
@@ -184,7 +187,7 @@ assets/fonts/         Fraunces + Manrope (self-hosted, latin-ext, OFL licenca)
 assets/img/           obrađene fotografije (intro, galerija, logo, favicon, og-image)
 assets/dishes/        fotografije jela (prazno dok ne stignu)
 assets/source/        originali (ne menjaju se)
-tools/                prepare-intro.py, prepare-assets.py, contrast-check.py, test-site.mjs
+tools/                build-video.py (+ video-edit.json), prepare-assets.py, contrast-check.py, test-site.mjs
 .htaccess             HTTPS, kompresija, keš
 ```
 

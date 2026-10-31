@@ -1,0 +1,63 @@
+{
+  "_info": "Montaža intro-a i hero video petlji. Vremena su u sekundama izvornog snimka (assets/source/video/). Posle izmene: python3 tools/build-video.py <deo>",
+  "fps": 30,
+  "grade": { "wb": 0.4, "targetLuma": 0.5, "contrast": 1.05, "saturation": 1.06, "warmth": 3.0 },
+
+  "introMobile": {
+    "_info": "Telefon 1080x1920, AI uveličanje (Real-ESRGAN). Ritam: sipanja → lomljenja → otkrivanje → čaša odozgo + logo.",
+    "size": [1080, 1920],
+    "ai": true,
+    "fadeInFrames": 6,
+    "segments": [
+      { "clip": "13-affogato", "from": 3.10, "to": 4.00, "note": "espresso se sipa preko sladoleda" },
+      { "clip": "05-san-sebastian-raspberry", "from": 4.20, "to": 4.90, "note": "crveni preliv" },
+      { "clip": "09-san-sebastian-pistachio", "from": 2.30, "to": 3.00, "note": "pistaći krema" },
+      { "clip": "03-san-sebastian-pumpkin-a", "from": 2.05, "to": 2.70, "note": "karamela, jesen" },
+      { "clip": "02-disneyland-spritz", "from": 5.00, "to": 5.70, "note": "penušavac u čašu", "whipOut": true },
+      { "clip": "07-isotonic-drop", "from": 0.20, "to": 0.70, "note": "flašica pada u led", "whipIn": true },
+      { "clip": "10-matcha-chocolate", "from": 1.25, "to": 1.70, "note": "lomljenje matcha čokolade" },
+      { "clip": "08-cookies-pistachio", "from": 2.80, "to": 3.25, "note": "kolačić se lomi" },
+      { "clip": "06-babke", "from": 1.05, "to": 1.60, "note": "podizanje zvona" },
+      { "clip": "02-disneyland-spritz", "from": 12.80, "to": 14.20, "note": "čaša odozgo — ovde se pojavljuje logo", "holdSeconds": 0.5, "pushIn": 1.06 }
+    ],
+    "logoAt": 5.9
+  },
+
+  "introDesktop": {
+    "_info": "Računar 1920x1080: triptih (3 vertikalna panela), rezovi 'domino talasom' (+0.12 s po panelu).",
+    "size": [1920, 1080],
+    "panel": { "width": 584, "height": 1038, "gap": 18, "radius": 30 },
+    "background": "#faf6ee",
+    "panels": [
+      [
+        { "clip": "13-affogato", "from": 3.00, "dur": 1.60 },
+        { "clip": "03-san-sebastian-pumpkin-a", "from": 2.00, "dur": 1.40 },
+        { "clip": "10-matcha-chocolate", "from": 1.00, "dur": 2.40 }
+      ],
+      [
+        { "clip": "05-san-sebastian-raspberry", "from": 4.00, "dur": 1.72 },
+        { "clip": "02-disneyland-spritz", "from": 4.60, "dur": 1.40 },
+        { "clip": "07-isotonic-drop", "from": 0.10, "dur": 1.40 },
+        { "clip": "02-disneyland-spritz", "from": 12.80, "dur": 1.40, "holdSeconds": 1.58, "pushIn": 1.06 }
+      ],
+      [
+        { "clip": "09-san-sebastian-pistachio", "from": 2.00, "dur": 1.84 },
+        { "clip": "08-cookies-pistachio", "from": 2.40, "dur": 1.40 },
+        { "clip": "06-babke", "from": 0.60, "dur": 2.16 }
+      ]
+    ],
+    "sideFadeOut": [4.9, 5.5],
+    "logoAt": 5.4
+  },
+
+  "hero": {
+    "_info": "Petlje za početnu stranicu po dobu dana. main = velika (telefon preko celog ekrana / računar luk), side = mala kartica na računaru.",
+    "loopCrossfade": 0.6,
+    "items": [
+      { "id": "morning", "main": { "clip": "13-affogato", "from": 2.9, "dur": 5.0 }, "side": { "clip": "06-babke", "from": 0.4, "dur": 4.0 } },
+      { "id": "lunch", "main": { "clip": "07-isotonic-drop", "from": 0.3, "dur": 5.0 }, "side": { "clip": "10-matcha-chocolate", "from": 0.4, "dur": 3.8 } },
+      { "id": "evening", "main": { "clip": "02-disneyland-spritz", "from": 0.3, "dur": 5.0 }, "side": { "clip": "12-san-sebastian-dark", "from": 0.5, "dur": 4.5 } },
+      { "id": "closed", "main": { "clip": "15-isotonic-spin", "from": 0.5, "dur": 6.0 }, "side": { "clip": "01-matilda-torta", "from": 1.0, "dur": 4.0 } }
+    ]
+  }
+}
