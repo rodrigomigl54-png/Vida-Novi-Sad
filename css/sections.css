@@ -141,13 +141,12 @@ html.intro-pending .intro { display: block !important; }
 @media (max-width: 899px) {
   .hero { min-height: calc(100svh - var(--header-h)); display: flex; align-items: flex-end; background: #1a1d18; color: var(--white); }
   .hero__glow, .hero__side { display: none; }
-  .hero__grid { width: 100%; padding-block: 2rem calc(1.75rem + env(safe-area-inset-bottom)); }
+  .hero__grid { position: static; width: 100%; padding-block: 2rem calc(1.75rem + env(safe-area-inset-bottom)); }
   .hero__media { position: absolute; inset: 0; z-index: 0; }
   .hero__arch { position: absolute; inset: 0; }
   .hero__arch::after { content: ""; position: absolute; inset: 0; background: linear-gradient(to top, rgb(12 15 12 / 88%) 0%, rgb(12 15 12 / 62%) 34%, rgb(12 15 12 / 12%) 66%, rgb(12 15 12 / 30%) 100%); }
   .hero__copy { position: relative; z-index: 1; }
-  .hero__badge { position: absolute; z-index: 1; top: 1rem; right: var(--gutter); }
-  .hero__badge a { background: rgb(255 255 255 / 88%); backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px); box-shadow: none; padding: 0.45rem 0.8rem; font-size: var(--fs-xs); }
+  .hero__badge { display: none; }
   .hero .eyebrow { color: var(--peach); }
   .hero__title em { color: var(--peach); }
   .hero__lead { color: rgb(255 255 255 / 88%); }
