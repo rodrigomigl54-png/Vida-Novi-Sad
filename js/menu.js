@@ -20,7 +20,17 @@ const norm = (s) => (s || "").toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g,
  * Spisak fajlova se čita iz listinga foldera (Apache/LiteSpeed "Options +Indexes",
  * vidi assets/dishes/.htaccess). Ako listing nije dostupan, koristi se polje "image" iz menu.json.
  */
-async function loadDishImages() {
+async function loadDishImages(gh) {
+  // GitHub Pages nema listing foldera → spisak fajlova preko javnog GitHub API-ja
+  if (/\.github\.io$/.test(location.hostname)) {
+    try {
+      const owner = location.hostname.split(".")[0];
+      const repo = location.pathname.split("/").filter(Boolean)[0];
+      const res = await fetch(`https://api.github.com/repos/${owner}/${repo}/contents/assets/dishes?ref=${encodeURIComponent(gh?.branch || "gh-pages")}`);
+      if (res.ok) (await res.json()).forEach((f) => { if (/\.(webp|jpe?g|png)$/i.test(f.name)) dishImages.add(f.name.toLowerCase()); });
+    } catch (e) { /* bez spiska — samo placeholderi */ }
+    return;
+  }
   try {
     const res = await fetch("assets/dishes/", { cache: "no-cache" });
     if (!res.ok) return;
@@ -194,9 +204,9 @@ function find(id) {
   return {};
 }
 
-export async function initMenu(menuData) {
+export async function initMenu(menuData, gh) {
   menu = menuData;
-  await loadDishImages();
+  await loadDishImages(gh);
   bind();
   renderDiets();
   render();

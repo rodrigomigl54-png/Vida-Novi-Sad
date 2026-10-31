@@ -1,13 +1,28 @@
 # Vida Novi Sad — sajt „The Feel Good Place“
 
 Statičan sajt (HTML + CSS + JavaScript), **bez baze podataka i bez build koraka**.
-Ceo folder se samo prebaci na Hostinger u `public_html`, i sajt radi.
+
+**Faza 1 (sada): pregled na GitHub Pages**
+→ **https://rodrigomigl54-png.github.io/Vida-Novi-Sad/**
+Sajt se objavljuje sa grane **`gh-pages`**. Svaka izmena koja se pushuje na tu granu je na linku posle ~1 minuta.
+
+**Faza 2 (kad vlasnik odobri):** ceo folder se prebaci na Hostinger u `public_html` (odeljak 1).
 
 Pre objave pročitaj **`REVIEW.md`**: tamo je spisak svega što treba potvrditi sa vlasnikom (cene, oznake, domen…).
 
 ---
 
-## 1. Postavljanje na Hostinger
+## 0. GitHub Pages (pregled za vlasnika)
+
+Jednokratno podešavanje (ako link još ne radi):
+1. Na GitHub-u otvori repozitorijum → **Settings → Pages**.
+2. *Build and deployment → Source:* **Deploy from a branch**.
+3. *Branch:* **`gh-pages`**, folder **`/ (root)`** → **Save**.
+4. Posle 1–2 minuta sajt je na `https://rodrigomigl54-png.github.io/Vida-Novi-Sad/`.
+
+Na GitHub Pages fotografije jela se pronalaze preko GitHub API-ja (dovoljno je ubaciti fajl u `assets/dishes/` na grani `gh-pages`). Fajl `.htaccess` GitHub ignoriše; on je za Hostinger.
+
+## 1. Postavljanje na Hostinger (kasnije)
 
 1. Uloguj se u **hPanel → Websites → Manage → File Manager** (ili koristi FTP, npr. FileZilla).
 2. Otvori folder **`public_html`** (obriši podrazumevani `default.php` ako postoji).
@@ -90,7 +105,7 @@ Oba fajla imaju **iste ključeve**. Kad menjaš tekst na srpskom, promeni i engl
 
 Spisak svih očekivanih naziva fajlova je u `REVIEW.md` (odeljak 8).
 
-> Sajt pronalazi fotografije preko listinga foldera (fajl `assets/dishes/.htaccess`). Ako na hostingu to ne radi, upiši putanju ručno u `menu.json`: `"image": "assets/dishes/acai-bowl.webp"`.
+> Na Hostingeru sajt pronalazi fotografije preko listinga foldera (fajl `assets/dishes/.htaccess`), a na GitHub Pages preko GitHub API-ja. Ako to negde ne radi, upiši putanju ručno u `menu.json`: `"image": "assets/dishes/acai-bowl.webp"`.
 
 ---
 

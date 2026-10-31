@@ -1,5 +1,6 @@
 {
   "siteUrl": "https://www.DOMEN.rs/",
+  "githubPages": { "branch": "gh-pages" },
   "_siteUrlNote": "TODO: upisati pravi domen (i u index.html, sitemap.xml, robots.txt)",
   "name": "Vida Novi Sad",
   "brand": "VIDA",

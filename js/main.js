@@ -139,7 +139,7 @@ async function main() {
   await initI18n();
   initOpenStatus(site);
   initCart(site);
-  await initMenu(menu);
+  await initMenu(menu, site.githubPages);
   initTimeOfDay(site, menu, gallery);
   if (site.features.moodFilter) initMood();
   if (site.features.bowlBuilder) {
