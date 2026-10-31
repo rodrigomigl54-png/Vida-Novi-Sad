@@ -316,6 +316,10 @@ for (const [hhmm, open, tod] of times) {
   ok("galerija: strelica napred", a > 50, String(a));
   await page.click("[data-gal-prev]"); await page.waitForTimeout(700);
   ok("galerija: strelica nazad", (await sl()) < a);
+  // sačekaj da se scroll potpuno smiri pre prevlačenja
+  for (let prev = -1, i = 0; i < 30; i++) { const cur = await sl(); if (cur === prev) break; prev = cur; await page.waitForTimeout(150); }
+  await page.$eval("[data-gal-track]", (t) => t.scrollIntoView({ behavior: "instant", block: "center" }));
+  await page.waitForTimeout(300);
   const box = await track.boundingBox();
   await page.mouse.move(box.x + box.width * 0.7, box.y + box.height / 2);
   await page.mouse.down();

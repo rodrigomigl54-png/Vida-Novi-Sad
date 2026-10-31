@@ -107,8 +107,9 @@ def whip(img, strength, direction=1):
     kernel = np.zeros((1, k), np.float32)
     kernel[0, :] = 1 / k
     out = cv2.filter2D(img, -1, kernel)
-    shift = int(direction * strength * img.shape[1] * 0.08)
-    return np.roll(out, shift, axis=1)
+    shift = direction * strength * img.shape[1] * 0.08
+    M = np.float32([[1, 0, shift], [0, 1, 0]])
+    return cv2.warpAffine(out, M, (img.shape[1], img.shape[0]), borderMode=cv2.BORDER_REPLICATE)
 
 
 def encode(frames_iter, size, base, crf_mp4=22, crf_webm=34, poster_index=None):
@@ -133,8 +134,10 @@ def encode(frames_iter, size, base, crf_mp4=22, crf_webm=34, poster_index=None):
     os.remove(tmp)
     if poster is not None:
         im = Image.fromarray(poster)
-        im.save(base + "-poster.jpg", quality=82, optimize=True, progressive=True)
-        im.save(base + "-poster.webp", quality=80, method=6)
+        if im.width > 720:  # poster je samo privremena slika — manji fajl = brže učitavanje
+            im = im.resize((720, round(im.height * 720 / im.width)), Image.LANCZOS)
+        im.save(base + "-poster.jpg", quality=78, optimize=True, progressive=True)
+        im.save(base + "-poster.webp", quality=72, method=6)
     for ext in (".mp4", ".webm"):
         print(f"  {os.path.relpath(base + ext, ROOT)}  {os.path.getsize(base + ext) / 1e6:.2f} MB")
 

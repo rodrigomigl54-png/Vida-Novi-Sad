@@ -150,7 +150,7 @@ html.intro-pending .intro { display: block !important; }
   .hero .eyebrow { color: var(--peach); }
   .hero__title em { color: var(--peach); }
   .hero__lead { color: rgb(255 255 255 / 88%); }
-  .hero__cats { min-height: 0; margin-bottom: var(--s-5); }
+  .hero__cats { min-height: 88px; margin-bottom: var(--s-5); }
   .hero__cats .chip { background: rgb(255 255 255 / 14%); border-color: rgb(255 255 255 / 28%); color: var(--white); backdrop-filter: blur(6px); -webkit-backdrop-filter: blur(6px); }
   .hero .btn--primary { --btn-bg: var(--cream); --btn-fg: var(--ink); --btn-bd: var(--cream); }
   .hero .btn--ghost { --btn-fg: var(--white); --btn-bd: rgb(255 255 255 / 55%); }
@@ -221,7 +221,7 @@ html.intro-pending .intro { display: block !important; }
 .menu__status { color: var(--ink-soft); font-size: var(--fs-sm); margin: 0 0 var(--s-3); min-height: 1.4em; }
 .menu__note { margin-top: var(--s-6); color: var(--ink-mute); font-size: var(--fs-sm); }
 
-.menu-cat { padding-top: var(--s-6); content-visibility: auto; contain-intrinsic-size: auto 900px; }
+.menu-cat { padding-top: var(--s-6); }
 .menu-cat__head { display: flex; align-items: baseline; gap: 0.75rem; flex-wrap: wrap; margin-bottom: var(--s-4); }
 .menu-cat__title { font-family: var(--font-display); font-size: var(--fs-xl); font-weight: 450; letter-spacing: -0.01em; }
 .menu-cat__meta { font-size: var(--fs-sm); color: var(--ink-mute); }
