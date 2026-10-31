@@ -1,0 +1,261 @@
+{
+  "enabled": true,
+  "durationMs": 5200,
+  "logoHoldMs": 1100,
+  "playMode": "session",
+  "skipIfLoadingLongerThanMs": 3000,
+  "showTagline": true,
+  "order": [
+    {
+      "file": "01-ulica.jpg",
+      "type": "exterior",
+      "label": "Ulica",
+      "manualFocus": [
+        0.4,
+        0.5
+      ],
+      "zoom": 1.6
+    },
+    {
+      "file": "02-fasada-ulaz.jpg",
+      "type": "exterior",
+      "label": "Fasada i ulaz",
+      "manualFocus": [
+        0.6,
+        0.52
+      ],
+      "zoom": 1.7
+    },
+    {
+      "file": "03-enterijer.jpg",
+      "type": "interior",
+      "label": "Enterijer",
+      "manualFocus": [
+        0.55,
+        0.5
+      ],
+      "zoom": 1.5
+    },
+    {
+      "file": "04-sank.jpg",
+      "type": "interior",
+      "label": "Šank",
+      "manualFocus": [
+        0.68,
+        0.45
+      ],
+      "zoom": 1.5
+    },
+    {
+      "file": "05-sank-logo.jpg",
+      "type": "interior",
+      "label": "Šank sa logom",
+      "manualFocus": [
+        0.62,
+        0.38
+      ],
+      "zoom": 1.15
+    }
+  ],
+  "frames": [
+    {
+      "file": "01-ulica.jpg",
+      "name": "01-ulica",
+      "type": "exterior",
+      "label": "Ulica",
+      "src": {
+        "landscape": "assets/img/intro/01-ulica-land",
+        "portrait": "assets/img/intro/01-ulica-port"
+      },
+      "size": {
+        "landscape": {
+          "w": 1280,
+          "h": 718
+        },
+        "portrait": {
+          "w": 409,
+          "h": 727,
+          "crop": [
+            0.2415,
+            0.0,
+            0.3163,
+            1.0
+          ]
+        },
+        "bytes": {
+          "landWebp": 93776,
+          "portWebp": 28220
+        }
+      },
+      "target": [
+        0.0875,
+        0.1875,
+        0.625,
+        0.625
+      ],
+      "targetMethod": "manual",
+      "skyReplaced": true,
+      "skyRatio": 0.057
+    },
+    {
+      "file": "02-fasada-ulaz.jpg",
+      "name": "02-fasada-ulaz",
+      "type": "exterior",
+      "label": "Fasada i ulaz",
+      "src": {
+        "landscape": "assets/img/intro/02-fasada-ulaz-land",
+        "portrait": "assets/img/intro/02-fasada-ulaz-port"
+      },
+      "size": {
+        "landscape": {
+          "w": 1100,
+          "h": 825
+        },
+        "portrait": {
+          "w": 464,
+          "h": 825,
+          "crop": [
+            0.388,
+            0.0,
+            0.422,
+            1.0
+          ]
+        },
+        "bytes": {
+          "landWebp": 85632,
+          "portWebp": 37044
+        }
+      },
+      "target": [
+        0.3059,
+        0.2259,
+        0.5882,
+        0.5882
+      ],
+      "targetMethod": "manual",
+      "skyReplaced": true,
+      "skyRatio": 0.02
+    },
+    {
+      "file": "03-enterijer.jpg",
+      "name": "03-enterijer",
+      "type": "interior",
+      "label": "Enterijer",
+      "src": {
+        "landscape": "assets/img/intro/03-enterijer-land",
+        "portrait": "assets/img/intro/03-enterijer-port"
+      },
+      "size": {
+        "landscape": {
+          "w": 1203,
+          "h": 803
+        },
+        "portrait": {
+          "w": 451,
+          "h": 802,
+          "crop": [
+            0.362,
+            0.0,
+            0.3748,
+            0.9973
+          ]
+        },
+        "bytes": {
+          "landWebp": 88620,
+          "portWebp": 30166
+        }
+      },
+      "target": [
+        0.2167,
+        0.1667,
+        0.6667,
+        0.6667
+      ],
+      "targetMethod": "manual",
+      "skyReplaced": false,
+      "skyRatio": 0.0
+    },
+    {
+      "file": "04-sank.jpg",
+      "name": "04-sank",
+      "type": "interior",
+      "label": "Šank",
+      "src": {
+        "landscape": "assets/img/intro/04-sank-land",
+        "portrait": "assets/img/intro/04-sank-port"
+      },
+      "size": {
+        "landscape": {
+          "w": 1203,
+          "h": 803
+        },
+        "portrait": {
+          "w": 451,
+          "h": 802,
+          "crop": [
+            0.479,
+            0.0,
+            0.3748,
+            0.9973
+          ]
+        },
+        "bytes": {
+          "landWebp": 86190,
+          "portWebp": 38098
+        }
+      },
+      "target": [
+        0.3333,
+        0.1167,
+        0.6667,
+        0.6667
+      ],
+      "targetMethod": "manual",
+      "skyReplaced": false,
+      "skyRatio": 0.0
+    },
+    {
+      "file": "05-sank-logo.jpg",
+      "name": "05-sank-logo",
+      "type": "interior",
+      "label": "Šank sa logom",
+      "src": {
+        "landscape": "assets/img/intro/05-sank-logo-land",
+        "portrait": "assets/img/intro/05-sank-logo-port"
+      },
+      "size": {
+        "landscape": {
+          "w": 851,
+          "h": 1135
+        },
+        "portrait": {
+          "w": 638,
+          "h": 1134,
+          "crop": [
+            0.1886,
+            0.0,
+            0.7494,
+            1.0
+          ]
+        },
+        "bytes": {
+          "landWebp": 128648,
+          "portWebp": 97110
+        }
+      },
+      "target": [
+        0.1304,
+        0.0,
+        0.8696,
+        0.8696
+      ],
+      "targetMethod": "end",
+      "skyReplaced": false,
+      "skyRatio": 0.0
+    }
+  ],
+  "weights": {
+    "portraitWebpBytes": 230638,
+    "landscapeWebpBytes": 482866
+  }
+}

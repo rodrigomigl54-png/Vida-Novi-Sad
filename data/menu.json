@@ -1,0 +1,4029 @@
+{
+  "currency": "RSD",
+  "version": "2026-10-31",
+  "note": "Prepisano sa fotografija menija u /assets/source/menu/. Stavke sa needsReview:true proveriti sa vlasnikom.",
+  "diets": {
+    "vegan": {
+      "sr": "Vegan",
+      "en": "Vegan"
+    },
+    "gluten-free": {
+      "sr": "Bez glutena",
+      "en": "Gluten-free"
+    },
+    "sugar-free": {
+      "sr": "Bez šećera",
+      "en": "Sugar-free"
+    },
+    "raw": {
+      "sr": "Raw",
+      "en": "Raw"
+    }
+  },
+  "moods": {
+    "energy": {
+      "sr": "Treba mi energija",
+      "en": "I need energy"
+    },
+    "light": {
+      "sr": "Nešto lagano",
+      "en": "Something light"
+    },
+    "sweet": {
+      "sr": "Slatko",
+      "en": "Sweet"
+    },
+    "post-workout": {
+      "sr": "Posle treninga",
+      "en": "After a workout"
+    },
+    "kids": {
+      "sr": "Za decu",
+      "en": "For kids"
+    },
+    "coffee-relax": {
+      "sr": "Kafa & opuštanje",
+      "en": "Coffee & chill"
+    }
+  },
+  "categories": [
+    {
+      "id": "kafa",
+      "name": {
+        "sr": "Coffee – Blend",
+        "en": "Coffee – Blend"
+      },
+      "icon": "cup",
+      "source": "menu-05-blend-tryme-icet-b.jpg, levo gore",
+      "items": [
+        {
+          "id": "ristretto",
+          "name": "Ristretto",
+          "description": null,
+          "price": 230,
+          "variants": [],
+          "size": null,
+          "diet": [],
+          "mood": [
+            "coffee-relax"
+          ],
+          "image": null,
+          "needsReview": true,
+          "moodNeedsReview": true,
+          "source": "menu-05-blend-tryme-icet-b.jpg, levo gore",
+          "reviewNote": "Cena se razlikuje između fotografija menija – potvrditi aktuelnu.",
+          "altPrices": {
+            "menu-04": 220,
+            "menu-01": 220
+          }
+        },
+        {
+          "id": "espresso",
+          "name": "Espresso",
+          "description": null,
+          "price": 230,
+          "variants": [],
+          "size": null,
+          "diet": [],
+          "mood": [
+            "coffee-relax"
+          ],
+          "image": null,
+          "needsReview": true,
+          "moodNeedsReview": true,
+          "source": "menu-05-blend-tryme-icet-b.jpg, levo gore",
+          "reviewNote": "Cena se razlikuje između fotografija menija – potvrditi aktuelnu.",
+          "altPrices": {
+            "menu-04": 220,
+            "menu-01": 220
+          }
+        },
+        {
+          "id": "macchiato",
+          "name": "Macchiato",
+          "description": null,
+          "price": 240,
+          "variants": [],
+          "size": null,
+          "diet": [],
+          "mood": [
+            "coffee-relax"
+          ],
+          "image": null,
+          "needsReview": true,
+          "moodNeedsReview": true,
+          "source": "menu-05-blend-tryme-icet-b.jpg, levo gore",
+          "reviewNote": "Cena se razlikuje između fotografija menija – potvrditi aktuelnu.",
+          "altPrices": {
+            "menu-04": 230,
+            "menu-01": 230
+          }
+        },
+        {
+          "id": "cappuccino",
+          "name": "Cappuccino",
+          "description": null,
+          "price": 280,
+          "variants": [],
+          "size": null,
+          "diet": [],
+          "mood": [
+            "coffee-relax"
+          ],
+          "image": null,
+          "needsReview": true,
+          "moodNeedsReview": true,
+          "source": "menu-05-blend-tryme-icet-b.jpg, levo gore",
+          "reviewNote": "Cena se razlikuje između fotografija menija – potvrditi aktuelnu.",
+          "altPrices": {
+            "menu-04": 250,
+            "menu-01": 250
+          }
+        },
+        {
+          "id": "americano",
+          "name": "Americano",
+          "description": null,
+          "price": 240,
+          "variants": [],
+          "size": null,
+          "diet": [],
+          "mood": [
+            "coffee-relax"
+          ],
+          "image": null,
+          "needsReview": true,
+          "moodNeedsReview": true,
+          "source": "menu-05-blend-tryme-icet-b.jpg, levo gore",
+          "reviewNote": "Cena se razlikuje između fotografija menija – potvrditi aktuelnu.",
+          "altPrices": {
+            "menu-04": 230,
+            "menu-01": 230
+          }
+        },
+        {
+          "id": "latte",
+          "name": "Latte",
+          "description": null,
+          "price": 340,
+          "variants": [],
+          "size": "0,30",
+          "diet": [],
+          "mood": [
+            "coffee-relax"
+          ],
+          "image": null,
+          "needsReview": true,
+          "moodNeedsReview": true,
+          "source": "menu-05-blend-tryme-icet-b.jpg, levo gore",
+          "reviewNote": "Cena se razlikuje između fotografija menija – potvrditi aktuelnu.",
+          "altPrices": {
+            "menu-04": 330,
+            "menu-01": 330
+          }
+        },
+        {
+          "id": "latte-macchiato",
+          "name": "Latte Macchiato",
+          "description": null,
+          "price": 350,
+          "variants": [],
+          "size": null,
+          "diet": [],
+          "mood": [
+            "coffee-relax"
+          ],
+          "image": null,
+          "needsReview": true,
+          "moodNeedsReview": true,
+          "source": "menu-05-blend-tryme-icet-b.jpg, levo gore",
+          "reviewNote": "Cena se razlikuje između fotografija menija – potvrditi aktuelnu.",
+          "altPrices": {
+            "menu-04": 340,
+            "menu-01": 340
+          }
+        },
+        {
+          "id": "marzipan-latte",
+          "name": "Marzipan Latte",
+          "description": null,
+          "price": 490,
+          "variants": [],
+          "size": "0,30",
+          "diet": [],
+          "mood": [
+            "coffee-relax"
+          ],
+          "image": null,
+          "needsReview": true,
+          "moodNeedsReview": true,
+          "source": "menu-05-blend-tryme-icet-b.jpg, levo gore",
+          "reviewNote": "Cena se razlikuje između fotografija menija – potvrditi aktuelnu.",
+          "altPrices": {
+            "menu-04": 480,
+            "menu-01": 460
+          }
+        },
+        {
+          "id": "pistaccino",
+          "name": "Pistaccino",
+          "description": null,
+          "price": 560,
+          "variants": [],
+          "size": null,
+          "diet": [],
+          "mood": [
+            "coffee-relax"
+          ],
+          "image": null,
+          "needsReview": false,
+          "moodNeedsReview": true,
+          "source": "menu-05-blend-tryme-icet-b.jpg, levo gore",
+          "altPrices": {
+            "menu-04": 560
+          }
+        },
+        {
+          "id": "black-cappuccino",
+          "name": "Black Cappuccino",
+          "description": null,
+          "price": 460,
+          "variants": [],
+          "size": null,
+          "diet": [],
+          "mood": [
+            "coffee-relax"
+          ],
+          "image": null,
+          "needsReview": true,
+          "moodNeedsReview": true,
+          "source": "menu-05-blend-tryme-icet-b.jpg, levo gore",
+          "reviewNote": "Cena se razlikuje između fotografija menija – potvrditi aktuelnu.",
+          "altPrices": {
+            "menu-04": 450,
+            "menu-01": 450
+          }
+        },
+        {
+          "id": "mocha",
+          "name": "Mocha",
+          "description": {
+            "sr": "dark, white, orange",
+            "en": "dark, white, orange",
+            "needsReview": true
+          },
+          "price": 480,
+          "variants": [],
+          "size": null,
+          "diet": [],
+          "mood": [
+            "coffee-relax"
+          ],
+          "image": null,
+          "needsReview": true,
+          "moodNeedsReview": true,
+          "source": "menu-05-blend-tryme-icet-b.jpg, levo gore",
+          "reviewNote": "Cena se razlikuje između fotografija menija – potvrditi aktuelnu.",
+          "altPrices": {
+            "menu-04": 480,
+            "menu-01": 450
+          }
+        },
+        {
+          "id": "coffee-flavor",
+          "name": "Coffee & Flavor",
+          "description": {
+            "sr": "+ dodatak uz kafu: lešnik, vanila, čokolada, karamela, toffee",
+            "en": "+ coffee add-on: hazelnut, vanilla, chocolate, caramel, toffee",
+            "needsReview": true
+          },
+          "price": 190,
+          "variants": [],
+          "size": null,
+          "diet": [],
+          "mood": [
+            "coffee-relax"
+          ],
+          "image": null,
+          "needsReview": true,
+          "moodNeedsReview": true,
+          "source": "menu-05-blend-tryme-icet-b.jpg, levo gore",
+          "reviewNote": "Na meniju '+190 din' – dodatak uz kafu.",
+          "altPrices": {
+            "menu-04": 190
+          }
+        }
+      ]
+    },
+    {
+      "id": "kafa-specijal",
+      "name": {
+        "sr": "Coffee – specijaliteti",
+        "en": "Coffee – specials"
+      },
+      "icon": "cup",
+      "source": "menu-05-blend-tryme-icet-b.jpg, sredina gore",
+      "items": [
+        {
+          "id": "salted-caramel-latte",
+          "name": "Salted Caramel Latte",
+          "description": null,
+          "price": 590,
+          "variants": [],
+          "size": null,
+          "diet": [],
+          "mood": [
+            "coffee-relax"
+          ],
+          "image": null,
+          "needsReview": true,
+          "moodNeedsReview": true,
+          "source": "menu-05-blend-tryme-icet-b.jpg, sredina gore",
+          "reviewNote": "Cena se razlikuje između fotografija menija – potvrditi aktuelnu.",
+          "altPrices": {
+            "menu-04": 560,
+            "menu-01": 560
+          }
+        },
+        {
+          "id": "pumpkin-spice-latte",
+          "name": "Pumpkin Spice Latte",
+          "description": null,
+          "price": 640,
+          "variants": [],
+          "size": null,
+          "diet": [],
+          "mood": [
+            "coffee-relax"
+          ],
+          "image": null,
+          "needsReview": true,
+          "moodNeedsReview": true,
+          "source": "menu-05-blend-tryme-icet-b.jpg, sredina gore",
+          "reviewNote": "Cena se razlikuje između fotografija menija – potvrditi aktuelnu.",
+          "altPrices": {
+            "menu-04": 620,
+            "menu-01": 600
+          }
+        },
+        {
+          "id": "espresso-bez-kofeina",
+          "name": "Espresso bez kofeina",
+          "description": null,
+          "price": 350,
+          "variants": [],
+          "size": null,
+          "diet": [],
+          "mood": [
+            "coffee-relax"
+          ],
+          "image": null,
+          "needsReview": true,
+          "moodNeedsReview": true,
+          "source": "menu-05-blend-tryme-icet-b.jpg, sredina gore",
+          "reviewNote": "Cena se razlikuje između fotografija menija – potvrditi aktuelnu.",
+          "altPrices": {
+            "menu-04": 380,
+            "menu-01": 370
+          }
+        },
+        {
+          "id": "ice-coffee",
+          "name": "Ice Coffee",
+          "description": null,
+          "price": 370,
+          "variants": [],
+          "size": null,
+          "diet": [],
+          "mood": [
+            "coffee-relax",
+            "energy"
+          ],
+          "image": null,
+          "needsReview": true,
+          "moodNeedsReview": true,
+          "source": "menu-05-blend-tryme-icet-b.jpg, sredina gore",
+          "reviewNote": "Cena se razlikuje između fotografija menija – potvrditi aktuelnu.",
+          "altPrices": {
+            "menu-04": 390,
+            "menu-01": 340
+          }
+        },
+        {
+          "id": "bruno-ice-coffee",
+          "name": "Bruno Ice Coffee",
+          "description": null,
+          "price": 585,
+          "variants": [],
+          "size": null,
+          "diet": [],
+          "mood": [
+            "coffee-relax"
+          ],
+          "image": null,
+          "needsReview": true,
+          "moodNeedsReview": true,
+          "source": "menu-05-blend-tryme-icet-b.jpg, sredina gore",
+          "reviewNote": "Cena se razlikuje između fotografija menija – potvrditi aktuelnu.",
+          "altPrices": {
+            "menu-04": 580
+          }
+        },
+        {
+          "id": "schwarzwald-ice-coffee",
+          "name": "Schwarzwald Ice Coffee",
+          "description": null,
+          "price": 590,
+          "variants": [],
+          "size": null,
+          "diet": [],
+          "mood": [
+            "coffee-relax"
+          ],
+          "image": null,
+          "needsReview": true,
+          "moodNeedsReview": true,
+          "source": "menu-05-blend-tryme-icet-b.jpg, sredina gore",
+          "reviewNote": "Cena se razlikuje između fotografija menija – potvrditi aktuelnu.",
+          "altPrices": {
+            "menu-04": 580
+          }
+        },
+        {
+          "id": "pumpkin-spice-ice-coffee",
+          "name": "Pumpkin Spice Ice Coffee",
+          "description": null,
+          "price": 630,
+          "variants": [],
+          "size": null,
+          "diet": [],
+          "mood": [
+            "coffee-relax"
+          ],
+          "image": null,
+          "needsReview": true,
+          "moodNeedsReview": true,
+          "source": "menu-05-blend-tryme-icet-b.jpg, sredina gore",
+          "reviewNote": "Cena se razlikuje između fotografija menija – potvrditi aktuelnu.",
+          "altPrices": {
+            "menu-04": 620
+          }
+        },
+        {
+          "id": "black-ice-coffee",
+          "name": "Black Ice Coffee",
+          "description": null,
+          "price": 590,
+          "variants": [],
+          "size": null,
+          "diet": [],
+          "mood": [
+            "coffee-relax"
+          ],
+          "image": null,
+          "needsReview": true,
+          "moodNeedsReview": true,
+          "source": "menu-05-blend-tryme-icet-b.jpg, sredina gore",
+          "reviewNote": "Cena se razlikuje između fotografija menija – potvrditi aktuelnu.",
+          "altPrices": {
+            "menu-04": 580
+          }
+        },
+        {
+          "id": "salted-caramel-ice-coffee",
+          "name": "Salted Caramel Ice Coffee",
+          "description": null,
+          "price": 570,
+          "variants": [],
+          "size": null,
+          "diet": [],
+          "mood": [
+            "coffee-relax"
+          ],
+          "image": null,
+          "needsReview": true,
+          "moodNeedsReview": true,
+          "source": "menu-05-blend-tryme-icet-b.jpg, sredina gore",
+          "reviewNote": "Cena se razlikuje između fotografija menija – potvrditi aktuelnu.",
+          "altPrices": {
+            "menu-04": 560
+          }
+        },
+        {
+          "id": "ice-mocha",
+          "name": "Ice Mocha",
+          "description": null,
+          "price": 480,
+          "variants": [],
+          "size": null,
+          "diet": [],
+          "mood": [
+            "coffee-relax"
+          ],
+          "image": null,
+          "needsReview": true,
+          "moodNeedsReview": true,
+          "source": "menu-05-blend-tryme-icet-b.jpg, sredina gore",
+          "reviewNote": "Cena se razlikuje između fotografija menija – potvrditi aktuelnu.",
+          "altPrices": {
+            "menu-04": 480,
+            "menu-01": 460
+          }
+        },
+        {
+          "id": "coffee-tonic",
+          "name": "Coffee Tonic",
+          "description": null,
+          "price": 490,
+          "variants": [],
+          "size": null,
+          "diet": [],
+          "mood": [
+            "energy"
+          ],
+          "image": null,
+          "needsReview": true,
+          "moodNeedsReview": true,
+          "source": "menu-05-blend-tryme-icet-b.jpg, sredina gore",
+          "reviewNote": "Cena se razlikuje između fotografija menija – potvrditi aktuelnu.",
+          "altPrices": {
+            "menu-04": 490,
+            "menu-01": 460
+          }
+        },
+        {
+          "id": "dalgona",
+          "name": "Dalgona",
+          "description": null,
+          "price": 490,
+          "variants": [],
+          "size": null,
+          "diet": [],
+          "mood": [
+            "coffee-relax"
+          ],
+          "image": null,
+          "needsReview": true,
+          "moodNeedsReview": true,
+          "source": "menu-05-blend-tryme-icet-b.jpg, sredina gore",
+          "reviewNote": "Cena se razlikuje između fotografija menija – potvrditi aktuelnu.",
+          "altPrices": {
+            "menu-04": 490,
+            "menu-01": 460
+          }
+        },
+        {
+          "id": "babyccino",
+          "name": "Babyccino",
+          "description": null,
+          "price": 290,
+          "variants": [],
+          "size": null,
+          "diet": [],
+          "mood": [
+            "kids"
+          ],
+          "image": null,
+          "needsReview": true,
+          "moodNeedsReview": true,
+          "source": "menu-05-blend-tryme-icet-b.jpg, sredina gore",
+          "altPrices": {
+            "menu-04": 290,
+            "menu-01": 290
+          }
+        },
+        {
+          "id": "freddo-espresso",
+          "name": "Freddo Espresso",
+          "description": null,
+          "price": 350,
+          "variants": [],
+          "size": null,
+          "diet": [],
+          "mood": [
+            "coffee-relax"
+          ],
+          "image": null,
+          "needsReview": true,
+          "moodNeedsReview": true,
+          "source": "menu-05-blend-tryme-icet-b.jpg, sredina gore",
+          "reviewNote": "Cena se razlikuje između fotografija menija – potvrditi aktuelnu.",
+          "altPrices": {
+            "menu-04": 340
+          }
+        },
+        {
+          "id": "freddo-cappuccino",
+          "name": "Freddo Cappuccino",
+          "description": null,
+          "price": 380,
+          "variants": [],
+          "size": null,
+          "diet": [],
+          "mood": [
+            "coffee-relax"
+          ],
+          "image": null,
+          "needsReview": true,
+          "moodNeedsReview": true,
+          "source": "menu-05-blend-tryme-icet-b.jpg, sredina gore",
+          "reviewNote": "Cena se razlikuje između fotografija menija – potvrditi aktuelnu.",
+          "altPrices": {
+            "menu-04": 350
+          }
+        },
+        {
+          "id": "affogato",
+          "name": "Affogato",
+          "description": null,
+          "price": 480,
+          "variants": [],
+          "size": null,
+          "diet": [],
+          "mood": [
+            "sweet"
+          ],
+          "image": null,
+          "needsReview": true,
+          "moodNeedsReview": true,
+          "source": "menu-05-blend-tryme-icet-b.jpg, sredina gore",
+          "reviewNote": "Cena se razlikuje između fotografija menija – potvrditi aktuelnu.",
+          "altPrices": {
+            "menu-04": 420,
+            "menu-01": 420
+          }
+        },
+        {
+          "id": "nes",
+          "name": "Nes",
+          "description": null,
+          "price": 280,
+          "variants": [],
+          "size": null,
+          "diet": [],
+          "mood": [
+            "coffee-relax"
+          ],
+          "image": null,
+          "needsReview": true,
+          "moodNeedsReview": true,
+          "source": "menu-05-blend-tryme-icet-b.jpg, sredina gore",
+          "reviewNote": "Cena se razlikuje između fotografija menija – potvrditi aktuelnu.",
+          "altPrices": {
+            "menu-04": 280,
+            "menu-01": 270
+          }
+        },
+        {
+          "id": "ledeni-nes",
+          "name": "Ledeni Nes",
+          "description": null,
+          "price": 300,
+          "variants": [],
+          "size": null,
+          "diet": [],
+          "mood": [
+            "coffee-relax"
+          ],
+          "image": null,
+          "needsReview": true,
+          "moodNeedsReview": true,
+          "source": "menu-05-blend-tryme-icet-b.jpg, sredina gore",
+          "reviewNote": "Cena se razlikuje između fotografija menija – potvrditi aktuelnu.",
+          "altPrices": {
+            "menu-04": 290,
+            "menu-01": 280
+          }
+        }
+      ]
+    },
+    {
+      "id": "try-me",
+      "name": {
+        "sr": "Try Me",
+        "en": "Try Me"
+      },
+      "icon": "cup",
+      "source": "menu-05-blend-tryme-icet-b.jpg, levo dole",
+      "items": [
+        {
+          "id": "cafe-bombon",
+          "name": "Café Bombón",
+          "description": null,
+          "price": 490,
+          "variants": [],
+          "size": null,
+          "diet": [],
+          "mood": [],
+          "image": null,
+          "needsReview": false,
+          "moodNeedsReview": true,
+          "source": "menu-05-blend-tryme-icet-b.jpg, levo dole",
+          "altPrices": {
+            "menu-04": 490,
+            "menu-01": 490
+          }
+        },
+        {
+          "id": "protein-coffee",
+          "name": "Protein coffee",
+          "description": null,
+          "price": 590,
+          "variants": [],
+          "size": null,
+          "diet": [],
+          "mood": [
+            "post-workout",
+            "energy"
+          ],
+          "image": null,
+          "needsReview": true,
+          "moodNeedsReview": true,
+          "source": "menu-05-blend-tryme-icet-b.jpg, levo dole",
+          "reviewNote": "Cena se razlikuje između fotografija menija – potvrditi aktuelnu.",
+          "altPrices": {
+            "menu-04": 590,
+            "menu-01": 580
+          }
+        },
+        {
+          "id": "vida-coffee-in-a-cone",
+          "name": "VIDA coffee in a cone",
+          "description": null,
+          "price": 590,
+          "variants": [],
+          "size": null,
+          "diet": [],
+          "mood": [
+            "coffee-relax"
+          ],
+          "image": null,
+          "needsReview": true,
+          "moodNeedsReview": true,
+          "source": "menu-05-blend-tryme-icet-b.jpg, levo dole",
+          "reviewNote": "Cena se razlikuje između fotografija menija – potvrditi aktuelnu.",
+          "altPrices": {
+            "menu-04": 570,
+            "menu-01": 590
+          }
+        },
+        {
+          "id": "iced-strawberry-matcha",
+          "name": "Iced Strawberry Matcha",
+          "description": null,
+          "price": 590,
+          "variants": [],
+          "size": null,
+          "diet": [],
+          "mood": [
+            "energy"
+          ],
+          "image": null,
+          "needsReview": false,
+          "moodNeedsReview": true,
+          "source": "menu-05-blend-tryme-icet-b.jpg, levo dole",
+          "altPrices": {
+            "menu-04": 590
+          }
+        },
+        {
+          "id": "iced-moringa",
+          "name": "Iced Moringa",
+          "description": null,
+          "price": 430,
+          "variants": [],
+          "size": "0,30",
+          "diet": [],
+          "mood": [
+            "energy"
+          ],
+          "image": null,
+          "needsReview": true,
+          "moodNeedsReview": true,
+          "source": "menu-05-blend-tryme-icet-b.jpg, levo dole",
+          "reviewNote": "Cena se razlikuje između fotografija menija – potvrditi aktuelnu.",
+          "altPrices": {
+            "menu-04": 430,
+            "menu-01": 420
+          }
+        },
+        {
+          "id": "iced-honey-vanilla-sky",
+          "name": "Iced Honey Vanilla Sky",
+          "description": null,
+          "price": 590,
+          "variants": [],
+          "size": "0,30",
+          "diet": [],
+          "mood": [],
+          "image": null,
+          "needsReview": true,
+          "moodNeedsReview": true,
+          "source": "menu-05-blend-tryme-icet-b.jpg, levo dole",
+          "reviewNote": "Cena se razlikuje između fotografija menija – potvrditi aktuelnu.",
+          "altPrices": {
+            "menu-04": 580
+          }
+        },
+        {
+          "id": "iced-honey-matcha-latte",
+          "name": "Iced Honey Matcha Latte",
+          "description": null,
+          "price": 530,
+          "variants": [],
+          "size": "0,30",
+          "diet": [],
+          "mood": [
+            "energy"
+          ],
+          "image": null,
+          "needsReview": true,
+          "moodNeedsReview": true,
+          "source": "menu-05-blend-tryme-icet-b.jpg, levo dole",
+          "reviewNote": "Cena se razlikuje između fotografija menija – potvrditi aktuelnu.",
+          "altPrices": {
+            "menu-04": 550,
+            "menu-01": 490
+          }
+        },
+        {
+          "id": "iced-honey-chai-latte",
+          "name": "Iced Honey Chai Latte",
+          "description": null,
+          "price": 530,
+          "variants": [],
+          "size": "0,30",
+          "diet": [],
+          "mood": [],
+          "image": null,
+          "needsReview": true,
+          "moodNeedsReview": true,
+          "source": "menu-05-blend-tryme-icet-b.jpg, levo dole",
+          "reviewNote": "Cena se razlikuje između fotografija menija – potvrditi aktuelnu.",
+          "altPrices": {
+            "menu-04": 530,
+            "menu-01": 490
+          }
+        },
+        {
+          "id": "iced-honey-passion-latte",
+          "name": "Iced Honey Passion Latte",
+          "description": null,
+          "price": 580,
+          "variants": [],
+          "size": "0,30",
+          "diet": [],
+          "mood": [],
+          "image": null,
+          "needsReview": true,
+          "moodNeedsReview": true,
+          "source": "menu-05-blend-tryme-icet-b.jpg, levo dole",
+          "reviewNote": "Cena se razlikuje između fotografija menija – potvrditi aktuelnu.",
+          "altPrices": {
+            "menu-04": 570,
+            "menu-01": 490
+          }
+        },
+        {
+          "id": "iced-honey-turmeric-latte",
+          "name": "Iced Honey Turmeric Latte",
+          "description": null,
+          "price": 530,
+          "variants": [],
+          "size": "0,30",
+          "diet": [],
+          "mood": [],
+          "image": null,
+          "needsReview": true,
+          "moodNeedsReview": true,
+          "source": "menu-05-blend-tryme-icet-b.jpg, levo dole",
+          "reviewNote": "Stavka postoji samo na menu-05."
+        },
+        {
+          "id": "chai-latte",
+          "name": "Chai Latte",
+          "description": null,
+          "price": 530,
+          "variants": [],
+          "size": "0,30",
+          "diet": [],
+          "mood": [],
+          "image": null,
+          "needsReview": true,
+          "moodNeedsReview": true,
+          "source": "menu-05-blend-tryme-icet-b.jpg, levo dole",
+          "reviewNote": "Cena se razlikuje između fotografija menija – potvrditi aktuelnu.",
+          "altPrices": {
+            "menu-04": 530,
+            "menu-01": 490
+          }
+        },
+        {
+          "id": "passion-latte",
+          "name": "Passion Latte",
+          "description": null,
+          "price": 530,
+          "variants": [],
+          "size": "0,30",
+          "diet": [],
+          "mood": [],
+          "image": null,
+          "needsReview": true,
+          "moodNeedsReview": true,
+          "source": "menu-05-blend-tryme-icet-b.jpg, levo dole",
+          "reviewNote": "Cena se razlikuje između fotografija menija – potvrditi aktuelnu.",
+          "altPrices": {
+            "menu-04": 550,
+            "menu-01": 490
+          }
+        },
+        {
+          "id": "matcha-latte",
+          "name": "Matcha Latte",
+          "description": null,
+          "price": 530,
+          "variants": [],
+          "size": "0,30",
+          "diet": [],
+          "mood": [
+            "energy"
+          ],
+          "image": null,
+          "needsReview": true,
+          "moodNeedsReview": true,
+          "source": "menu-05-blend-tryme-icet-b.jpg, levo dole",
+          "reviewNote": "Cena se razlikuje između fotografija menija – potvrditi aktuelnu.",
+          "altPrices": {
+            "menu-04": 530,
+            "menu-01": 490
+          }
+        },
+        {
+          "id": "turmeric-latte",
+          "name": "Turmeric Latte",
+          "description": null,
+          "price": 550,
+          "variants": [],
+          "size": "0,30",
+          "diet": [],
+          "mood": [],
+          "image": null,
+          "needsReview": true,
+          "moodNeedsReview": true,
+          "source": "menu-05-blend-tryme-icet-b.jpg, levo dole",
+          "reviewNote": "Cena se razlikuje između fotografija menija – potvrditi aktuelnu.",
+          "altPrices": {
+            "menu-04": 530,
+            "menu-01": 490
+          }
+        },
+        {
+          "id": "vanilla-sky-latte",
+          "name": "Vanilla Sky Latte",
+          "description": null,
+          "price": 590,
+          "variants": [],
+          "size": null,
+          "diet": [],
+          "mood": [],
+          "image": null,
+          "needsReview": true,
+          "moodNeedsReview": true,
+          "source": "menu-05-blend-tryme-icet-b.jpg, levo dole",
+          "reviewNote": "Cena se razlikuje između fotografija menija – potvrditi aktuelnu.",
+          "altPrices": {
+            "menu-04": 580
+          }
+        },
+        {
+          "id": "black-latte",
+          "name": "Black Latte",
+          "description": null,
+          "price": 560,
+          "variants": [],
+          "size": null,
+          "diet": [],
+          "mood": [],
+          "image": null,
+          "needsReview": true,
+          "moodNeedsReview": true,
+          "source": "menu-05-blend-tryme-icet-b.jpg, levo dole",
+          "reviewNote": "Cena se razlikuje između fotografija menija – potvrditi aktuelnu.",
+          "altPrices": {
+            "menu-04": 540
+          }
+        },
+        {
+          "id": "freak-shake",
+          "name": "Freak Shake",
+          "description": null,
+          "price": 690,
+          "variants": [],
+          "size": "0,30",
+          "diet": [],
+          "mood": [
+            "sweet",
+            "kids"
+          ],
+          "image": null,
+          "needsReview": true,
+          "moodNeedsReview": true,
+          "source": "menu-05-blend-tryme-icet-b.jpg, levo dole",
+          "reviewNote": "Cena se razlikuje između fotografija menija – potvrditi aktuelnu.",
+          "altPrices": {
+            "menu-04": 690,
+            "menu-01": 590
+          }
+        },
+        {
+          "id": "tiramisu-coffee",
+          "name": "Tiramisu coffee",
+          "description": null,
+          "price": 490,
+          "variants": [],
+          "size": "0,30",
+          "diet": [],
+          "mood": [
+            "sweet"
+          ],
+          "image": null,
+          "needsReview": false,
+          "moodNeedsReview": true,
+          "source": "menu-05-blend-tryme-icet-b.jpg, levo dole",
+          "altPrices": {
+            "menu-04": 490,
+            "menu-01": 490
+          }
+        },
+        {
+          "id": "rose-lemonade",
+          "name": "Rose Lemonade",
+          "description": null,
+          "price": 450,
+          "variants": [],
+          "size": "0,30",
+          "diet": [],
+          "mood": [],
+          "image": null,
+          "needsReview": false,
+          "moodNeedsReview": true,
+          "source": "menu-05-blend-tryme-icet-b.jpg, levo dole",
+          "altPrices": {
+            "menu-04": 450,
+            "menu-01": 450
+          }
+        },
+        {
+          "id": "caj-althaus",
+          "name": "Čaj Althaus (infuzija)",
+          "description": null,
+          "price": 330,
+          "variants": [],
+          "size": "0,30",
+          "diet": [],
+          "mood": [
+            "coffee-relax"
+          ],
+          "image": null,
+          "needsReview": false,
+          "moodNeedsReview": true,
+          "source": "menu-05-blend-tryme-icet-b.jpg, levo dole",
+          "altPrices": {
+            "menu-04": 330
+          }
+        },
+        {
+          "id": "homemade-caj-djumbir",
+          "name": "Homemade Čaj Đumbir",
+          "description": null,
+          "price": 410,
+          "variants": [],
+          "size": "0,30",
+          "diet": [],
+          "mood": [
+            "energy"
+          ],
+          "image": null,
+          "needsReview": true,
+          "moodNeedsReview": true,
+          "source": "menu-05-blend-tryme-icet-b.jpg, levo dole",
+          "reviewNote": "Cena se razlikuje između fotografija menija – potvrditi aktuelnu.",
+          "altPrices": {
+            "menu-04": 390,
+            "menu-01": 360
+          }
+        },
+        {
+          "id": "organski-caj",
+          "name": "Organski čaj",
+          "description": {
+            "sr": "(nisu čitljive sve vrste – npr. kamilica, nana…)",
+            "en": "(not all varieties legible – e.g. chamomile, mint…)",
+            "needsReview": true
+          },
+          "price": 350,
+          "variants": [],
+          "size": "0,30",
+          "diet": [],
+          "mood": [
+            "coffee-relax"
+          ],
+          "image": null,
+          "needsReview": true,
+          "moodNeedsReview": true,
+          "source": "menu-05-blend-tryme-icet-b.jpg, levo dole",
+          "reviewNote": "Vrste čaja na meniju nisu čitljive."
+        },
+        {
+          "id": "apple-pie-hot-punch",
+          "name": "Apple Pie Hot Punch",
+          "description": null,
+          "price": 560,
+          "variants": [],
+          "size": null,
+          "diet": [],
+          "mood": [],
+          "image": null,
+          "needsReview": true,
+          "moodNeedsReview": true,
+          "source": "menu-05-blend-tryme-icet-b.jpg, levo dole",
+          "reviewNote": "Cena se razlikuje između fotografija menija – potvrditi aktuelnu.",
+          "altPrices": {
+            "menu-01": 490
+          }
+        },
+        {
+          "id": "vida-infused-water",
+          "name": "Vida Infused Water",
+          "description": null,
+          "price": 190,
+          "variants": [],
+          "size": null,
+          "diet": [],
+          "mood": [],
+          "image": null,
+          "needsReview": true,
+          "moodNeedsReview": true,
+          "source": "menu-05-blend-tryme-icet-b.jpg, levo dole",
+          "reviewNote": "Samo na menu-01; cena teško čitljiva.",
+          "altPrices": {
+            "menu-01": 190
+          }
+        }
+      ]
+    },
+    {
+      "id": "dorucak",
+      "name": {
+        "sr": "Doručak (do 12h)",
+        "en": "Breakfast (until 12:00)"
+      },
+      "icon": "plate",
+      "source": "menu-07-dorucak-smoothiebowls-sendvici-wrap-salate.jpg, levo gore",
+      "items": [
+        {
+          "id": "eggcelent",
+          "name": "Eggcelent",
+          "description": {
+            "sr": "fit doručak od 2 belanca + 1 celo jaje na puteru, mladi sir, čeri, radič, baby spanać, maslinovo ulje, domaći integralni hleb",
+            "en": "light breakfast of 2 egg whites + 1 whole egg cooked in butter, fresh cheese, cherry tomatoes, radicchio, baby spinach, olive oil, homemade wholegrain bread",
+            "needsReview": true
+          },
+          "price": 550,
+          "variants": [],
+          "size": null,
+          "diet": [],
+          "mood": [
+            "post-workout",
+            "light"
+          ],
+          "image": null,
+          "needsReview": false,
+          "moodNeedsReview": true,
+          "source": "menu-07-dorucak-smoothiebowls-sendvici-wrap-salate.jpg, levo gore"
+        },
+        {
+          "id": "croque-monsieur",
+          "name": "Croque Monsieur",
+          "description": {
+            "sr": "topli tost hleb, pečenica, kačkavalj, bešamel, vlašac",
+            "en": "warm toast, smoked pork loin, kashkaval cheese, béchamel, chives",
+            "needsReview": true
+          },
+          "price": 590,
+          "variants": [],
+          "size": null,
+          "diet": [],
+          "mood": [
+            "kids"
+          ],
+          "image": null,
+          "needsReview": false,
+          "moodNeedsReview": true,
+          "source": "menu-07-dorucak-smoothiebowls-sendvici-wrap-salate.jpg, levo gore"
+        },
+        {
+          "id": "wakie-wakie",
+          "name": "Wakie Wakie",
+          "description": {
+            "sr": "3 jaja (omlet, kajgana, na oko), paradajz, krastavac, paprika, zelena salata, namaz od sira, slanina, domaći integralni hleb",
+            "en": "3 eggs (omelette, scrambled or fried), tomato, cucumber, bell pepper, lettuce, cheese spread, bacon, homemade wholegrain bread",
+            "needsReview": true
+          },
+          "price": 540,
+          "variants": [],
+          "size": null,
+          "diet": [],
+          "mood": [
+            "post-workout"
+          ],
+          "image": null,
+          "needsReview": false,
+          "moodNeedsReview": true,
+          "source": "menu-07-dorucak-smoothiebowls-sendvici-wrap-salate.jpg, levo gore"
+        },
+        {
+          "id": "green-day",
+          "name": "Green Day",
+          "description": {
+            "sr": "omlet od 2 cela jajeta, spanaća i ovsenih pahuljica, pršuta, čeri, feta, nar, mediteranski dresing od maslinovog ulja, belog luka i origana uz domaći integralni hleb",
+            "en": "omelette of 2 whole eggs, spinach and oat flakes, prosciutto, cherry tomatoes, feta, pomegranate, Mediterranean dressing of olive oil, garlic and oregano, with homemade wholegrain bread",
+            "needsReview": true
+          },
+          "price": 790,
+          "variants": [],
+          "size": null,
+          "diet": [],
+          "mood": [
+            "post-workout"
+          ],
+          "image": null,
+          "needsReview": false,
+          "moodNeedsReview": true,
+          "source": "menu-07-dorucak-smoothiebowls-sendvici-wrap-salate.jpg, levo gore"
+        },
+        {
+          "id": "benedict",
+          "name": "Benedict",
+          "description": {
+            "sr": "homemade lepinja*, poširano jaje, šunka, hollandaise sos (*VIDA healthy option: batat u osnovi)",
+            "en": "homemade flatbread*, poached egg, ham, hollandaise sauce (*VIDA healthy option: sweet potato base)",
+            "needsReview": true
+          },
+          "price": 860,
+          "variants": [
+            {
+              "id": "lepinja",
+              "name": {
+                "sr": "Homemade lepinja",
+                "en": "Homemade flatbread"
+              },
+              "price": 860
+            },
+            {
+              "id": "batat",
+              "name": {
+                "sr": "VIDA healthy option – batat u osnovi",
+                "en": "VIDA healthy option – sweet potato base"
+              },
+              "price": 890
+            }
+          ],
+          "size": null,
+          "diet": [],
+          "mood": [],
+          "image": null,
+          "needsReview": true,
+          "moodNeedsReview": true,
+          "source": "menu-07-dorucak-smoothiebowls-sendvici-wrap-salate.jpg, levo gore",
+          "reviewNote": "Cena 860/890 din – pretpostavka: 860 lepinja, 890 batat. Potvrditi."
+        }
+      ],
+      "availability": {
+        "until": "12:00",
+        "label": {
+          "sr": "do 12h",
+          "en": "until 12:00"
+        }
+      }
+    },
+    {
+      "id": "brunch",
+      "name": {
+        "sr": "Vida Brunch Masters",
+        "en": "Vida Brunch Masters"
+      },
+      "icon": "plate",
+      "source": "menu-06-burger-brunch-main-bowls.jpg, desno gore",
+      "items": [
+        {
+          "id": "burrata",
+          "name": "Burrata",
+          "description": {
+            "sr": "kriška zapečenog domaćeg hleba, Vidin džem od čerija i breskve, pršuta, rukola, vlašac, pesto, marinada od belog luka, burata, balzamiko",
+            "en": "slice of toasted homemade bread, Vida's cherry-tomato & peach jam, prosciutto, rocket, chives, pesto, garlic marinade, burrata, balsamic",
+            "needsReview": true
+          },
+          "price": 1350,
+          "variants": [],
+          "size": null,
+          "diet": [],
+          "mood": [],
+          "image": null,
+          "needsReview": false,
+          "moodNeedsReview": true,
+          "source": "menu-06-burger-brunch-main-bowls.jpg, desno gore"
+        },
+        {
+          "id": "red-pearl",
+          "name": "Red Pearl",
+          "description": {
+            "sr": "kriška domaćeg zapečenog hleba, poširano jaje, avokado, crveni kavijar od morske trave, feta, rukola, edamame, klice graška, kiseli crveni luk, vlašac, crni susam, limun dresing",
+            "en": "slice of toasted homemade bread, poached egg, avocado, red seaweed caviar, feta, rocket, edamame, pea shoots, pickled red onion, chives, black sesame, lemon dressing",
+            "needsReview": true
+          },
+          "price": 1450,
+          "variants": [],
+          "size": null,
+          "diet": [],
+          "mood": [],
+          "image": null,
+          "needsReview": false,
+          "moodNeedsReview": true,
+          "source": "menu-06-burger-brunch-main-bowls.jpg, desno gore"
+        },
+        {
+          "id": "avo-perfection",
+          "name": "Avo Perfection",
+          "description": {
+            "sr": "kriška zapečenog domaćeg hleba sa maslinovim uljem, ruzmarin, avokado, poširano jaje, feta sir, nar",
+            "en": "slice of toasted homemade bread with olive oil, rosemary, avocado, poached egg, feta cheese, pomegranate",
+            "needsReview": true
+          },
+          "price": 1150,
+          "variants": [],
+          "size": null,
+          "diet": [],
+          "mood": [
+            "light"
+          ],
+          "image": null,
+          "needsReview": false,
+          "moodNeedsReview": true,
+          "source": "menu-06-burger-brunch-main-bowls.jpg, desno gore"
+        },
+        {
+          "id": "viking",
+          "name": "Viking",
+          "description": {
+            "sr": "kriška zapečenog domaćeg hleba sa maslinovim uljem i ruzmarinom, avokado, losos, poširano jaje, rukola, sušeni paradajz",
+            "en": "slice of toasted homemade bread with olive oil and rosemary, avocado, salmon, poached egg, rocket, sun-dried tomato",
+            "needsReview": true
+          },
+          "price": 1350,
+          "variants": [],
+          "size": null,
+          "diet": [],
+          "mood": [
+            "post-workout"
+          ],
+          "image": null,
+          "needsReview": false,
+          "moodNeedsReview": true,
+          "source": "menu-06-burger-brunch-main-bowls.jpg, desno gore"
+        },
+        {
+          "id": "grilled-chicken-brunch",
+          "name": "Grilled Chicken",
+          "description": {
+            "sr": "kriška domaćeg zapečenog hleba, grilovana piletina, avokado, čeri, zelena salata, začinsko ulje, kari majonez, chili flakes",
+            "en": "slice of toasted homemade bread, grilled chicken, avocado, cherry tomatoes, lettuce, seasoned oil, curry mayonnaise, chili flakes",
+            "needsReview": true
+          },
+          "price": 1190,
+          "variants": [],
+          "size": null,
+          "diet": [],
+          "mood": [
+            "post-workout"
+          ],
+          "image": null,
+          "needsReview": false,
+          "moodNeedsReview": true,
+          "source": "menu-06-burger-brunch-main-bowls.jpg, desno gore"
+        },
+        {
+          "id": "beauty-and-the-beet",
+          "name": "Beauty and the Beet",
+          "description": {
+            "sr": "kriška domaćeg zapečenog hleba, avokado, paradajz, humus od cvekle, feta sir, poširano jaje, nar",
+            "en": "slice of toasted homemade bread, avocado, tomato, beetroot hummus, feta cheese, poached egg, pomegranate",
+            "needsReview": true
+          },
+          "price": 1130,
+          "variants": [],
+          "size": null,
+          "diet": [],
+          "mood": [
+            "light"
+          ],
+          "image": null,
+          "needsReview": false,
+          "moodNeedsReview": true,
+          "source": "menu-06-burger-brunch-main-bowls.jpg, desno gore"
+        }
+      ]
+    },
+    {
+      "id": "smoothie-bowls",
+      "name": {
+        "sr": "Vida Coconut Smoothie Bowls",
+        "en": "Vida Coconut Smoothie Bowls"
+      },
+      "icon": "bowl",
+      "source": "menu-07-dorucak-smoothiebowls-sendvici-wrap-salate.jpg, levo dole",
+      "items": [
+        {
+          "id": "golden-apple",
+          "name": "Golden Apple",
+          "description": {
+            "sr": "ovsene pahuljice u bademovom mleku, sotirana jabuka, cimet, vanila, bademov puter, orasi, javorov sirup",
+            "en": "oat flakes in almond milk, sautéed apple, cinnamon, vanilla, almond butter, walnuts, maple syrup",
+            "needsReview": true
+          },
+          "price": 890,
+          "variants": [],
+          "size": null,
+          "diet": [],
+          "mood": [
+            "sweet"
+          ],
+          "image": null,
+          "needsReview": false,
+          "moodNeedsReview": true,
+          "source": "menu-07-dorucak-smoothiebowls-sendvici-wrap-salate.jpg, levo dole"
+        },
+        {
+          "id": "royal-ube-bowl",
+          "name": "Royal Ube bowl",
+          "description": {
+            "sr": "ovsene pahuljice u bademovom mleku, orasi, bademi, bademov puter, indijski orah, kupine, ube, javorov sirup",
+            "en": "oat flakes in almond milk, walnuts, almonds, almond butter, cashews, blackberries, ube, maple syrup",
+            "needsReview": true
+          },
+          "price": 950,
+          "variants": [],
+          "size": null,
+          "diet": [],
+          "mood": [
+            "sweet"
+          ],
+          "image": null,
+          "needsReview": false,
+          "moodNeedsReview": true,
+          "source": "menu-07-dorucak-smoothiebowls-sendvici-wrap-salate.jpg, levo dole"
+        },
+        {
+          "id": "house-rules",
+          "name": "House Rules",
+          "description": {
+            "sr": "smoothie bowl, domaća VIDA granola, jagoda, grčki jogurt/sojino mleko, urme, banana",
+            "en": "smoothie bowl, homemade VIDA granola, strawberry, Greek yogurt/soy milk, dates, banana",
+            "needsReview": true
+          },
+          "price": 850,
+          "variants": [],
+          "size": null,
+          "diet": [],
+          "mood": [
+            "sweet",
+            "kids"
+          ],
+          "image": null,
+          "needsReview": true,
+          "moodNeedsReview": true,
+          "source": "menu-07-dorucak-smoothiebowls-sendvici-wrap-salate.jpg, levo dole",
+          "reviewNote": "Cena 850 ili 890 – teško čitljivo."
+        },
+        {
+          "id": "acai-bowl",
+          "name": "Acai Bowl",
+          "description": {
+            "sr": "acai berry, banana, grčki jogurt/sojino mleko, kivi, šumsko voće, domaća VIDA granola",
+            "en": "acai berry, banana, Greek yogurt/soy milk, kiwi, forest berries, homemade VIDA granola",
+            "needsReview": true
+          },
+          "price": 890,
+          "variants": [],
+          "size": null,
+          "diet": [],
+          "mood": [
+            "energy",
+            "sweet"
+          ],
+          "image": null,
+          "needsReview": false,
+          "moodNeedsReview": true,
+          "source": "menu-07-dorucak-smoothiebowls-sendvici-wrap-salate.jpg, levo dole"
+        },
+        {
+          "id": "choco-loco",
+          "name": "Choco Loco",
+          "description": {
+            "sr": "kakao, avokado, banana, urme, med, mleko/sojino mleko, domaća VIDA granola",
+            "en": "cocoa, avocado, banana, dates, honey, milk/soy milk, homemade VIDA granola",
+            "needsReview": true
+          },
+          "price": 890,
+          "variants": [],
+          "size": null,
+          "diet": [],
+          "mood": [
+            "sweet",
+            "kids"
+          ],
+          "image": null,
+          "needsReview": false,
+          "moodNeedsReview": true,
+          "source": "menu-07-dorucak-smoothiebowls-sendvici-wrap-salate.jpg, levo dole"
+        },
+        {
+          "id": "wellness-guru",
+          "name": "Wellness Guru",
+          "description": {
+            "sr": "spirulina, avokado, banana, med, mleko/sojino mleko, domaća VIDA granola",
+            "en": "spirulina, avocado, banana, honey, milk/soy milk, homemade VIDA granola",
+            "needsReview": true
+          },
+          "price": 890,
+          "variants": [],
+          "size": null,
+          "diet": [],
+          "mood": [
+            "energy",
+            "post-workout"
+          ],
+          "image": null,
+          "needsReview": false,
+          "moodNeedsReview": true,
+          "source": "menu-07-dorucak-smoothiebowls-sendvici-wrap-salate.jpg, levo dole"
+        },
+        {
+          "id": "ocean-beauty-bowl",
+          "name": "Ocean Beauty Bowl",
+          "description": {
+            "sr": "mango, plava spirulina, banana, kolagen, kokos, domaća VIDA granola",
+            "en": "mango, blue spirulina, banana, collagen, coconut, homemade VIDA granola",
+            "needsReview": true
+          },
+          "price": 890,
+          "variants": [],
+          "size": null,
+          "diet": [],
+          "mood": [
+            "light",
+            "sweet"
+          ],
+          "image": null,
+          "needsReview": false,
+          "moodNeedsReview": true,
+          "source": "menu-07-dorucak-smoothiebowls-sendvici-wrap-salate.jpg, levo dole"
+        }
+      ]
+    },
+    {
+      "id": "healthy-bowls",
+      "name": {
+        "sr": "Vida Healthy Bowls (glavno jelo)",
+        "en": "Vida Healthy Bowls (main course)"
+      },
+      "icon": "bowl",
+      "source": "menu-06-burger-brunch-main-bowls.jpg, desno dole",
+      "items": [
+        {
+          "id": "superbowl",
+          "name": "Superbowl",
+          "description": {
+            "sr": "ćufte od junećeg mesa, rukola, čeri, feta sir, krastavac, pečeni batat, šargarepa, crveni kupus, medeni jalapeño dip, slatko-kiseli sos, čips od integralne tortilje",
+            "en": "beef meatballs, rocket, cherry tomatoes, feta cheese, cucumber, roasted sweet potato, carrot, red cabbage, honey jalapeño dip, sweet-and-sour sauce, wholegrain tortilla chips",
+            "needsReview": true
+          },
+          "price": 1220,
+          "variants": [],
+          "size": null,
+          "diet": [],
+          "mood": [
+            "post-workout"
+          ],
+          "image": null,
+          "needsReview": false,
+          "moodNeedsReview": true,
+          "source": "menu-06-burger-brunch-main-bowls.jpg, desno dole"
+        },
+        {
+          "id": "vege-bowl",
+          "name": "Vege Bowl",
+          "description": {
+            "sr": "ćufte od leblebije, kus kus u limun sosu, pečeni batat, čeri, Vida humus od leblebije, šargarepa, kiseli crveni luk, crveni kupus, čips od integralne tortilje",
+            "en": "chickpea balls, couscous in lemon sauce, roasted sweet potato, cherry tomatoes, Vida chickpea hummus, carrot, pickled red onion, red cabbage, wholegrain tortilla chips",
+            "needsReview": true
+          },
+          "price": 1290,
+          "variants": [],
+          "size": null,
+          "diet": [],
+          "mood": [
+            "light"
+          ],
+          "image": null,
+          "needsReview": true,
+          "moodNeedsReview": true,
+          "source": "menu-06-burger-brunch-main-bowls.jpg, desno dole",
+          "reviewNote": "Cena 1290 ili 1250 – teško čitljivo."
+        },
+        {
+          "id": "greek-bowl",
+          "name": "Greek Bowl",
+          "description": {
+            "sr": "komadići grilovane piletine, feta sir, crne masline, čeri, krastavac, crveni luk, kinoa u limun sosu, dresing od maslinovog ulja, belog luka i balzamika, kriška limuna, tzatziki",
+            "en": "grilled chicken pieces, feta cheese, black olives, cherry tomatoes, cucumber, red onion, quinoa in lemon sauce, olive oil, garlic and balsamic dressing, lemon slice, tzatziki",
+            "needsReview": true
+          },
+          "price": 1290,
+          "variants": [],
+          "size": null,
+          "diet": [],
+          "mood": [
+            "post-workout",
+            "light"
+          ],
+          "image": null,
+          "needsReview": true,
+          "moodNeedsReview": true,
+          "source": "menu-06-burger-brunch-main-bowls.jpg, desno dole",
+          "reviewNote": "Cena 1290 ili 1250 – teško čitljivo."
+        },
+        {
+          "id": "chimi-bowl",
+          "name": "Chimi Bowl",
+          "description": {
+            "sr": "tuna, avokado slajs, pečeni batat, karfiol, bebi spanać, chimichurri sos, crni susam, korijander, limun dresing",
+            "en": "tuna, sliced avocado, roasted sweet potato, cauliflower, baby spinach, chimichurri sauce, black sesame, coriander, lemon dressing",
+            "needsReview": true
+          },
+          "price": 1450,
+          "variants": [],
+          "size": null,
+          "diet": [],
+          "mood": [
+            "post-workout"
+          ],
+          "image": null,
+          "needsReview": false,
+          "moodNeedsReview": true,
+          "source": "menu-06-burger-brunch-main-bowls.jpg, desno dole"
+        },
+        {
+          "id": "cancun-bowl",
+          "name": "Cancun Bowl",
+          "description": {
+            "sr": "integralna tortilja, meksičke ćufte od crnog pasulja, pečena banana, edamame, zelena salata, paprika, kukuruz, BBQ pirinač, gvakamole, meksički sos, korijander",
+            "en": "wholegrain tortilla, Mexican black-bean balls, roasted banana, edamame, lettuce, bell pepper, corn, BBQ rice, guacamole, Mexican sauce, coriander",
+            "needsReview": true
+          },
+          "price": 1450,
+          "variants": [],
+          "size": null,
+          "diet": [],
+          "mood": [],
+          "image": null,
+          "needsReview": false,
+          "moodNeedsReview": true,
+          "source": "menu-06-burger-brunch-main-bowls.jpg, desno dole"
+        },
+        {
+          "id": "keto-beef",
+          "name": "Keto Beef",
+          "description": {
+            "sr": "juneće ćufte, avokado slajs, dva jaja na oko, baby mocarela, rukola, zelena salsa",
+            "en": "beef meatballs, sliced avocado, two fried eggs, baby mozzarella, rocket, green salsa",
+            "needsReview": true
+          },
+          "price": 1290,
+          "variants": [],
+          "size": null,
+          "diet": [],
+          "mood": [
+            "post-workout"
+          ],
+          "image": null,
+          "needsReview": true,
+          "moodNeedsReview": true,
+          "source": "menu-06-burger-brunch-main-bowls.jpg, desno dole",
+          "reviewNote": "Cena 1290 ili 1250 – teško čitljivo."
+        }
+      ]
+    },
+    {
+      "id": "main",
+      "name": {
+        "sr": "Main classics (glavno jelo)",
+        "en": "Main classics (main course)"
+      },
+      "icon": "plate",
+      "source": "menu-06-burger-brunch-main-bowls.jpg, levo dole",
+      "items": [
+        {
+          "id": "potato-bomb",
+          "name": "Potato Bomb",
+          "description": {
+            "sr": "kriške pečenog krompira, crveni pasulj, paradajz, gvakamole, preliv od indijskog oraha, tucana paprika, beli luk, prženi kokos/slanina",
+            "en": "roast potato wedges, red beans, tomato, guacamole, cashew dressing, chili flakes, garlic, fried coconut/bacon",
+            "needsReview": true
+          },
+          "price": 1150,
+          "variants": [],
+          "size": null,
+          "diet": [],
+          "mood": [],
+          "image": null,
+          "needsReview": false,
+          "moodNeedsReview": true,
+          "source": "menu-06-burger-brunch-main-bowls.jpg, levo dole"
+        },
+        {
+          "id": "fit-chicken",
+          "name": "Fit Chicken",
+          "description": {
+            "sr": "pileće grudi sa grila, kinoa, basmati pirinač, baby spanać, čeri, feta, limun dresing, nar, domaći hleb",
+            "en": "grilled chicken breast, quinoa, basmati rice, baby spinach, cherry tomatoes, feta, lemon dressing, pomegranate, homemade bread",
+            "needsReview": true
+          },
+          "price": 1220,
+          "variants": [],
+          "size": null,
+          "diet": [],
+          "mood": [
+            "post-workout",
+            "light"
+          ],
+          "image": null,
+          "needsReview": false,
+          "moodNeedsReview": true,
+          "source": "menu-06-burger-brunch-main-bowls.jpg, levo dole"
+        },
+        {
+          "id": "bianca",
+          "name": "Bianca",
+          "description": {
+            "sr": "grilovane ćureće grudi, jogurt sos, salata od rukole, komorača i narandže, nar, domaći hleb",
+            "en": "grilled turkey breast, yogurt sauce, rocket, fennel and orange salad, pomegranate, homemade bread",
+            "needsReview": true
+          },
+          "price": 1420,
+          "variants": [],
+          "size": null,
+          "diet": [],
+          "mood": [
+            "light"
+          ],
+          "image": null,
+          "needsReview": false,
+          "moodNeedsReview": true,
+          "source": "menu-06-burger-brunch-main-bowls.jpg, levo dole"
+        },
+        {
+          "id": "hallo-me",
+          "name": "Hallo Me",
+          "description": {
+            "sr": "grilovani sir, rukola, smokve, komorač, pire od sezonskog povrća, brusnica, med",
+            "en": "grilled cheese, rocket, figs, fennel, seasonal vegetable purée, cranberry, honey",
+            "needsReview": true
+          },
+          "price": 1450,
+          "variants": [],
+          "size": null,
+          "diet": [],
+          "mood": [],
+          "image": null,
+          "needsReview": false,
+          "moodNeedsReview": true,
+          "source": "menu-06-burger-brunch-main-bowls.jpg, levo dole",
+          "reviewNote": "Naziv sa menija: 'HALLO ME' (verovatno igra reči sa halloumi) – zadržan original."
+        },
+        {
+          "id": "middle-east-chicken",
+          "name": "Middle East Chicken",
+          "description": {
+            "sr": "pileći ražnjić, pita hleb, leblebija, grilovana tikvica, labneh, humus od cvekle, ukiseljeni luk, zaatar, limeta, sušeni paradajz",
+            "en": "chicken skewer, pita bread, chickpeas, grilled courgette, labneh, beetroot hummus, pickled onion, za'atar, lime, sun-dried tomato",
+            "needsReview": true
+          },
+          "price": 1350,
+          "variants": [],
+          "size": null,
+          "diet": [],
+          "mood": [
+            "post-workout"
+          ],
+          "image": null,
+          "needsReview": false,
+          "moodNeedsReview": true,
+          "source": "menu-06-burger-brunch-main-bowls.jpg, levo dole"
+        },
+        {
+          "id": "gourmet-pork-couscous",
+          "name": "Gourmet Pork Couscous",
+          "description": {
+            "sr": "svinjski ražnjić, suve šljive, slanina, pečeni krompir, kuskus sa sušenim paradajzom i kiselim krastavcima, salsa od nane",
+            "en": "pork skewer, prunes, bacon, roast potatoes, couscous with sun-dried tomato and pickles, mint salsa",
+            "needsReview": true
+          },
+          "price": 1470,
+          "variants": [],
+          "size": null,
+          "diet": [],
+          "mood": [],
+          "image": null,
+          "needsReview": false,
+          "moodNeedsReview": true,
+          "source": "menu-06-burger-brunch-main-bowls.jpg, levo dole"
+        }
+      ]
+    },
+    {
+      "id": "burgeri",
+      "name": {
+        "sr": "Burgeri & pizza",
+        "en": "Burgers & pizza"
+      },
+      "icon": "burger",
+      "source": "menu-06-burger-brunch-main-bowls.jpg, levo gore",
+      "items": [
+        {
+          "id": "classic-burger",
+          "name": "Classic",
+          "description": {
+            "sr": "100% juneće meso, 1000 island sos, kiseli krastavac, zelena salata, crveni luk, čeri, sir, pečeni krompir, domaća zemička",
+            "en": "100% beef, 1000 Island sauce, pickles, lettuce, red onion, cherry tomatoes, cheese, roast potatoes, homemade bun",
+            "needsReview": true
+          },
+          "price": 1330,
+          "variants": [],
+          "size": null,
+          "diet": [],
+          "mood": [],
+          "image": null,
+          "needsReview": false,
+          "moodNeedsReview": true,
+          "source": "menu-06-burger-brunch-main-bowls.jpg, levo gore"
+        },
+        {
+          "id": "vege-burger",
+          "name": "Vege Burger",
+          "description": {
+            "sr": "burger od crvenog pasulja, paradajz, zelena salata, medeni jalapeño, Vida humus od leblebije, kiseli crveni luk, pečeni batat, domaća zemička",
+            "en": "red-bean burger, tomato, lettuce, honey jalapeño, Vida chickpea hummus, pickled red onion, roasted sweet potato, homemade bun",
+            "needsReview": true
+          },
+          "price": 1290,
+          "variants": [],
+          "size": null,
+          "diet": [],
+          "mood": [],
+          "image": null,
+          "needsReview": true,
+          "moodNeedsReview": true,
+          "source": "menu-06-burger-brunch-main-bowls.jpg, levo gore",
+          "reviewNote": "Cena teško čitljiva (1290 ili 1330)."
+        },
+        {
+          "id": "vida-burger",
+          "name": "Vida Burger",
+          "description": {
+            "sr": "100% juneće meso, gvakamole sos, čeri, rukola, iceberg, crveni luk, mladi sir, naš namaz, pečeni krompir sa ruzmarinom, salsa od paprike, domaća zemička",
+            "en": "100% beef, guacamole sauce, cherry tomatoes, rocket, iceberg, red onion, fresh cheese, our spread, roast potatoes with rosemary, bell pepper salsa, homemade bun",
+            "needsReview": true
+          },
+          "price": 1380,
+          "variants": [],
+          "size": null,
+          "diet": [],
+          "mood": [
+            "post-workout"
+          ],
+          "image": null,
+          "needsReview": false,
+          "moodNeedsReview": true,
+          "source": "menu-06-burger-brunch-main-bowls.jpg, levo gore"
+        },
+        {
+          "id": "pizza",
+          "name": "Pizza",
+          "description": {
+            "sr": "pelat, sir, šunkarica, šampinjoni (*opcija VEGE)",
+            "en": "tomato sauce, cheese, ham, button mushrooms (*VEGE option)",
+            "needsReview": true
+          },
+          "price": 1130,
+          "variants": [],
+          "size": null,
+          "diet": [],
+          "mood": [
+            "kids"
+          ],
+          "image": null,
+          "needsReview": false,
+          "moodNeedsReview": true,
+          "source": "menu-06-burger-brunch-main-bowls.jpg, levo gore"
+        },
+        {
+          "id": "potaz-dana",
+          "name": "Potaž dana",
+          "description": {
+            "sr": "potaž dana",
+            "en": "soup of the day",
+            "needsReview": true
+          },
+          "price": 490,
+          "variants": [],
+          "size": null,
+          "diet": [],
+          "mood": [
+            "light"
+          ],
+          "image": null,
+          "needsReview": false,
+          "moodNeedsReview": true,
+          "source": "menu-06-burger-brunch-main-bowls.jpg, levo gore",
+          "reviewNote": "Na meniju samo 'Potaž dana' bez opisa."
+        }
+      ]
+    },
+    {
+      "id": "sendvici",
+      "name": {
+        "sr": "Homemade sendviči – Vida Classics",
+        "en": "Homemade sandwiches – Vida Classics"
+      },
+      "icon": "sandwich",
+      "source": "menu-07-dorucak-smoothiebowls-sendvici-wrap-salate.jpg, desno gore",
+      "items": [
+        {
+          "id": "i-m-home",
+          "name": "I'm Home",
+          "description": {
+            "sr": "domaća kifla, naš namaz, pečenica, rendani sir, zelena salata, paprika, paradajz",
+            "en": "homemade roll, our spread, smoked pork loin, grated cheese, lettuce, bell pepper, tomato",
+            "needsReview": true
+          },
+          "price": 490,
+          "variants": [],
+          "size": null,
+          "diet": [],
+          "mood": [
+            "kids"
+          ],
+          "image": null,
+          "needsReview": false,
+          "moodNeedsReview": true,
+          "source": "menu-07-dorucak-smoothiebowls-sendvici-wrap-salate.jpg, desno gore"
+        },
+        {
+          "id": "the-bavarian",
+          "name": "The Bavarian",
+          "description": {
+            "sr": "bavarska kifla, pršuta, rukola, paradajz, naš namaz, zelena salata, parmezan, kačkavalj, maslinovo ulje, paprika",
+            "en": "Bavarian roll, prosciutto, rocket, tomato, our spread, lettuce, parmesan, kashkaval cheese, olive oil, bell pepper",
+            "needsReview": true
+          },
+          "price": 530,
+          "variants": [],
+          "size": null,
+          "diet": [],
+          "mood": [],
+          "image": null,
+          "needsReview": false,
+          "moodNeedsReview": true,
+          "source": "menu-07-dorucak-smoothiebowls-sendvici-wrap-salate.jpg, desno gore"
+        },
+        {
+          "id": "vege-sendvic",
+          "name": "Vege",
+          "description": {
+            "sr": "integralna kifla, sezonsko povrće, zelena salata, paradajz, maslinovo ulje, Vida humus od leblebije",
+            "en": "wholegrain roll, seasonal vegetables, lettuce, tomato, olive oil, Vida chickpea hummus",
+            "needsReview": true
+          },
+          "price": 570,
+          "variants": [],
+          "size": null,
+          "diet": [],
+          "mood": [
+            "light"
+          ],
+          "image": null,
+          "needsReview": false,
+          "moodNeedsReview": true,
+          "source": "menu-07-dorucak-smoothiebowls-sendvici-wrap-salate.jpg, desno gore"
+        },
+        {
+          "id": "tuna-sendvic",
+          "name": "Tuna",
+          "description": {
+            "sr": "integralna kifla, tuna, mix salata, mix povrća, humus, brusnica, lomljeni badem",
+            "en": "wholegrain roll, tuna, mixed salad, mixed vegetables, hummus, cranberry, crushed almonds",
+            "needsReview": true
+          },
+          "price": 690,
+          "variants": [],
+          "size": null,
+          "diet": [],
+          "mood": [
+            "post-workout"
+          ],
+          "image": null,
+          "needsReview": false,
+          "moodNeedsReview": true,
+          "source": "menu-07-dorucak-smoothiebowls-sendvici-wrap-salate.jpg, desno gore"
+        },
+        {
+          "id": "dodatak-il-mio-panino",
+          "name": "Dodatak „Il Mio Panino” – bezglutenski tost",
+          "description": {
+            "sr": "* dodatak „Il Mio Panino” – bezglutenski tost",
+            "en": "* add-on “Il Mio Panino” – gluten-free toast",
+            "needsReview": true
+          },
+          "price": 290,
+          "variants": [],
+          "size": null,
+          "diet": [
+            "gluten-free"
+          ],
+          "mood": [],
+          "image": null,
+          "needsReview": false,
+          "moodNeedsReview": true,
+          "source": "menu-07-dorucak-smoothiebowls-sendvici-wrap-salate.jpg, desno gore",
+          "reviewNote": "Na meniju je ovo dodatak uz sendviče (označen *). Oznaka 'bez glutena' je doslovno sa menija ('bezglutenski tost')."
+        }
+      ]
+    },
+    {
+      "id": "bruschetta",
+      "name": {
+        "sr": "Bruschetta",
+        "en": "Bruschetta"
+      },
+      "icon": "plate",
+      "source": "menu-07-dorucak-smoothiebowls-sendvici-wrap-salate.jpg, desno sredina",
+      "items": [
+        {
+          "id": "my-way-bruschetta",
+          "name": "My Way Bruschetta",
+          "description": {
+            "sr": "zapečeni začinjeni hleb, pršuta, rukola, čeri, masline, orašasti plodovi, gvakamole sos, tzatziki, humus od cvekle",
+            "en": "toasted seasoned bread, prosciutto, rocket, cherry tomatoes, olives, nuts, guacamole sauce, tzatziki, beetroot hummus",
+            "needsReview": true
+          },
+          "price": 1290,
+          "variants": [],
+          "size": null,
+          "diet": [],
+          "mood": [],
+          "image": null,
+          "needsReview": false,
+          "moodNeedsReview": true,
+          "source": "menu-07-dorucak-smoothiebowls-sendvici-wrap-salate.jpg, desno sredina"
+        }
+      ]
+    },
+    {
+      "id": "wrap",
+      "name": {
+        "sr": "It's a Wrap!",
+        "en": "It's a Wrap!"
+      },
+      "icon": "wrap",
+      "source": "menu-07-dorucak-smoothiebowls-sendvici-wrap-salate.jpg, desno dole",
+      "items": [
+        {
+          "id": "greek-wrap",
+          "name": "Greek",
+          "description": {
+            "sr": "tortilja, grilovana piletina, tzatziki, mix salata, feta sir, paradajz",
+            "en": "tortilla, grilled chicken, tzatziki, mixed salad, feta cheese, tomato",
+            "needsReview": true
+          },
+          "price": 850,
+          "variants": [],
+          "size": null,
+          "diet": [],
+          "mood": [],
+          "image": null,
+          "needsReview": false,
+          "moodNeedsReview": true,
+          "source": "menu-07-dorucak-smoothiebowls-sendvici-wrap-salate.jpg, desno dole"
+        },
+        {
+          "id": "mexico-wrap",
+          "name": "Mexico",
+          "description": {
+            "sr": "tortilja, svinjski file, gvakamole, paradajz, iceberg, pasulj, pirinač, kukuruz, salsa od paprike (*opcija Mexico VEGE)",
+            "en": "tortilla, pork fillet, guacamole, tomato, iceberg, beans, rice, corn, bell pepper salsa (*Mexico VEGE option available)",
+            "needsReview": true
+          },
+          "price": 890,
+          "variants": [],
+          "size": null,
+          "diet": [],
+          "mood": [],
+          "image": null,
+          "needsReview": false,
+          "moodNeedsReview": true,
+          "source": "menu-07-dorucak-smoothiebowls-sendvici-wrap-salate.jpg, desno dole"
+        },
+        {
+          "id": "tuna-wrap",
+          "name": "Tuna Wrap",
+          "description": {
+            "sr": "zelena tortilja, tuna, kinoa, crne masline, paprika, baby spanać, crveni kupus, dijon/vlašac dresing",
+            "en": "green tortilla, tuna, quinoa, black olives, bell pepper, baby spinach, red cabbage, Dijon/chive dressing",
+            "needsReview": true
+          },
+          "price": 890,
+          "variants": [],
+          "size": null,
+          "diet": [],
+          "mood": [
+            "post-workout",
+            "light"
+          ],
+          "image": null,
+          "needsReview": false,
+          "moodNeedsReview": true,
+          "source": "menu-07-dorucak-smoothiebowls-sendvici-wrap-salate.jpg, desno dole"
+        },
+        {
+          "id": "vida-rainbow-rolls",
+          "name": "Vida Rainbow Rolls",
+          "description": {
+            "sr": "(*vegan) japanske pirinčane rolnice punjene sezonskim povrćem uz hoisin & teriyaki dip",
+            "en": "(*vegan) Japanese rice-paper rolls filled with seasonal vegetables, with hoisin & teriyaki dip",
+            "needsReview": true
+          },
+          "price": 860,
+          "variants": [],
+          "size": null,
+          "diet": [
+            "vegan"
+          ],
+          "mood": [
+            "light"
+          ],
+          "image": null,
+          "needsReview": false,
+          "moodNeedsReview": true,
+          "source": "menu-07-dorucak-smoothiebowls-sendvici-wrap-salate.jpg, desno dole",
+          "reviewNote": "Oznaka 'vegan' je doslovno sa menija."
+        }
+      ]
+    },
+    {
+      "id": "salate",
+      "name": {
+        "sr": "Obrok salate",
+        "en": "Meal salads"
+      },
+      "icon": "leaf",
+      "source": "menu-07-dorucak-smoothiebowls-sendvici-wrap-salate.jpg, desno dole",
+      "items": [
+        {
+          "id": "rainbow",
+          "name": "Rainbow",
+          "description": {
+            "sr": "mix zelenih salata sa sezonskim povrćem, maslinovo ulje, limun dresing (opcija dodatak tuna)",
+            "en": "mixed greens with seasonal vegetables, olive oil, lemon dressing (optional tuna add-on)",
+            "needsReview": true
+          },
+          "price": 790,
+          "variants": [
+            {
+              "id": "osnovna",
+              "name": {
+                "sr": "Osnovna",
+                "en": "Basic"
+              },
+              "price": 790
+            },
+            {
+              "id": "tuna",
+              "name": {
+                "sr": "Sa tunom",
+                "en": "With tuna"
+              },
+              "price": 850
+            }
+          ],
+          "size": null,
+          "diet": [],
+          "mood": [
+            "light"
+          ],
+          "image": null,
+          "needsReview": true,
+          "moodNeedsReview": true,
+          "source": "menu-07-dorucak-smoothiebowls-sendvici-wrap-salate.jpg, desno dole",
+          "reviewNote": "790/850 din – pretpostavka: 850 sa dodatkom tune."
+        },
+        {
+          "id": "rocket",
+          "name": "Rocket",
+          "description": {
+            "sr": "rukola, grilovana piletina, kuskus, kozji sir, čeri, urme, dresing od indijskog oraha (*opcija VEGE)",
+            "en": "rocket, grilled chicken, couscous, goat cheese, cherry tomatoes, dates, cashew dressing (*VEGE option)",
+            "needsReview": true
+          },
+          "price": 990,
+          "variants": [
+            {
+              "id": "v1",
+              "name": {
+                "sr": "Cena 1",
+                "en": "Price 1"
+              },
+              "price": 990
+            },
+            {
+              "id": "v2",
+              "name": {
+                "sr": "Cena 2",
+                "en": "Price 2"
+              },
+              "price": 1190
+            }
+          ],
+          "size": null,
+          "diet": [],
+          "mood": [
+            "light",
+            "post-workout"
+          ],
+          "image": null,
+          "needsReview": true,
+          "moodNeedsReview": true,
+          "source": "menu-07-dorucak-smoothiebowls-sendvici-wrap-salate.jpg, desno dole",
+          "reviewNote": "Na meniju 990/1190 (ili 1180) din bez objašnjenja – nije jasno šta je koja cena (VEGE / veća porcija?). Potvrditi nazive varijanti."
+        },
+        {
+          "id": "iron-baby",
+          "name": "Iron Baby",
+          "description": {
+            "sr": "baby spanać, grilovana ćuretina, feta sir, orasi, crveni luk, brusnica, dresing od grčkog jogurta (*opcija VEGE)",
+            "en": "baby spinach, grilled turkey, feta cheese, walnuts, red onion, cranberry, Greek yogurt dressing (*VEGE option)",
+            "needsReview": true
+          },
+          "price": 990,
+          "variants": [
+            {
+              "id": "v1",
+              "name": {
+                "sr": "Cena 1",
+                "en": "Price 1"
+              },
+              "price": 990
+            },
+            {
+              "id": "v2",
+              "name": {
+                "sr": "Cena 2",
+                "en": "Price 2"
+              },
+              "price": 1190
+            }
+          ],
+          "size": null,
+          "diet": [],
+          "mood": [
+            "light",
+            "post-workout"
+          ],
+          "image": null,
+          "needsReview": true,
+          "moodNeedsReview": true,
+          "source": "menu-07-dorucak-smoothiebowls-sendvici-wrap-salate.jpg, desno dole",
+          "reviewNote": "990/1190 din bez objašnjenja – potvrditi šta je koja varijanta."
+        }
+      ]
+    },
+    {
+      "id": "smoothie",
+      "name": {
+        "sr": "Ceđeni, smoothie, shake, mocktail",
+        "en": "Juices, smoothies, shakes, mocktails"
+      },
+      "icon": "glass",
+      "source": "menu-03-smoothie-shake-mocktail.jpg",
+      "items": [
+        {
+          "id": "vida-zen",
+          "name": "VIDA ZEN",
+          "description": {
+            "sr": "kokosova voda, limeta, ananas, limun, nana, maka prah",
+            "en": "coconut water, lime, pineapple, lemon, mint, maca powder",
+            "needsReview": true
+          },
+          "price": 590,
+          "variants": [],
+          "size": null,
+          "diet": [],
+          "mood": [
+            "energy",
+            "light"
+          ],
+          "image": null,
+          "needsReview": false,
+          "moodNeedsReview": true,
+          "source": "menu-03-smoothie-shake-mocktail.jpg"
+        },
+        {
+          "id": "oh-la-la",
+          "name": "Oh La La",
+          "description": {
+            "sr": "aronija, malina, nar, limeta, nana, soda",
+            "en": "aronia, raspberry, pomegranate, lime, mint, soda",
+            "needsReview": true
+          },
+          "price": 550,
+          "variants": [],
+          "size": null,
+          "diet": [],
+          "mood": [
+            "light"
+          ],
+          "image": null,
+          "needsReview": false,
+          "moodNeedsReview": true,
+          "source": "menu-03-smoothie-shake-mocktail.jpg"
+        },
+        {
+          "id": "basic",
+          "name": "Basic",
+          "description": {
+            "sr": "pomorandža, jabuka, šargarepa",
+            "en": "orange, apple, carrot",
+            "needsReview": true
+          },
+          "price": 490,
+          "variants": [],
+          "size": null,
+          "diet": [],
+          "mood": [
+            "light",
+            "kids"
+          ],
+          "image": null,
+          "needsReview": false,
+          "moodNeedsReview": true,
+          "source": "menu-03-smoothie-shake-mocktail.jpg"
+        },
+        {
+          "id": "refresh",
+          "name": "Refresh",
+          "description": {
+            "sr": "jabuka, nana, đumbir, krastavac",
+            "en": "apple, mint, ginger, cucumber",
+            "needsReview": true
+          },
+          "price": 490,
+          "variants": [],
+          "size": null,
+          "diet": [],
+          "mood": [
+            "light"
+          ],
+          "image": null,
+          "needsReview": false,
+          "moodNeedsReview": true,
+          "source": "menu-03-smoothie-shake-mocktail.jpg"
+        },
+        {
+          "id": "citrus-mix",
+          "name": "Citrus mix",
+          "description": {
+            "sr": "pomorandža, grejp, limun, đumbir",
+            "en": "orange, grapefruit, lemon, ginger",
+            "needsReview": true
+          },
+          "price": 540,
+          "variants": [],
+          "size": null,
+          "diet": [],
+          "mood": [
+            "energy"
+          ],
+          "image": null,
+          "needsReview": false,
+          "moodNeedsReview": true,
+          "source": "menu-03-smoothie-shake-mocktail.jpg"
+        },
+        {
+          "id": "fervex",
+          "name": "Fervex",
+          "description": {
+            "sr": "grejp, jabuka, limun, đumbir, med",
+            "en": "grapefruit, apple, lemon, ginger, honey",
+            "needsReview": true
+          },
+          "price": 540,
+          "variants": [],
+          "size": null,
+          "diet": [],
+          "mood": [
+            "energy"
+          ],
+          "image": null,
+          "needsReview": false,
+          "moodNeedsReview": true,
+          "source": "menu-03-smoothie-shake-mocktail.jpg"
+        },
+        {
+          "id": "perfect-skin",
+          "name": "Perfect skin",
+          "description": {
+            "sr": "cvekla, jabuka, šargarepa, limun, đumbir",
+            "en": "beetroot, apple, carrot, lemon, ginger",
+            "needsReview": true
+          },
+          "price": 550,
+          "variants": [],
+          "size": null,
+          "diet": [],
+          "mood": [
+            "light"
+          ],
+          "image": null,
+          "needsReview": false,
+          "moodNeedsReview": true,
+          "source": "menu-03-smoothie-shake-mocktail.jpg"
+        },
+        {
+          "id": "green-paradise",
+          "name": "Green Paradise",
+          "description": {
+            "sr": "jabuka, spanać, krastavac, celer",
+            "en": "apple, spinach, cucumber, celery",
+            "needsReview": true
+          },
+          "price": 550,
+          "variants": [],
+          "size": null,
+          "diet": [],
+          "mood": [
+            "light"
+          ],
+          "image": null,
+          "needsReview": false,
+          "moodNeedsReview": true,
+          "source": "menu-03-smoothie-shake-mocktail.jpg"
+        },
+        {
+          "id": "ice-ice-baby",
+          "name": "Ice Ice Baby",
+          "description": {
+            "sr": "jagoda, sladoled, jogurt",
+            "en": "strawberry, ice cream, yogurt",
+            "needsReview": true
+          },
+          "price": 540,
+          "variants": [],
+          "size": null,
+          "diet": [],
+          "mood": [
+            "sweet",
+            "kids"
+          ],
+          "image": null,
+          "needsReview": false,
+          "moodNeedsReview": true,
+          "source": "menu-03-smoothie-shake-mocktail.jpg"
+        },
+        {
+          "id": "very-berry",
+          "name": "Very Berry",
+          "description": {
+            "sr": "borovnica, pomorandža, banana, jabuka",
+            "en": "blueberry, orange, banana, apple",
+            "needsReview": true
+          },
+          "price": 550,
+          "variants": [],
+          "size": null,
+          "diet": [],
+          "mood": [
+            "sweet",
+            "kids"
+          ],
+          "image": null,
+          "needsReview": false,
+          "moodNeedsReview": true,
+          "source": "menu-03-smoothie-shake-mocktail.jpg"
+        },
+        {
+          "id": "omg",
+          "name": "OMG",
+          "description": {
+            "sr": "ananas, limeta, jabuka, nana",
+            "en": "pineapple, lime, apple, mint",
+            "needsReview": true
+          },
+          "price": 550,
+          "variants": [],
+          "size": null,
+          "diet": [],
+          "mood": [
+            "light"
+          ],
+          "image": null,
+          "needsReview": false,
+          "moodNeedsReview": true,
+          "source": "menu-03-smoothie-shake-mocktail.jpg"
+        },
+        {
+          "id": "pink-kiss",
+          "name": "Pink Kiss",
+          "description": {
+            "sr": "banana, malina, pomorandža",
+            "en": "banana, raspberry, orange",
+            "needsReview": true
+          },
+          "price": 550,
+          "variants": [],
+          "size": null,
+          "diet": [],
+          "mood": [
+            "sweet"
+          ],
+          "image": null,
+          "needsReview": false,
+          "moodNeedsReview": true,
+          "source": "menu-03-smoothie-shake-mocktail.jpg"
+        },
+        {
+          "id": "arnold-protein-shake",
+          "name": "Arnold Protein Shake",
+          "description": {
+            "sr": "whey protein, sojino mleko, banana",
+            "en": "whey protein, soy milk, banana",
+            "needsReview": true
+          },
+          "price": 620,
+          "variants": [],
+          "size": null,
+          "diet": [],
+          "mood": [
+            "post-workout"
+          ],
+          "image": null,
+          "needsReview": false,
+          "moodNeedsReview": true,
+          "source": "menu-03-smoothie-shake-mocktail.jpg"
+        },
+        {
+          "id": "creamy",
+          "name": "Creamy",
+          "description": {
+            "sr": "malina/borovnica, banana, pomorandža, jogurt",
+            "en": "raspberry/blueberry, banana, orange, yogurt",
+            "needsReview": true
+          },
+          "price": 490,
+          "variants": [],
+          "size": null,
+          "diet": [],
+          "mood": [
+            "sweet"
+          ],
+          "image": null,
+          "needsReview": false,
+          "moodNeedsReview": true,
+          "source": "menu-03-smoothie-shake-mocktail.jpg"
+        },
+        {
+          "id": "plazma-shake",
+          "name": "Plazma Shake",
+          "description": {
+            "sr": "plazma, banana, mleko, med",
+            "en": "Plazma biscuits, banana, milk, honey",
+            "needsReview": true
+          },
+          "price": 540,
+          "variants": [],
+          "size": null,
+          "diet": [],
+          "mood": [
+            "sweet",
+            "kids"
+          ],
+          "image": null,
+          "needsReview": false,
+          "moodNeedsReview": true,
+          "source": "menu-03-smoothie-shake-mocktail.jpg"
+        },
+        {
+          "id": "winter-night",
+          "name": "Winter night",
+          "description": {
+            "sr": "pomorandža, banana, cimet, šargarepa",
+            "en": "orange, banana, cinnamon, carrot",
+            "needsReview": true
+          },
+          "price": 530,
+          "variants": [],
+          "size": null,
+          "diet": [],
+          "mood": [
+            "sweet"
+          ],
+          "image": null,
+          "needsReview": false,
+          "moodNeedsReview": true,
+          "source": "menu-03-smoothie-shake-mocktail.jpg"
+        },
+        {
+          "id": "jaffa",
+          "name": "Jaffa",
+          "description": {
+            "sr": "pomorandža, kakao, badem, urme, banana",
+            "en": "orange, cocoa, almond, dates, banana",
+            "needsReview": true
+          },
+          "price": 540,
+          "variants": [],
+          "size": null,
+          "diet": [],
+          "mood": [
+            "sweet",
+            "post-workout"
+          ],
+          "image": null,
+          "needsReview": false,
+          "moodNeedsReview": true,
+          "source": "menu-03-smoothie-shake-mocktail.jpg"
+        },
+        {
+          "id": "apple-pie-smoothie",
+          "name": "Apple Pie",
+          "description": {
+            "sr": "jabuka, orasi, cimet",
+            "en": "apple, walnuts, cinnamon",
+            "needsReview": true
+          },
+          "price": 530,
+          "variants": [],
+          "size": null,
+          "diet": [],
+          "mood": [
+            "sweet"
+          ],
+          "image": null,
+          "needsReview": false,
+          "moodNeedsReview": true,
+          "source": "menu-03-smoothie-shake-mocktail.jpg"
+        },
+        {
+          "id": "pick-me",
+          "name": "Pick Me",
+          "description": {
+            "sr": "ceđeni mix/smoothie po izboru (do 4 sastojka)",
+            "en": "juice mix/smoothie of your choice (up to 4 ingredients)",
+            "needsReview": true
+          },
+          "price": 590,
+          "variants": [],
+          "size": null,
+          "diet": [],
+          "mood": [
+            "light"
+          ],
+          "image": null,
+          "needsReview": false,
+          "moodNeedsReview": true,
+          "source": "menu-03-smoothie-shake-mocktail.jpg"
+        }
+      ]
+    },
+    {
+      "id": "cedjeni-sokovi",
+      "name": {
+        "sr": "Hladno ceđeni sokovi (0,3l)",
+        "en": "Cold-pressed juices (0.3l)"
+      },
+      "icon": "glass",
+      "source": "menu-05-blend-tryme-icet-b.jpg, desno gore",
+      "items": [
+        {
+          "id": "cedjena-pomorandza",
+          "name": "Ceđena pomorandža",
+          "description": null,
+          "price": 410,
+          "variants": [],
+          "size": null,
+          "diet": [],
+          "mood": [
+            "energy",
+            "light"
+          ],
+          "image": null,
+          "needsReview": false,
+          "moodNeedsReview": true,
+          "source": "menu-05-blend-tryme-icet-b.jpg, desno gore",
+          "altPrices": {
+            "menu-04": 410,
+            "menu-01": 410
+          }
+        },
+        {
+          "id": "cedjeni-grejp",
+          "name": "Ceđeni grejp",
+          "description": null,
+          "price": 410,
+          "variants": [],
+          "size": null,
+          "diet": [],
+          "mood": [
+            "light"
+          ],
+          "image": null,
+          "needsReview": false,
+          "moodNeedsReview": true,
+          "source": "menu-05-blend-tryme-icet-b.jpg, desno gore",
+          "altPrices": {
+            "menu-04": 410,
+            "menu-01": 410
+          }
+        },
+        {
+          "id": "cedjena-jabuka",
+          "name": "Ceđena jabuka",
+          "description": null,
+          "price": 410,
+          "variants": [],
+          "size": null,
+          "diet": [],
+          "mood": [
+            "light",
+            "kids"
+          ],
+          "image": null,
+          "needsReview": false,
+          "moodNeedsReview": true,
+          "source": "menu-05-blend-tryme-icet-b.jpg, desno gore",
+          "altPrices": {
+            "menu-04": 410,
+            "menu-01": 410
+          }
+        },
+        {
+          "id": "limunada",
+          "name": "Limunada",
+          "description": null,
+          "price": 340,
+          "variants": [],
+          "size": null,
+          "diet": [],
+          "mood": [
+            "light"
+          ],
+          "image": null,
+          "needsReview": false,
+          "moodNeedsReview": true,
+          "source": "menu-05-blend-tryme-icet-b.jpg, desno gore",
+          "altPrices": {
+            "menu-04": 340,
+            "menu-01": 340
+          }
+        },
+        {
+          "id": "limunana",
+          "name": "LimuNana",
+          "description": null,
+          "price": 370,
+          "variants": [],
+          "size": null,
+          "diet": [],
+          "mood": [
+            "light"
+          ],
+          "image": null,
+          "needsReview": true,
+          "moodNeedsReview": true,
+          "source": "menu-05-blend-tryme-icet-b.jpg, desno gore",
+          "reviewNote": "Cena se razlikuje između fotografija menija – potvrditi aktuelnu.",
+          "altPrices": {
+            "menu-04": 350,
+            "menu-01": 350
+          }
+        },
+        {
+          "id": "homemade-lavanda-sirup",
+          "name": "Homemade Lavanda Sirup",
+          "description": null,
+          "price": 390,
+          "variants": [],
+          "size": null,
+          "diet": [],
+          "mood": [
+            "light"
+          ],
+          "image": null,
+          "needsReview": true,
+          "moodNeedsReview": true,
+          "source": "menu-05-blend-tryme-icet-b.jpg, desno gore",
+          "reviewNote": "Cena se razlikuje između fotografija menija – potvrditi aktuelnu.",
+          "altPrices": {
+            "menu-04": 390,
+            "menu-01": 360
+          }
+        },
+        {
+          "id": "flavor",
+          "name": "Flavor",
+          "description": {
+            "sr": "ananas, kokos, limeta (dodatak)",
+            "en": "pineapple, coconut, lime (add-on)",
+            "needsReview": true
+          },
+          "price": 200,
+          "variants": [],
+          "size": null,
+          "diet": [],
+          "mood": [
+            "light"
+          ],
+          "image": null,
+          "needsReview": true,
+          "moodNeedsReview": true,
+          "source": "menu-05-blend-tryme-icet-b.jpg, desno gore",
+          "altPrices": {
+            "menu-04": 200,
+            "menu-01": 200
+          }
+        }
+      ]
+    },
+    {
+      "id": "ice-t",
+      "name": {
+        "sr": "Ice T – Vida Homemade (0,3l)",
+        "en": "Ice T – Vida Homemade (0.3l)"
+      },
+      "icon": "glass",
+      "source": "menu-05-blend-tryme-icet-b.jpg, desno dole",
+      "items": [
+        {
+          "id": "vital-grapefruit-grejpfrut",
+          "name": "Vital grapefruit (grejpfrut)",
+          "description": null,
+          "price": 490,
+          "variants": [],
+          "size": null,
+          "diet": [],
+          "mood": [
+            "light"
+          ],
+          "image": null,
+          "needsReview": true,
+          "moodNeedsReview": true,
+          "source": "menu-05-blend-tryme-icet-b.jpg, desno dole",
+          "reviewNote": "Cena se razlikuje između fotografija menija – potvrditi aktuelnu.",
+          "altPrices": {
+            "menu-04": 490,
+            "menu-01": 470
+          }
+        },
+        {
+          "id": "chill-out",
+          "name": "Chill Out",
+          "description": {
+            "sr": "pomorandža, aromatično bilje",
+            "en": "orange, aromatic herbs",
+            "needsReview": true
+          },
+          "price": 450,
+          "variants": [],
+          "size": null,
+          "diet": [],
+          "mood": [
+            "light"
+          ],
+          "image": null,
+          "needsReview": true,
+          "moodNeedsReview": true,
+          "source": "menu-05-blend-tryme-icet-b.jpg, desno dole",
+          "reviewNote": "Cena se razlikuje između fotografija menija – potvrditi aktuelnu.",
+          "altPrices": {
+            "menu-04": 490,
+            "menu-01": 470
+          }
+        },
+        {
+          "id": "cranberry-brusnica",
+          "name": "Cranberry (brusnica)",
+          "description": null,
+          "price": 490,
+          "variants": [],
+          "size": null,
+          "diet": [],
+          "mood": [
+            "light"
+          ],
+          "image": null,
+          "needsReview": true,
+          "moodNeedsReview": true,
+          "source": "menu-05-blend-tryme-icet-b.jpg, desno dole",
+          "reviewNote": "Cena se razlikuje između fotografija menija – potvrditi aktuelnu.",
+          "altPrices": {
+            "menu-04": 490,
+            "menu-01": 470
+          }
+        },
+        {
+          "id": "red-fruit-crveno-voce",
+          "name": "Red Fruit (crveno voće)",
+          "description": null,
+          "price": 490,
+          "variants": [],
+          "size": null,
+          "diet": [],
+          "mood": [
+            "light"
+          ],
+          "image": null,
+          "needsReview": true,
+          "moodNeedsReview": true,
+          "source": "menu-05-blend-tryme-icet-b.jpg, desno dole",
+          "reviewNote": "Cena se razlikuje između fotografija menija – potvrditi aktuelnu.",
+          "altPrices": {
+            "menu-04": 490,
+            "menu-01": 470
+          }
+        },
+        {
+          "id": "mint-nana",
+          "name": "Mint (nana)",
+          "description": null,
+          "price": 490,
+          "variants": [],
+          "size": null,
+          "diet": [],
+          "mood": [
+            "light"
+          ],
+          "image": null,
+          "needsReview": true,
+          "moodNeedsReview": true,
+          "source": "menu-05-blend-tryme-icet-b.jpg, desno dole",
+          "reviewNote": "Cena se razlikuje između fotografija menija – potvrditi aktuelnu.",
+          "altPrices": {
+            "menu-04": 490,
+            "menu-01": 470
+          }
+        },
+        {
+          "id": "black-spice",
+          "name": "Black Spice",
+          "description": {
+            "sr": "crni čaj, tamarind, kardamom, anis, slatka paprika, med",
+            "en": "black tea, tamarind, cardamom, anise, sweet paprika, honey",
+            "needsReview": true
+          },
+          "price": 590,
+          "variants": [],
+          "size": null,
+          "diet": [],
+          "mood": [
+            "light"
+          ],
+          "image": null,
+          "needsReview": true,
+          "moodNeedsReview": true,
+          "source": "menu-05-blend-tryme-icet-b.jpg, desno dole",
+          "altPrices": {
+            "menu-04": 590
+          }
+        }
+      ],
+      "note": {
+        "sr": "Svi VIDA čajevi su pravljeni od najkvalitetnijeg čaja iz infuzije.",
+        "en": "All VIDA teas are made from top-quality infused tea.",
+        "needsReview": true
+      }
+    },
+    {
+      "id": "wellness-shots",
+      "name": {
+        "sr": "Wellness shots (0,05l)",
+        "en": "Wellness shots (0.05l)"
+      },
+      "icon": "glass",
+      "source": "menu-05-blend-tryme-icet-b.jpg, desno dole",
+      "items": [
+        {
+          "id": "red-dragon",
+          "name": "Red Dragon (beauty)",
+          "description": {
+            "sr": "cvekla, đumbir, kurkuma, jabuka",
+            "en": "beetroot, ginger, turmeric, apple",
+            "needsReview": true
+          },
+          "price": 350,
+          "variants": [],
+          "size": null,
+          "diet": [],
+          "mood": [
+            "energy"
+          ],
+          "image": null,
+          "needsReview": true,
+          "moodNeedsReview": true,
+          "source": "menu-05-blend-tryme-icet-b.jpg, desno dole",
+          "reviewNote": "Cena se razlikuje između fotografija menija – potvrditi aktuelnu.",
+          "altPrices": {
+            "menu-04": 330
+          }
+        },
+        {
+          "id": "dr-pepper-shot",
+          "name": "Dr Pepper (immunity)",
+          "description": {
+            "sr": "pomorandža, grejp, limun, đumbir, crni biber, kurkuma",
+            "en": "orange, grapefruit, lemon, ginger, black pepper, turmeric",
+            "needsReview": true
+          },
+          "price": 350,
+          "variants": [],
+          "size": null,
+          "diet": [],
+          "mood": [
+            "energy"
+          ],
+          "image": null,
+          "needsReview": true,
+          "moodNeedsReview": true,
+          "source": "menu-05-blend-tryme-icet-b.jpg, desno dole",
+          "reviewNote": "Cena se razlikuje između fotografija menija – potvrditi aktuelnu.",
+          "altPrices": {
+            "menu-04": 330
+          }
+        },
+        {
+          "id": "green-elixir",
+          "name": "Green Elixir (energy)",
+          "description": {
+            "sr": "spanać, limeta, pšenična trava, nana, jabuka",
+            "en": "spinach, lime, wheatgrass, mint, apple",
+            "needsReview": true
+          },
+          "price": 350,
+          "variants": [],
+          "size": null,
+          "diet": [],
+          "mood": [
+            "energy"
+          ],
+          "image": null,
+          "needsReview": true,
+          "moodNeedsReview": true,
+          "source": "menu-05-blend-tryme-icet-b.jpg, desno dole",
+          "reviewNote": "Cena se razlikuje između fotografija menija – potvrditi aktuelnu.",
+          "altPrices": {
+            "menu-04": 330
+          }
+        }
+      ]
+    },
+    {
+      "id": "topla-cokolada",
+      "name": {
+        "sr": "Topla čokolada",
+        "en": "Hot chocolate"
+      },
+      "icon": "cup",
+      "source": "menu-02-sokovi-vino-pivo-spritz.jpg, levo sredina",
+      "items": [
+        {
+          "id": "organski-kakao",
+          "name": "Organski kakao",
+          "description": {
+            "sr": "mleko po izboru",
+            "en": "milk of your choice",
+            "needsReview": true
+          },
+          "price": 550,
+          "variants": [],
+          "size": null,
+          "diet": [],
+          "mood": [
+            "sweet",
+            "kids"
+          ],
+          "image": null,
+          "needsReview": false,
+          "moodNeedsReview": true,
+          "source": "menu-02-sokovi-vino-pivo-spritz.jpg, levo sredina"
+        },
+        {
+          "id": "gingerbread-hot-chocolate",
+          "name": "Gingerbread Hot Chocolate",
+          "description": {
+            "sr": "dark čokolada, vanila, cimet, karanfilić, đumbir, mleko, šlag",
+            "en": "dark chocolate, vanilla, cinnamon, clove, ginger, milk, whipped cream",
+            "needsReview": true
+          },
+          "price": 590,
+          "variants": [],
+          "size": null,
+          "diet": [],
+          "mood": [
+            "sweet"
+          ],
+          "image": null,
+          "needsReview": true,
+          "moodNeedsReview": true,
+          "source": "menu-02-sokovi-vino-pivo-spritz.jpg, levo sredina",
+          "altPrices": {
+            "menu-01": 590
+          }
+        },
+        {
+          "id": "choco-orange-hot-chocolate",
+          "name": "Choco Orange Hot Chocolate",
+          "description": {
+            "sr": "dark čokolada, sok od narandže, kakao, mleko, šlag",
+            "en": "dark chocolate, orange juice, cocoa, milk, whipped cream",
+            "needsReview": true
+          },
+          "price": 590,
+          "variants": [],
+          "size": null,
+          "diet": [],
+          "mood": [
+            "sweet"
+          ],
+          "image": null,
+          "needsReview": true,
+          "moodNeedsReview": true,
+          "source": "menu-02-sokovi-vino-pivo-spritz.jpg, levo sredina",
+          "altPrices": {
+            "menu-01": 590
+          }
+        },
+        {
+          "id": "mexican-hot-chocolate",
+          "name": "Mexican Hot Chocolate",
+          "description": {
+            "sr": "dark čokolada, vanila, cimet, čili, crni biber, mleko, šlag",
+            "en": "dark chocolate, vanilla, cinnamon, chili, black pepper, milk, whipped cream",
+            "needsReview": true
+          },
+          "price": 590,
+          "variants": [],
+          "size": null,
+          "diet": [],
+          "mood": [
+            "sweet"
+          ],
+          "image": null,
+          "needsReview": true,
+          "moodNeedsReview": true,
+          "source": "menu-02-sokovi-vino-pivo-spritz.jpg, levo sredina",
+          "reviewNote": "Cena se razlikuje između fotografija menija – potvrditi aktuelnu.",
+          "altPrices": {
+            "menu-01": 560
+          }
+        },
+        {
+          "id": "vegan-hot-chocolate",
+          "name": "Vegan Hot Chocolate",
+          "description": {
+            "sr": "milk of choice: soja, badem, ovas",
+            "en": "milk of choice: soy, almond, oat",
+            "needsReview": true
+          },
+          "price": 520,
+          "variants": [],
+          "size": null,
+          "diet": [
+            "vegan"
+          ],
+          "mood": [
+            "sweet"
+          ],
+          "image": null,
+          "needsReview": true,
+          "moodNeedsReview": true,
+          "source": "menu-02-sokovi-vino-pivo-spritz.jpg, levo sredina",
+          "reviewNote": "Cena se razlikuje između fotografija menija – potvrditi aktuelnu. Oznaka 'vegan' iz naziva stavke. Napomena '*sve dark čokolade su veganske' odnosi se na čokoladu, ne na ceo napitak (mleko/šlag) – zato drugim stavkama NIJE dodata oznaka.",
+          "altPrices": {
+            "menu-01": 490
+          }
+        },
+        {
+          "id": "white-hot-chocolate",
+          "name": "White Hot Chocolate",
+          "description": {
+            "sr": "bela topla čokolada, mleko, marshmallows",
+            "en": "white hot chocolate, milk, marshmallows",
+            "needsReview": true
+          },
+          "price": 520,
+          "variants": [],
+          "size": null,
+          "diet": [],
+          "mood": [
+            "sweet",
+            "kids"
+          ],
+          "image": null,
+          "needsReview": true,
+          "moodNeedsReview": true,
+          "source": "menu-02-sokovi-vino-pivo-spritz.jpg, levo sredina",
+          "reviewNote": "Cena se razlikuje između fotografija menija – potvrditi aktuelnu.",
+          "altPrices": {
+            "menu-01": 540
+          }
+        },
+        {
+          "id": "vida-choco-stick",
+          "name": "Vida Choco Stick",
+          "description": {
+            "sr": "homemade topla čokolada na štapiću",
+            "en": "homemade hot chocolate on a stick",
+            "needsReview": true
+          },
+          "price": 570,
+          "variants": [],
+          "size": null,
+          "diet": [],
+          "mood": [
+            "sweet",
+            "kids"
+          ],
+          "image": null,
+          "needsReview": true,
+          "moodNeedsReview": true,
+          "source": "menu-02-sokovi-vino-pivo-spritz.jpg, levo sredina",
+          "reviewNote": "Cena se razlikuje između fotografija menija – potvrditi aktuelnu.",
+          "altPrices": {
+            "menu-01": 530
+          }
+        }
+      ],
+      "note": {
+        "sr": "*sve dark čokolade su veganske",
+        "en": "*all dark chocolates are vegan",
+        "needsReview": true
+      }
+    },
+    {
+      "id": "sokovi",
+      "name": {
+        "sr": "Sokovi (0,25l)",
+        "en": "Soft drinks (0.25l)"
+      },
+      "icon": "glass",
+      "source": "menu-02-sokovi-vino-pivo-spritz.jpg, levo gore",
+      "items": [
+        {
+          "id": "kombucha-acerola-ginger",
+          "name": "Kombucha – Acerola, Ginger",
+          "description": null,
+          "price": 520,
+          "variants": [],
+          "size": null,
+          "diet": [],
+          "mood": [],
+          "image": null,
+          "needsReview": false,
+          "moodNeedsReview": true,
+          "source": "menu-02-sokovi-vino-pivo-spritz.jpg, levo gore"
+        },
+        {
+          "id": "kombucha-mango-maracuja",
+          "name": "Kombucha – Mango, Maracuja",
+          "description": null,
+          "price": 520,
+          "variants": [],
+          "size": null,
+          "diet": [],
+          "mood": [],
+          "image": null,
+          "needsReview": false,
+          "moodNeedsReview": true,
+          "source": "menu-02-sokovi-vino-pivo-spritz.jpg, levo gore"
+        },
+        {
+          "id": "coca-cola",
+          "name": "Coca Cola",
+          "description": null,
+          "price": 295,
+          "variants": [],
+          "size": null,
+          "diet": [],
+          "mood": [],
+          "image": null,
+          "needsReview": false,
+          "moodNeedsReview": true,
+          "source": "menu-02-sokovi-vino-pivo-spritz.jpg, levo gore"
+        },
+        {
+          "id": "coca-cola-zero",
+          "name": "Coca Cola Zero",
+          "description": null,
+          "price": 295,
+          "variants": [],
+          "size": null,
+          "diet": [],
+          "mood": [],
+          "image": null,
+          "needsReview": false,
+          "moodNeedsReview": true,
+          "source": "menu-02-sokovi-vino-pivo-spritz.jpg, levo gore"
+        },
+        {
+          "id": "schweppes-bitter-lemon",
+          "name": "Schweppes Bitter Lemon",
+          "description": null,
+          "price": 295,
+          "variants": [],
+          "size": null,
+          "diet": [],
+          "mood": [],
+          "image": null,
+          "needsReview": false,
+          "moodNeedsReview": true,
+          "source": "menu-02-sokovi-vino-pivo-spritz.jpg, levo gore"
+        },
+        {
+          "id": "schweppes-tonic-water",
+          "name": "Schweppes Tonic Water",
+          "description": null,
+          "price": 295,
+          "variants": [],
+          "size": null,
+          "diet": [],
+          "mood": [],
+          "image": null,
+          "needsReview": false,
+          "moodNeedsReview": true,
+          "source": "menu-02-sokovi-vino-pivo-spritz.jpg, levo gore"
+        },
+        {
+          "id": "fanta",
+          "name": "Fanta",
+          "description": null,
+          "price": 295,
+          "variants": [],
+          "size": null,
+          "diet": [],
+          "mood": [
+            "kids"
+          ],
+          "image": null,
+          "needsReview": false,
+          "moodNeedsReview": true,
+          "source": "menu-02-sokovi-vino-pivo-spritz.jpg, levo gore"
+        },
+        {
+          "id": "sprite",
+          "name": "Sprite",
+          "description": null,
+          "price": 295,
+          "variants": [],
+          "size": null,
+          "diet": [],
+          "mood": [
+            "kids"
+          ],
+          "image": null,
+          "needsReview": false,
+          "moodNeedsReview": true,
+          "source": "menu-02-sokovi-vino-pivo-spritz.jpg, levo gore"
+        }
+      ]
+    },
+    {
+      "id": "voda",
+      "name": {
+        "sr": "Voda",
+        "en": "Water"
+      },
+      "icon": "glass",
+      "source": "menu-05-blend-tryme-icet-b.jpg, desno dole (delimično odsečeno)",
+      "items": [
+        {
+          "id": "rosa-033",
+          "name": "Rosa",
+          "description": null,
+          "price": 230,
+          "variants": [],
+          "size": "0,33",
+          "diet": [],
+          "mood": [],
+          "image": null,
+          "needsReview": true,
+          "moodNeedsReview": true,
+          "source": "menu-05-blend-tryme-icet-b.jpg, desno dole (delimično odsečeno)",
+          "reviewNote": "Cena se razlikuje između fotografija menija – potvrditi aktuelnu.",
+          "altPrices": {
+            "menu-04": 220,
+            "menu-01": 210
+          }
+        },
+        {
+          "id": "rosa-gazirana-033",
+          "name": "Rosa gazirana",
+          "description": null,
+          "price": 230,
+          "variants": [],
+          "size": "0,33",
+          "diet": [],
+          "mood": [],
+          "image": null,
+          "needsReview": true,
+          "moodNeedsReview": true,
+          "source": "menu-05-blend-tryme-icet-b.jpg, desno dole (delimično odsečeno)",
+          "reviewNote": "Cena se razlikuje između fotografija menija – potvrditi aktuelnu.",
+          "altPrices": {
+            "menu-01": 210
+          }
+        },
+        {
+          "id": "rosa-075",
+          "name": "Rosa",
+          "description": null,
+          "price": 390,
+          "variants": [],
+          "size": "0,75",
+          "diet": [],
+          "mood": [],
+          "image": null,
+          "needsReview": true,
+          "moodNeedsReview": true,
+          "source": "menu-05-blend-tryme-icet-b.jpg, desno dole (delimično odsečeno)",
+          "altPrices": {
+            "menu-01": 390
+          }
+        },
+        {
+          "id": "rosa-gazirana-075",
+          "name": "Rosa gazirana",
+          "description": null,
+          "price": 390,
+          "variants": [],
+          "size": "0,75",
+          "diet": [],
+          "mood": [],
+          "image": null,
+          "needsReview": true,
+          "moodNeedsReview": true,
+          "source": "menu-05-blend-tryme-icet-b.jpg, desno dole (delimično odsečeno)",
+          "reviewNote": "Cena se razlikuje između fotografija menija – potvrditi aktuelnu.",
+          "altPrices": {
+            "menu-01": 375
+          }
+        }
+      ]
+    },
+    {
+      "id": "spritz",
+      "name": {
+        "sr": "Spritz (0,25l)",
+        "en": "Spritz (0.25l)"
+      },
+      "icon": "cocktail",
+      "source": "menu-02-sokovi-vino-pivo-spritz.jpg, levo dole (dno odsečeno)",
+      "items": [
+        {
+          "id": "disneyland",
+          "name": "Disneyland",
+          "description": {
+            "sr": "(nečitljivo – francusko penušavo slatko vino)",
+            "en": "(partly illegible – French sweet sparkling wine)",
+            "needsReview": true
+          },
+          "price": 750,
+          "variants": [],
+          "size": "0,20",
+          "diet": [],
+          "mood": [],
+          "image": null,
+          "needsReview": true,
+          "moodNeedsReview": true,
+          "source": "menu-02-sokovi-vino-pivo-spritz.jpg, levo dole (dno odsečeno)"
+        },
+        {
+          "id": "grapefruit-spritz",
+          "name": "Grapefruit Spritz",
+          "description": {
+            "sr": "ceđeni sok od grejpa, penušavo vino, soda",
+            "en": "fresh grapefruit juice, sparkling wine, soda",
+            "needsReview": true
+          },
+          "price": 660,
+          "variants": [],
+          "size": null,
+          "diet": [],
+          "mood": [],
+          "image": null,
+          "needsReview": true,
+          "moodNeedsReview": true,
+          "source": "menu-02-sokovi-vino-pivo-spritz.jpg, levo dole (dno odsečeno)"
+        },
+        {
+          "id": "aperol-spritz",
+          "name": "Aperol Spritz",
+          "description": {
+            "sr": "penušavo vino, aperol, soda",
+            "en": "sparkling wine, Aperol, soda",
+            "needsReview": true
+          },
+          "price": 660,
+          "variants": [],
+          "size": null,
+          "diet": [],
+          "mood": [],
+          "image": null,
+          "needsReview": true,
+          "moodNeedsReview": true,
+          "source": "menu-02-sokovi-vino-pivo-spritz.jpg, levo dole (dno odsečeno)"
+        },
+        {
+          "id": "hugo",
+          "name": "Hugo",
+          "description": {
+            "sr": "penušavo vino, zova, nana, limeta, soda",
+            "en": "sparkling wine, elderflower, mint, lime, soda",
+            "needsReview": true
+          },
+          "price": null,
+          "variants": [],
+          "size": null,
+          "diet": [],
+          "mood": [],
+          "image": null,
+          "needsReview": true,
+          "moodNeedsReview": true,
+          "source": "menu-02-sokovi-vino-pivo-spritz.jpg, levo dole (dno odsečeno)",
+          "reviewNote": "Cena odsečena na fotografiji – price=null dok se ne potvrdi."
+        }
+      ]
+    },
+    {
+      "id": "gin",
+      "name": {
+        "sr": "Gin (0,20l)",
+        "en": "Gin (0.20l)"
+      },
+      "icon": "cocktail",
+      "source": "menu-02-sokovi-vino-pivo-spritz.jpg, levo dole",
+      "items": [
+        {
+          "id": "pink-gin",
+          "name": "Pink Gin",
+          "description": null,
+          "price": 630,
+          "variants": [],
+          "size": null,
+          "diet": [],
+          "mood": [],
+          "image": null,
+          "needsReview": true,
+          "moodNeedsReview": true,
+          "source": "menu-02-sokovi-vino-pivo-spritz.jpg, levo dole"
+        },
+        {
+          "id": "coffee-gin",
+          "name": "Coffee Gin",
+          "description": null,
+          "price": 630,
+          "variants": [],
+          "size": null,
+          "diet": [],
+          "mood": [],
+          "image": null,
+          "needsReview": true,
+          "moodNeedsReview": true,
+          "source": "menu-02-sokovi-vino-pivo-spritz.jpg, levo dole"
+        }
+      ]
+    },
+    {
+      "id": "vino",
+      "name": {
+        "sr": "Vino",
+        "en": "Wine"
+      },
+      "icon": "wine",
+      "source": "menu-02-sokovi-vino-pivo-spritz.jpg, sredina gore (levi deo naziva odsečen)",
+      "items": [
+        {
+          "id": "temet-tri-morave-belo",
+          "name": "Temet Tri Morave Belo",
+          "description": null,
+          "price": 590,
+          "variants": [
+            {
+              "id": "casa",
+              "name": {
+                "sr": "Čaša 0,125l",
+                "en": "Glass 0.125l"
+              },
+              "price": 590
+            },
+            {
+              "id": "flasa",
+              "name": {
+                "sr": "Flaša 0,75l",
+                "en": "Bottle 0.75l"
+              },
+              "price": 3540
+            }
+          ],
+          "size": null,
+          "diet": [],
+          "mood": [],
+          "image": null,
+          "needsReview": true,
+          "moodNeedsReview": true,
+          "source": "menu-02-sokovi-vino-pivo-spritz.jpg, sredina gore (levi deo naziva odsečen)",
+          "reviewNote": "Naziv i cene delimično odsečeni na fotografiji – potvrditi."
+        },
+        {
+          "id": "deja-tamjanika",
+          "name": "Deja Tamjanika",
+          "description": null,
+          "price": 560,
+          "variants": [
+            {
+              "id": "casa",
+              "name": {
+                "sr": "Čaša 0,125l",
+                "en": "Glass 0.125l"
+              },
+              "price": 560
+            },
+            {
+              "id": "flasa",
+              "name": {
+                "sr": "Flaša 0,75l",
+                "en": "Bottle 0.75l"
+              },
+              "price": 3360
+            }
+          ],
+          "size": null,
+          "diet": [],
+          "mood": [],
+          "image": null,
+          "needsReview": true,
+          "moodNeedsReview": true,
+          "source": "menu-02-sokovi-vino-pivo-spritz.jpg, sredina gore (levi deo naziva odsečen)",
+          "reviewNote": "Naziv i cene delimično odsečeni na fotografiji – potvrditi."
+        },
+        {
+          "id": "deuric-chardonnay",
+          "name": "Deurić Chardonnay",
+          "description": null,
+          "price": 590,
+          "variants": [
+            {
+              "id": "casa",
+              "name": {
+                "sr": "Čaša 0,125l",
+                "en": "Glass 0.125l"
+              },
+              "price": 590
+            },
+            {
+              "id": "flasa",
+              "name": {
+                "sr": "Flaša 0,75l",
+                "en": "Bottle 0.75l"
+              },
+              "price": 3540
+            }
+          ],
+          "size": null,
+          "diet": [],
+          "mood": [],
+          "image": null,
+          "needsReview": true,
+          "moodNeedsReview": true,
+          "source": "menu-02-sokovi-vino-pivo-spritz.jpg, sredina gore (levi deo naziva odsečen)",
+          "reviewNote": "Naziv i cene delimično odsečeni na fotografiji – potvrditi."
+        },
+        {
+          "id": "radovanovic-rose",
+          "name": "Radovanović Rose",
+          "description": null,
+          "price": 530,
+          "variants": [
+            {
+              "id": "casa",
+              "name": {
+                "sr": "Čaša 0,125l",
+                "en": "Glass 0.125l"
+              },
+              "price": 530
+            },
+            {
+              "id": "flasa",
+              "name": {
+                "sr": "Flaša 0,75l",
+                "en": "Bottle 0.75l"
+              },
+              "price": 3180
+            }
+          ],
+          "size": null,
+          "diet": [],
+          "mood": [],
+          "image": null,
+          "needsReview": true,
+          "moodNeedsReview": true,
+          "source": "menu-02-sokovi-vino-pivo-spritz.jpg, sredina gore (levi deo naziva odsečen)",
+          "reviewNote": "Naziv i cene delimično odsečeni na fotografiji – potvrditi."
+        },
+        {
+          "id": "erdevik-tri-roze-rose",
+          "name": "Erdevik Tri Rože Rose",
+          "description": null,
+          "price": 530,
+          "variants": [
+            {
+              "id": "casa",
+              "name": {
+                "sr": "Čaša 0,125l",
+                "en": "Glass 0.125l"
+              },
+              "price": 530
+            },
+            {
+              "id": "flasa",
+              "name": {
+                "sr": "Flaša 0,75l",
+                "en": "Bottle 0.75l"
+              },
+              "price": 3180
+            }
+          ],
+          "size": null,
+          "diet": [],
+          "mood": [],
+          "image": null,
+          "needsReview": true,
+          "moodNeedsReview": true,
+          "source": "menu-02-sokovi-vino-pivo-spritz.jpg, sredina gore (levi deo naziva odsečen)",
+          "reviewNote": "Naziv i cene delimično odsečeni na fotografiji – potvrditi."
+        },
+        {
+          "id": "temet-tri-morave-crveno",
+          "name": "Temet Tri Morave Crveno",
+          "description": null,
+          "price": 640,
+          "variants": [
+            {
+              "id": "casa",
+              "name": {
+                "sr": "Čaša 0,125l",
+                "en": "Glass 0.125l"
+              },
+              "price": 640
+            },
+            {
+              "id": "flasa",
+              "name": {
+                "sr": "Flaša 0,75l",
+                "en": "Bottle 0.75l"
+              },
+              "price": 3840
+            }
+          ],
+          "size": null,
+          "diet": [],
+          "mood": [],
+          "image": null,
+          "needsReview": true,
+          "moodNeedsReview": true,
+          "source": "menu-02-sokovi-vino-pivo-spritz.jpg, sredina gore (levi deo naziva odsečen)",
+          "reviewNote": "Naziv i cene delimično odsečeni na fotografiji – potvrditi."
+        },
+        {
+          "id": "erdevik-trianon",
+          "name": "Erdevik Trianon",
+          "description": null,
+          "price": 590,
+          "variants": [
+            {
+              "id": "casa",
+              "name": {
+                "sr": "Čaša 0,125l",
+                "en": "Glass 0.125l"
+              },
+              "price": 590
+            },
+            {
+              "id": "flasa",
+              "name": {
+                "sr": "Flaša 0,75l",
+                "en": "Bottle 0.75l"
+              },
+              "price": 3540
+            }
+          ],
+          "size": null,
+          "diet": [],
+          "mood": [],
+          "image": null,
+          "needsReview": true,
+          "moodNeedsReview": true,
+          "source": "menu-02-sokovi-vino-pivo-spritz.jpg, sredina gore (levi deo naziva odsečen)",
+          "reviewNote": "Naziv i cene delimično odsečeni na fotografiji – potvrditi."
+        },
+        {
+          "id": "prosecco",
+          "name": "Prosecco",
+          "description": null,
+          "price": null,
+          "variants": [],
+          "size": "0,75",
+          "diet": [],
+          "mood": [],
+          "image": null,
+          "needsReview": true,
+          "moodNeedsReview": true,
+          "source": "menu-02-sokovi-vino-pivo-spritz.jpg, sredina gore (levi deo naziva odsečen)",
+          "reviewNote": "Cena nečitljiva (verovatno 4x90 din) – price=null."
+        }
+      ]
+    },
+    {
+      "id": "pivo",
+      "name": {
+        "sr": "Craft pivo & pivo",
+        "en": "Craft beer & beer"
+      },
+      "icon": "beer",
+      "source": "menu-02-sokovi-vino-pivo-spritz.jpg, sredina",
+      "items": [
+        {
+          "id": "dogma-hoptopod-toceno-0-33",
+          "name": "Dogma Hoptopod točeno",
+          "description": null,
+          "price": 460,
+          "variants": [],
+          "size": "0,33",
+          "diet": [],
+          "mood": [],
+          "image": null,
+          "needsReview": true,
+          "moodNeedsReview": true,
+          "source": "menu-02-sokovi-vino-pivo-spritz.jpg, sredina",
+          "reviewNote": "Naziv/cena delimično odsečeni – potvrditi."
+        },
+        {
+          "id": "dogma-hoptopod-toceno-0-5",
+          "name": "Dogma Hoptopod točeno",
+          "description": null,
+          "price": 590,
+          "variants": [],
+          "size": "0,5",
+          "diet": [],
+          "mood": [],
+          "image": null,
+          "needsReview": true,
+          "moodNeedsReview": true,
+          "source": "menu-02-sokovi-vino-pivo-spritz.jpg, sredina",
+          "reviewNote": "Naziv/cena delimično odsečeni – potvrditi."
+        },
+        {
+          "id": "gent-toceno-0-33",
+          "name": "Gent točeno",
+          "description": null,
+          "price": 380,
+          "variants": [],
+          "size": "0,33",
+          "diet": [],
+          "mood": [],
+          "image": null,
+          "needsReview": true,
+          "moodNeedsReview": true,
+          "source": "menu-02-sokovi-vino-pivo-spritz.jpg, sredina",
+          "reviewNote": "Naziv/cena delimično odsečeni – potvrditi."
+        },
+        {
+          "id": "gent-toceno-0-5",
+          "name": "Gent točeno",
+          "description": null,
+          "price": 590,
+          "variants": [],
+          "size": "0,5",
+          "diet": [],
+          "mood": [],
+          "image": null,
+          "needsReview": true,
+          "moodNeedsReview": true,
+          "source": "menu-02-sokovi-vino-pivo-spritz.jpg, sredina",
+          "reviewNote": "Naziv/cena delimično odsečeni – potvrditi."
+        },
+        {
+          "id": "heineken-0-25",
+          "name": "Heineken",
+          "description": null,
+          "price": 380,
+          "variants": [],
+          "size": "0,25",
+          "diet": [],
+          "mood": [],
+          "image": null,
+          "needsReview": true,
+          "moodNeedsReview": true,
+          "source": "menu-02-sokovi-vino-pivo-spritz.jpg, sredina",
+          "reviewNote": "Naziv/cena delimično odsečeni – potvrditi."
+        },
+        {
+          "id": "zajecarsko-crno-0-33",
+          "name": "Zaječarsko Crno",
+          "description": null,
+          "price": 350,
+          "variants": [],
+          "size": "0,33",
+          "diet": [],
+          "mood": [],
+          "image": null,
+          "needsReview": true,
+          "moodNeedsReview": true,
+          "source": "menu-02-sokovi-vino-pivo-spritz.jpg, sredina",
+          "reviewNote": "Naziv/cena delimično odsečeni – potvrditi."
+        },
+        {
+          "id": "zajecarsko-svetlo-0-33",
+          "name": "Zaječarsko Svetlo",
+          "description": null,
+          "price": 350,
+          "variants": [],
+          "size": "0,33",
+          "diet": [],
+          "mood": [],
+          "image": null,
+          "needsReview": true,
+          "moodNeedsReview": true,
+          "source": "menu-02-sokovi-vino-pivo-spritz.jpg, sredina",
+          "reviewNote": "Naziv/cena delimično odsečeni – potvrditi."
+        }
+      ]
+    },
+    {
+      "id": "aperitiv",
+      "name": {
+        "sr": "Aperitiv (0,03l)",
+        "en": "Aperitif (0.03l)"
+      },
+      "icon": "glass",
+      "source": "menu-02-sokovi-vino-pivo-spritz.jpg, sredina dole",
+      "items": [
+        {
+          "id": "zlatna-kajsija",
+          "name": "Zlatna Kajsija",
+          "description": null,
+          "price": 380,
+          "variants": [],
+          "size": "0,03",
+          "diet": [],
+          "mood": [],
+          "image": null,
+          "needsReview": true,
+          "moodNeedsReview": true,
+          "source": "menu-02-sokovi-vino-pivo-spritz.jpg, sredina dole"
+        },
+        {
+          "id": "zlatna-dunja",
+          "name": "Zlatna Dunja",
+          "description": null,
+          "price": 380,
+          "variants": [],
+          "size": "0,03",
+          "diet": [],
+          "mood": [],
+          "image": null,
+          "needsReview": true,
+          "moodNeedsReview": true,
+          "source": "menu-02-sokovi-vino-pivo-spritz.jpg, sredina dole"
+        }
+      ]
+    }
+  ]
+}
