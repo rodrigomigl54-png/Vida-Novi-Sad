@@ -5,3 +5,4 @@ _pregled/
 assets/source/video/
 node_modules/
 tools/models/
+*.master.mp4
