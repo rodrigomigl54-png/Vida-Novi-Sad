@@ -1,0 +1,184 @@
+{
+  "items": [
+    {
+      "id": "we-celebrate-life",
+      "alt": {
+        "sr": "Zid sa muralom i natpisom We Celebrate Life",
+        "en": "Mural wall with the words We Celebrate Life"
+      },
+      "sizes": [
+        {
+          "w": 480,
+          "h": 321,
+          "base": "assets/img/gallery/we-celebrate-life-480"
+        },
+        {
+          "w": 940,
+          "h": 628,
+          "base": "assets/img/gallery/we-celebrate-life-940"
+        }
+      ],
+      "ratio": 1.4962
+    },
+    {
+      "id": "vitrina-kolaci",
+      "alt": {
+        "sr": "Vitrina sa kolačima ispred šanka sa Vida logom",
+        "en": "Cake display in front of the bar with the Vida logo"
+      },
+      "sizes": [
+        {
+          "w": 480,
+          "h": 640,
+          "base": "assets/img/gallery/vitrina-kolaci-480"
+        },
+        {
+          "w": 619,
+          "h": 825,
+          "base": "assets/img/gallery/vitrina-kolaci-619"
+        }
+      ],
+      "ratio": 0.75
+    },
+    {
+      "id": "terasa-vece",
+      "alt": {
+        "sr": "Terasa uveče pod svetlećim girlandama",
+        "en": "The terrace in the evening under string lights"
+      },
+      "sizes": [
+        {
+          "w": 480,
+          "h": 587,
+          "base": "assets/img/gallery/terasa-vece-480"
+        },
+        {
+          "w": 636,
+          "h": 778,
+          "base": "assets/img/gallery/terasa-vece-636"
+        }
+      ],
+      "ratio": 0.8172
+    },
+    {
+      "id": "enterijer-biljke",
+      "alt": {
+        "sr": "Svetao enterijer sa policama punim biljaka",
+        "en": "Bright interior with shelves full of plants"
+      },
+      "sizes": [
+        {
+          "w": 480,
+          "h": 320,
+          "base": "assets/img/gallery/enterijer-biljke-480"
+        },
+        {
+          "w": 875,
+          "h": 584,
+          "base": "assets/img/gallery/enterijer-biljke-875"
+        }
+      ],
+      "ratio": 1.4986
+    },
+    {
+      "id": "basta-dan",
+      "alt": {
+        "sr": "Bašta sa drvenim klupama tokom dana",
+        "en": "Garden seating with wooden benches during the day"
+      },
+      "sizes": [
+        {
+          "w": 480,
+          "h": 639,
+          "base": "assets/img/gallery/basta-dan-480"
+        },
+        {
+          "w": 768,
+          "h": 1022,
+          "base": "assets/img/gallery/basta-dan-768"
+        }
+      ],
+      "ratio": 0.7512
+    },
+    {
+      "id": "sank",
+      "alt": {
+        "sr": "Šank sa aparatom za espresso i Vida logom",
+        "en": "The bar with the espresso machine and Vida logo"
+      },
+      "sizes": [
+        {
+          "w": 480,
+          "h": 320,
+          "base": "assets/img/gallery/sank-480"
+        },
+        {
+          "w": 875,
+          "h": 584,
+          "base": "assets/img/gallery/sank-875"
+        }
+      ],
+      "ratio": 1.4986
+    },
+    {
+      "id": "enterijer-gosti",
+      "alt": {
+        "sr": "Gosti za stolovima ispod pletenih lampi",
+        "en": "Guests at tables beneath woven lamps"
+      },
+      "sizes": [
+        {
+          "w": 480,
+          "h": 321,
+          "base": "assets/img/gallery/enterijer-gosti-480"
+        },
+        {
+          "w": 940,
+          "h": 628,
+          "base": "assets/img/gallery/enterijer-gosti-940"
+        }
+      ],
+      "ratio": 1.4962
+    },
+    {
+      "id": "ulaz",
+      "alt": {
+        "sr": "Ulaz u Vidu sa stolovima ispred",
+        "en": "The Vida entrance with tables outside"
+      },
+      "sizes": [
+        {
+          "w": 480,
+          "h": 360,
+          "base": "assets/img/gallery/ulaz-480"
+        },
+        {
+          "w": 800,
+          "h": 600,
+          "base": "assets/img/gallery/ulaz-800"
+        }
+      ],
+      "ratio": 1.3333
+    },
+    {
+      "id": "spolja",
+      "alt": {
+        "sr": "Vida spolja, sa terasom",
+        "en": "Vida from the outside, with the terrace"
+      },
+      "sizes": [
+        {
+          "w": 480,
+          "h": 269,
+          "base": "assets/img/gallery/spolja-480"
+        },
+        {
+          "w": 940,
+          "h": 528,
+          "base": "assets/img/gallery/spolja-940"
+        }
+      ],
+      "ratio": 1.7818
+    }
+  ]
+}

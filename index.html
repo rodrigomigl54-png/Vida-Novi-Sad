@@ -1,0 +1,763 @@
+<!doctype html>
+<html lang="sr-Latn">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Vida Novi Sad — The Feel Good Place | zdrava hrana, brunch i kafa</title>
+  <meta name="description" content="Vida Novi Sad — The Feel Good Place od 2016. Brunch, healthy bowls, coconut smoothie bowls, wrapovi, ceđeni sokovi, matcha i kafa. Rumenačka 148a, svaki dan 07–23h. Poruči ili rezerviši sto.">
+  <meta name="theme-color" content="#faf6ee">
+  <!-- TODO: zameniti https://www.DOMEN.rs/ pravim domenom (vidi README) -->
+  <link rel="canonical" href="https://www.DOMEN.rs/">
+  <link rel="alternate" hreflang="sr-Latn" href="https://www.DOMEN.rs/">
+  <link rel="alternate" hreflang="en" href="https://www.DOMEN.rs/?lang=en">
+  <link rel="alternate" hreflang="x-default" href="https://www.DOMEN.rs/">
+
+  <meta property="og:type" content="restaurant">
+  <meta property="og:site_name" content="Vida Novi Sad">
+  <meta property="og:title" content="Vida Novi Sad — The Feel Good Place">
+  <meta property="og:description" content="Zdrava hrana, brunch, bowls, ceđeni sokovi i kafa u Novom Sadu od 2016. Rumenačka 148a, svaki dan 07–23h.">
+  <meta property="og:url" content="https://www.DOMEN.rs/">
+  <meta property="og:image" content="https://www.DOMEN.rs/assets/img/og-image.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Vida Novi Sad — terasa uveče i Vida logo">
+  <meta property="og:locale" content="sr_RS">
+  <meta property="og:locale:alternate" content="en_US">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Vida Novi Sad — The Feel Good Place">
+  <meta name="twitter:description" content="Zdrava hrana, brunch, bowls i kafa u Novom Sadu od 2016.">
+  <meta name="twitter:image" content="https://www.DOMEN.rs/assets/img/og-image.jpg">
+
+  <link rel="icon" href="favicon.ico" sizes="32x32">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon/favicon-32.png">
+  <link rel="apple-touch-icon" href="assets/img/favicon/apple-touch-icon.png">
+  <link rel="manifest" href="site.webmanifest">
+
+  <link rel="preload" href="assets/fonts/fraunces-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/manrope-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/sections.css">
+
+  <!-- Intro: odluka pre prvog iscrtavanja (bez treptanja sadržaja) -->
+  <script>
+    (function () {
+      try {
+        var d = document.documentElement, q = location.search;
+        var played = sessionStorage.getItem("vida-intro") || localStorage.getItem("vida-intro-visitor");
+        if (!played && !/[?&]nointro\b/.test(q) && !/bot|crawl|spider|lighthouse/i.test(navigator.userAgent)) {
+          d.classList.add("intro-pending");
+          // sigurnosni izlaz: ako JS ne krene, ne zaključavaj stranicu
+          setTimeout(function () { if (!window.__vidaIntro) d.classList.remove("intro-pending"); }, 5000);
+        }
+      } catch (e) {}
+    })();
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "@id": "https://www.DOMEN.rs/#restaurant",
+    "name": "Vida Novi Sad",
+    "alternateName": "VIDA — The Feel Good Place",
+    "slogan": "The Feel Good Place",
+    "url": "https://www.DOMEN.rs/",
+    "image": "https://www.DOMEN.rs/assets/img/og-image.jpg",
+    "logo": "https://www.DOMEN.rs/assets/img/logo/vida-logo.png",
+    "telephone": "+381695332067",
+    "priceRange": "RSD 500–2000",
+    "servesCuisine": ["Healthy food", "Brunch", "Café", "Vegan options"],
+    "acceptsReservations": true,
+    "hasMenu": "https://www.DOMEN.rs/#meni",
+    "foundingDate": "2016",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Rumenačka 148a",
+      "addressLocality": "Novi Sad",
+      "postalCode": "21000",
+      "addressCountry": "RS"
+    },
+    "openingHoursSpecification": [{
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+      "opens": "07:00",
+      "closes": "23:00"
+    }],
+    "sameAs": [
+      "https://www.instagram.com/vidanovisad/",
+      "https://www.facebook.com/vidanovisad2016",
+      "https://wolt.com/sr/srb/novi_sad/restaurant/vida"
+    ]
+  }
+  </script>
+</head>
+<body data-tod="morning">
+  <!-- ===================== IKONICE (jedan set, linijske) ===================== -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+    <defs>
+      <symbol id="i-cup" viewBox="0 0 48 48"><g style="stroke-width:var(--sw48,2.9)"><path d="M9 18h26v11a11 11 0 0 1-11 11h-4A11 11 0 0 1 9 29V18Z"/><path d="M35 21h3a5 5 0 0 1 0 10h-3.5"/><path d="M17 8c-1.5 2 1.5 3.5 0 6M23 6c-1.5 2 1.5 3.5 0 6M29 8c-1.5 2 1.5 3.5 0 6"/></g></symbol>
+      <symbol id="i-bowl" viewBox="0 0 48 48"><g style="stroke-width:var(--sw48,2.9)"><path d="M5 22h38a19 15 0 0 1-38 0Z"/><path d="M17 41h14"/><path d="M14 22c0-4 3-7 7-7M24 22c1-6 6-9 11-8M30 15c2-3 5-4 8-3"/></g></symbol>
+      <symbol id="i-glass" viewBox="0 0 48 48"><g style="stroke-width:var(--sw48,2.9)"><path d="M13 10h22l-3 30H16Z"/><path d="M14 20h20"/><path d="M27 10l5-6h5"/></g></symbol>
+      <symbol id="i-cocktail" viewBox="0 0 48 48"><g style="stroke-width:var(--sw48,2.9)"><path d="M8 9h32L24 27Z"/><path d="M24 27v13M16 41h16"/><circle cx="33" cy="9" r="4"/></g></symbol>
+      <symbol id="i-wine" viewBox="0 0 48 48"><g style="stroke-width:var(--sw48,2.9)"><path d="M15 5h18v9a9 9 0 0 1-18 0Z"/><path d="M24 23v18M17 42h14M15 12h18"/></g></symbol>
+      <symbol id="i-beer" viewBox="0 0 48 48"><g style="stroke-width:var(--sw48,2.9)"><path d="M11 14h22v24a4 4 0 0 1-4 4H15a4 4 0 0 1-4-4Z"/><path d="M33 19h4a3 3 0 0 1 3 3v8a3 3 0 0 1-3 3h-4"/><path d="M11 14a4 4 0 0 1 5-5 5 5 0 0 1 9-1 4 4 0 0 1 8 4"/><path d="M18 22v14M26 22v14"/></g></symbol>
+      <symbol id="i-plate" viewBox="0 0 48 48"><g style="stroke-width:var(--sw48,2.9)"><circle cx="24" cy="26" r="15"/><circle cx="24" cy="26" r="9"/><path d="M4 10v8a3 3 0 0 0 3 3v19M4 10v6M10 10v8a3 3 0 0 1-3 3M44 10c-3 1-4 5-4 10h4v20"/></g></symbol>
+      <symbol id="i-sandwich" viewBox="0 0 48 48"><g style="stroke-width:var(--sw48,2.9)"><path d="M6 20c0-7 8-11 18-11s18 4 18 11Z"/><path d="M5 25c4 3 7-1 10 1s6 2 9 0 6-2 9 0 7 2 10-1"/><path d="M6 31h36v3a4 4 0 0 1-4 4H10a4 4 0 0 1-4-4Z"/></g></symbol>
+      <symbol id="i-wrap" viewBox="0 0 48 48"><g style="stroke-width:var(--sw48,2.9)"><path d="M10 38 32 8l8 6-22 30a4 4 0 0 1-6 1l-2-1a4 4 0 0 1 0-6Z"/><path d="M32 8c2 4 6 6 8 6"/><path d="M22 18l6 4M18 24l6 4M14 30l6 4"/></g></symbol>
+      <symbol id="i-leaf" viewBox="0 0 48 48"><g style="stroke-width:var(--sw48,2.9)"><path d="M10 38C8 20 20 8 40 8c0 20-12 32-30 30Z"/><path d="M10 38 30 18"/></g></symbol>
+      <symbol id="i-burger" viewBox="0 0 48 48"><g style="stroke-width:var(--sw48,2.9)"><path d="M7 20c0-7 8-12 17-12s17 5 17 12Z"/><path d="M5 26h38"/><path d="M7 31c3 2 6-1 9 0s5 2 8 0 5-1 8 0 6 2 9 0"/><path d="M7 35h34v1a5 5 0 0 1-5 5H12a5 5 0 0 1-5-5Z"/></g></symbol>
+      <symbol id="i-cake" viewBox="0 0 48 48"><g style="stroke-width:var(--sw48,2.9)"><path d="M6 34 30 10l12 24Z"/><path d="M6 34v6h36v-6"/><path d="M12 28c4 2 8-2 12 0s8 2 12 0"/></g></symbol>
+
+      <symbol id="i-cart" viewBox="0 0 24 24"><path d="M3 4h2.2l2.1 11.2a2 2 0 0 0 2 1.6h7.6a2 2 0 0 0 2-1.5L20.5 8H6"/><circle cx="10" cy="20" r="1.3"/><circle cx="17" cy="20" r="1.3"/></symbol>
+      <symbol id="i-plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></symbol>
+      <symbol id="i-minus" viewBox="0 0 24 24"><path d="M5 12h14"/></symbol>
+      <symbol id="i-close" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6 6 18"/></symbol>
+      <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 8h16M4 16h16"/></symbol>
+      <symbol id="i-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="6.5"/><path d="m16 16 4 4"/></symbol>
+      <symbol id="i-arrow-left" viewBox="0 0 24 24"><path d="M19 12H5M11 6l-6 6 6 6"/></symbol>
+      <symbol id="i-arrow-right" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+      <symbol id="i-phone" viewBox="0 0 24 24"><path d="M5 4h3.5l1.6 4-2.2 1.4a11 11 0 0 0 6.7 6.7l1.4-2.2 4 1.6V19a1.5 1.5 0 0 1-1.6 1.5A16 16 0 0 1 3.5 5.6 1.5 1.5 0 0 1 5 4Z"/></symbol>
+      <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21Z"/><circle cx="12" cy="9.5" r="2.5"/></symbol>
+      <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5"/><path d="M12 7.5V12l3 2"/></symbol>
+      <symbol id="i-star" viewBox="0 0 24 24"><path d="m12 3.5 2.6 5.4 5.9.8-4.3 4.1 1 5.9-5.2-2.8-5.2 2.8 1-5.9L3.5 9.7l5.9-.8Z"/></symbol>
+      <symbol id="i-whatsapp" viewBox="0 0 24 24"><path d="M4 20l1.2-4A8.5 8.5 0 1 1 8.3 19Z"/><path d="M9 8.5c0 3.5 3 6.5 6.5 6.5l1-1.6-2-1-1 .8a5 5 0 0 1-2.7-2.7l.8-1-1-2Z"/></symbol>
+      <symbol id="i-instagram" viewBox="0 0 24 24"><rect x="3.5" y="3.5" width="17" height="17" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r=".6"/></symbol>
+      <symbol id="i-facebook" viewBox="0 0 24 24"><path d="M14 21v-7.5h2.6l.4-3H14V8.7c0-.9.3-1.5 1.6-1.5H17V4.5a19 19 0 0 0-2.3-.1c-2.3 0-3.8 1.4-3.8 3.9v2.2H8.3v3H11V21"/></symbol>
+      <symbol id="i-bike" viewBox="0 0 24 24"><circle cx="6" cy="16.5" r="3.5"/><circle cx="18" cy="16.5" r="3.5"/><path d="M6 16.5 9.5 9h5l3.5 7.5M9.5 9 8 6H6M12 16.5l2.5-7.5M14 6h2.5"/></symbol>
+      <symbol id="i-check" viewBox="0 0 24 24"><path d="m5 12.5 4.5 4.5L19 7.5"/></symbol>
+      <symbol id="i-grid" viewBox="0 0 24 24"><rect x="4" y="4" width="7" height="7" rx="2"/><rect x="13" y="4" width="7" height="7" rx="2"/><rect x="4" y="13" width="7" height="7" rx="2"/><rect x="13" y="13" width="7" height="7" rx="2"/></symbol>
+      <symbol id="i-list" viewBox="0 0 24 24"><path d="M9 6h11M9 12h11M9 18h11"/><circle cx="4.5" cy="6" r=".8"/><circle cx="4.5" cy="12" r=".8"/><circle cx="4.5" cy="18" r=".8"/></symbol>
+      <symbol id="i-download" viewBox="0 0 24 24"><path d="M12 4v11M7 10.5l5 5 5-5M5 19.5h14"/></symbol>
+      <symbol id="i-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2.5v2M12 19.5v2M2.5 12h2M19.5 12h2M5.3 5.3l1.4 1.4M17.3 17.3l1.4 1.4M5.3 18.7l1.4-1.4M17.3 6.7l1.4-1.4"/></symbol>
+      <symbol id="i-kids" viewBox="0 0 24 24"><circle cx="12" cy="6" r="2.5"/><path d="M7 10.5c3 1.5 7 1.5 10 0M12 11.5V16M12 16l-3 5M12 16l3 5M8 10l-2 4M16 10l2 4"/></symbol>
+      <symbol id="i-paw" viewBox="0 0 24 24"><ellipse cx="12" cy="16" rx="4.5" ry="3.8"/><circle cx="6" cy="10.5" r="1.8"/><circle cx="9.5" cy="6.5" r="1.8"/><circle cx="14.5" cy="6.5" r="1.8"/><circle cx="18" cy="10.5" r="1.8"/></symbol>
+      <symbol id="i-vegan" viewBox="0 0 24 24"><path d="M5 19c-1-8 4-14 14-14 0 10-6 15-14 14Z"/><path d="M5 19 14 10"/></symbol>
+      <symbol id="i-calendar" viewBox="0 0 24 24"><rect x="3.5" y="5" width="17" height="15.5" rx="3"/><path d="M3.5 10h17M8 3v4M16 3v4"/></symbol>
+      <symbol id="i-gift" viewBox="0 0 24 24"><rect x="4" y="9" width="16" height="11.5" rx="2"/><path d="M3 9h18M12 9v11.5M12 9c-2-4-6-4-6-1.5S10 9 12 9Zm0 0c2-4 6-4 6-1.5S14 9 12 9Z"/></symbol>
+      <symbol id="i-external" viewBox="0 0 24 24"><path d="M14 5h5v5M19 5l-8 8M17 14v4a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 5 18V8.5A1.5 1.5 0 0 1 6.5 7H10"/></symbol>
+    </defs>
+  </svg>
+
+  <a class="skip-link" href="#main" data-i18n="a11y.skip">Preskoči na sadržaj</a>
+
+  <!-- ===================== INTRO ===================== -->
+  <div id="intro" class="intro" data-feature="intro" role="dialog" aria-modal="true" aria-label="Intro" hidden>
+    <canvas class="intro__canvas" aria-hidden="true"></canvas>
+    <div class="intro__vignette" aria-hidden="true"></div>
+    <div class="intro__loader" aria-hidden="true"><span></span></div>
+    <div class="intro__brand" aria-hidden="true">
+      <img class="intro__logo" src="assets/img/logo/vida-logo-white.webp" alt="" width="993" height="993">
+      <p class="intro__tagline">The Feel Good Place</p>
+    </div>
+    <button class="intro__skip" type="button" data-i18n="intro.skip">Preskoči</button>
+  </div>
+
+  <!-- ===================== HEADER ===================== -->
+  <header class="site-header" id="top">
+    <div class="site-header__inner">
+      <a class="brand" href="#pocetna" aria-label="Vida Novi Sad — početna">
+        <img src="assets/img/logo/vida-logo-256.webp" alt="Vida — Foods &amp; Coffee" width="256" height="256">
+      </a>
+
+      <nav class="nav" aria-label="Glavna navigacija" data-i18n-attr="aria-label:nav.label">
+        <ul class="nav__list">
+          <li><a href="#meni" data-i18n="nav.menu">Meni</a></li>
+          <li><a href="#poruci" data-i18n="nav.order">Poruči</a></li>
+          <li><a href="#rezervisi" data-i18n="nav.reserve">Rezerviši</a></li>
+          <li data-feature="celebrations"><a href="#proslave" data-i18n="nav.celebrations">Proslave</a></li>
+          <li><a href="#o-nama" data-i18n="nav.about">O nama</a></li>
+          <li><a href="#kontakt" data-i18n="nav.contact">Kontakt</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-tools">
+        <span class="status-pill" data-status aria-live="polite"><span class="status-pill__dot" aria-hidden="true"></span><span data-status-text>…</span></span>
+        <div class="lang" role="group" aria-label="Jezik / Language">
+          <button type="button" class="lang__btn" data-lang="sr" aria-pressed="true" lang="sr">SR</button>
+          <span aria-hidden="true">/</span>
+          <button type="button" class="lang__btn" data-lang="en" aria-pressed="false" lang="en">EN</button>
+        </div>
+        <button type="button" class="icon-btn cart-btn" data-open-cart>
+          <svg class="icon" aria-hidden="true"><use href="#i-cart"/></svg>
+          <span class="visually-hidden" data-i18n="cart.open">Korpa</span>
+          <span class="cart-btn__count" data-cart-count>0</span>
+        </button>
+        <button type="button" class="icon-btn menu-toggle" aria-expanded="false" aria-controls="mobile-nav" aria-label="Otvori meni" data-i18n-attr="aria-label:nav.open">
+          <svg class="icon" aria-hidden="true"><use href="#i-menu"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobilna navigacija (preko celog ekrana) -->
+  <div class="mobile-nav" id="mobile-nav" hidden>
+    <div class="mobile-nav__top">
+      <img src="assets/img/logo/vida-logo-256.webp" alt="" width="256" height="256">
+      <button type="button" class="icon-btn" data-close-mobile-nav aria-label="Zatvori meni" data-i18n-attr="aria-label:nav.close">
+        <svg class="icon" aria-hidden="true"><use href="#i-close"/></svg>
+      </button>
+    </div>
+    <ul class="mobile-nav__list">
+      <li><a href="#meni" data-i18n="nav.menu">Meni</a></li>
+      <li><a href="#poruci" data-i18n="nav.order">Poruči</a></li>
+      <li><a href="#rezervisi" data-i18n="nav.reserve">Rezerviši</a></li>
+      <li data-feature="celebrations"><a href="#proslave" data-i18n="nav.celebrations">Proslave</a></li>
+      <li><a href="#o-nama" data-i18n="nav.about">O nama</a></li>
+      <li><a href="#kontakt" data-i18n="nav.contact">Kontakt</a></li>
+    </ul>
+    <div class="mobile-nav__foot">
+      <span class="status-pill" data-status><span class="status-pill__dot" aria-hidden="true"></span><span data-status-text>…</span></span>
+      <a class="link-plain" href="tel:+381695332067">069 533 2067</a>
+    </div>
+  </div>
+
+  <main id="main">
+    <!-- ===================== HERO ===================== -->
+    <section class="hero" id="pocetna" aria-labelledby="hero-title">
+      <div class="hero__glow" aria-hidden="true"></div>
+      <div class="container hero__grid">
+        <div class="hero__copy">
+          <span class="status-pill hero__status" data-status><span class="status-pill__dot" aria-hidden="true"></span><span data-status-text>…</span></span>
+          <p class="eyebrow" data-hero-eyebrow data-i18n="hero.eyebrow">Novi Sad · od 2016.</p>
+          <h1 class="hero__title" id="hero-title">The Feel <em>Good</em> Place</h1>
+          <p class="hero__lead" data-hero-lead data-i18n="hero.morning.lead">Dobro jutro. Kafa, doručak i brunch — polako, uz sunce.</p>
+          <ul class="hero__cats" data-hero-cats aria-label="Preporuka" data-i18n-attr="aria-label:hero.suggested"></ul>
+          <div class="hero__cta">
+            <a class="btn btn--primary" href="#poruci" data-i18n="cta.order">Poruči</a>
+            <a class="btn btn--ghost" href="#rezervisi" data-i18n="cta.reserve">Rezerviši sto</a>
+          </div>
+          <p class="hero__closed" data-hero-closed hidden>
+            <a class="link-arrow" href="https://wolt.com/sr/srb/novi_sad/restaurant/vida" target="_blank" rel="noopener" data-wolt data-i18n="cta.wolt">Poruči preko Wolt-a</a>
+          </p>
+        </div>
+        <figure class="hero__media">
+          <picture data-hero-picture data-tod-images='{"morning":"we-celebrate-life","lunch":"enterijer-biljke","evening":"terasa-vece","closed":"spolja"}'>
+            <source type="image/webp" srcset="assets/img/gallery/we-celebrate-life-480.webp 480w, assets/img/gallery/we-celebrate-life-940.webp 940w" sizes="(min-width: 900px) 46vw, 92vw">
+            <img src="assets/img/gallery/we-celebrate-life-940.jpg" alt="Zid sa muralom i natpisom We Celebrate Life" width="940" height="628" fetchpriority="high" decoding="async">
+          </picture>
+          <script>
+            // Izbor hero fotografije pre učitavanja (bez kasnije zamene → brži LCP).
+            // Vremena moraju da prate data/site.json → timeOfDay; js/time-of-day.js svakako ispravlja ako se razlikuju.
+            (function () {
+              try {
+                var p = document.currentScript.previousElementSibling, map = JSON.parse(p.dataset.todImages);
+                var h = +new Intl.DateTimeFormat("en-GB", { timeZone: "Europe/Belgrade", hour: "2-digit", hourCycle: "h23" }).format(new Date());
+                var id = h < 7 || h >= 23 ? map.closed : h < 11 ? map.morning : h < 17 ? map.lunch : map.evening;
+                var sizes = { "we-celebrate-life": [940, 628], "enterijer-biljke": [875, 584], "terasa-vece": [636, 778], "spolja": [940, 528] }[id];
+                if (!sizes || id === "we-celebrate-life") return;
+                p.querySelector("source").srcset = "assets/img/gallery/" + id + "-480.webp 480w, assets/img/gallery/" + id + "-" + sizes[0] + ".webp " + sizes[0] + "w";
+                var img = p.querySelector("img"); img.src = "assets/img/gallery/" + id + "-" + sizes[0] + ".jpg"; img.width = sizes[0]; img.height = sizes[1];
+                p.dataset.current = id;
+              } catch (e) {}
+            })();
+          </script>
+          <figcaption class="hero__badge">
+            <a href="https://www.google.com/maps/search/?api=1&amp;query=Vida+Novi+Sad+Rumena%C4%8Dka+148a" target="_blank" rel="noopener" data-rating-link>
+              <svg class="icon icon--fill" aria-hidden="true"><use href="#i-star"/></svg>
+              <span data-rating-short>4,5 · 3.000+ Google recenzija</span>
+            </a>
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- ===================== MOOD ===================== -->
+    <section class="section mood" id="raspolozenje" data-feature="moodFilter" aria-labelledby="mood-title">
+      <div class="container">
+        <header class="section-head">
+          <p class="eyebrow" data-i18n="mood.eyebrow">Meni po raspoloženju</p>
+          <h2 class="section-title" id="mood-title" data-i18n="mood.title">Kako se osećaš?</h2>
+        </header>
+        <div class="mood__chips" role="group" aria-labelledby="mood-title" data-mood-chips></div>
+        <p class="mood__hint" data-mood-hint aria-live="polite"></p>
+      </div>
+    </section>
+
+    <!-- ===================== MENI ===================== -->
+    <section class="section menu" id="meni" aria-labelledby="menu-title">
+      <div class="container">
+        <header class="section-head section-head--row">
+          <div>
+            <p class="eyebrow" data-i18n="menu.eyebrow">Sve što pravimo</p>
+            <h2 class="section-title" id="menu-title" data-i18n="menu.title">Meni</h2>
+          </div>
+          <div class="menu__view" role="group" aria-label="Prikaz" data-i18n-attr="aria-label:menu.view">
+            <button type="button" class="icon-btn" data-view="grid" aria-pressed="true" aria-label="Kartice" data-i18n-attr="aria-label:menu.viewGrid"><svg class="icon" aria-hidden="true"><use href="#i-grid"/></svg></button>
+            <button type="button" class="icon-btn" data-view="list" aria-pressed="false" aria-label="Lista" data-i18n-attr="aria-label:menu.viewList"><svg class="icon" aria-hidden="true"><use href="#i-list"/></svg></button>
+          </div>
+        </header>
+      </div>
+
+      <div class="menu__bar" data-menu-bar>
+        <div class="container menu__bar-inner">
+          <nav class="menu__cats" aria-label="Kategorije menija" data-i18n-attr="aria-label:menu.categories" data-menu-cats></nav>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="menu__tools">
+          <label class="search">
+            <svg class="icon" aria-hidden="true"><use href="#i-search"/></svg>
+            <span class="visually-hidden" data-i18n="menu.search">Pretraga menija</span>
+            <input type="search" data-menu-search placeholder="Pretraži meni…" data-i18n-attr="placeholder:menu.searchPlaceholder" autocomplete="off">
+          </label>
+          <div class="menu__diets" role="group" aria-label="Filteri" data-i18n-attr="aria-label:menu.filters" data-menu-diets></div>
+        </div>
+        <p class="menu__status" data-menu-status aria-live="polite"></p>
+        <div class="menu__list" data-menu-list data-layout="grid"></div>
+        <p class="menu__note" data-i18n="menu.note">Cene su u dinarima (RSD). Za informacije o alergenima pitaj osoblje.</p>
+      </div>
+    </section>
+
+    <!-- ===================== BOWL BUILDER ===================== -->
+    <section class="section bowl" id="bowl" data-feature="bowlBuilder" aria-labelledby="bowl-title">
+      <div class="container">
+        <header class="section-head">
+          <p class="eyebrow" data-i18n="bowl.eyebrow">Vida coconut bowl</p>
+          <h2 class="section-title" id="bowl-title" data-i18n="bowl.title">Napravi svoj bowl</h2>
+          <p class="section-lead" data-i18n="bowl.lead">Izaberi bazu, voće, toppinge i preliv — i gledaj kako nastaje.</p>
+        </header>
+        <div class="bowl__grid">
+          <div class="bowl__stage">
+            <div class="bowl__visual" data-bowl-visual></div>
+            <div class="bowl__total">
+              <span data-i18n="bowl.total">Ukupno</span>
+              <strong data-bowl-total>—</strong>
+            </div>
+          </div>
+          <div class="bowl__panel">
+            <ol class="bowl__steps" data-bowl-steps></ol>
+            <div class="bowl__ingredients" data-bowl-ingredients></div>
+            <p class="bowl__hint" data-bowl-hint aria-live="polite"></p>
+            <div class="bowl__actions">
+              <button type="button" class="btn btn--ghost" data-bowl-prev data-i18n="bowl.prev">Nazad</button>
+              <button type="button" class="btn btn--primary" data-bowl-next data-i18n="bowl.next">Dalje</button>
+            </div>
+          </div>
+        </div>
+        <div class="bowl__summary" data-bowl-summary hidden>
+          <canvas class="bowl__card" width="1080" height="1080" data-bowl-card aria-label="Kartica tvog bowl-a" data-i18n-attr="aria-label:bowl.cardLabel"></canvas>
+          <div class="bowl__summary-copy">
+            <h3 class="h3" data-i18n="bowl.doneTitle">Tvoj bowl je spreman</h3>
+            <ul class="bowl__summary-list" data-bowl-list></ul>
+            <div class="bowl__summary-actions">
+              <button type="button" class="btn btn--primary" data-bowl-add data-i18n="bowl.addToCart">Dodaj u korpu</button>
+              <button type="button" class="btn btn--ghost" data-bowl-download>
+                <svg class="icon" aria-hidden="true"><use href="#i-download"/></svg><span data-i18n="bowl.download">Sačuvaj sliku (PNG)</span>
+              </button>
+              <button type="button" class="btn btn--text" data-bowl-reset data-i18n="bowl.reset">Kreni ispočetka</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== PORUČI ===================== -->
+    <section class="section order" id="poruci" aria-labelledby="order-title">
+      <div class="container order__grid">
+        <div>
+          <p class="eyebrow" data-i18n="order.eyebrow">Dostava i preuzimanje</p>
+          <h2 class="section-title" id="order-title" data-i18n="order.title">Poruči</h2>
+          <p class="section-lead" data-i18n="order.lead">Dodaj jela iz menija u korpu, a porudžbinu pošalji preko WhatsApp-a. Ili poruči preko Wolt-a.</p>
+          <ol class="steps">
+            <li><span class="steps__n">1</span><span data-i18n="order.step1">Izaberi iz menija</span></li>
+            <li><span class="steps__n">2</span><span data-i18n="order.step2">Popuni podatke u korpi</span></li>
+            <li><span class="steps__n">3</span><span data-i18n="order.step3">Pošalji poruku na WhatsApp</span></li>
+          </ol>
+          <p class="notice notice--closed" data-closed-notice hidden data-i18n="order.closedNotice">Trenutno smo zatvoreni. Porudžbinu možeš da pripremiš i pošalješ — videćemo je od 07:00.</p>
+          <p class="order__delivery-note" data-delivery-note hidden></p>
+        </div>
+        <div class="order__card">
+          <div class="order__summary" data-order-summary>
+            <p class="order__empty" data-i18n="order.empty">Korpa je prazna.</p>
+          </div>
+          <div class="order__actions">
+            <button type="button" class="btn btn--primary btn--block" data-open-cart data-i18n="order.openCart">Pregledaj korpu</button>
+            <a class="btn btn--ghost btn--block" href="https://wolt.com/sr/srb/novi_sad/restaurant/vida" target="_blank" rel="noopener" data-wolt>
+              <svg class="icon" aria-hidden="true"><use href="#i-bike"/></svg><span data-i18n="cta.wolt">Poruči preko Wolt-a</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== REZERVACIJA ===================== -->
+    <section class="section reserve" id="rezervisi" aria-labelledby="reserve-title">
+      <div class="container form-grid">
+        <header class="form-grid__head">
+          <p class="eyebrow" data-i18n="reserve.eyebrow">Unutra ili na terasi</p>
+          <h2 class="section-title" id="reserve-title" data-i18n="reserve.title">Rezerviši sto</h2>
+          <p class="section-lead" data-i18n="reserve.lead">Rezervacija je zahtev, potvrdu dobijaš od Vide putem WhatsApp-a.</p>
+        </header>
+        <form class="form card" data-reserve-form novalidate>
+          <div class="field">
+            <label for="r-name" data-i18n="form.name">Ime i prezime</label>
+            <input id="r-name" name="name" autocomplete="name" required>
+            <p class="field__error" id="r-name-err" aria-live="polite"></p>
+          </div>
+          <div class="field">
+            <label for="r-phone" data-i18n="form.phone">Telefon</label>
+            <input id="r-phone" name="phone" type="tel" autocomplete="tel" inputmode="tel" required placeholder="06x xxx xxxx">
+            <p class="field__error" id="r-phone-err" aria-live="polite"></p>
+          </div>
+          <div class="field-row">
+            <div class="field">
+              <label for="r-date" data-i18n="form.date">Datum</label>
+              <input id="r-date" name="date" type="date" required>
+              <p class="field__error" id="r-date-err" aria-live="polite"></p>
+            </div>
+            <div class="field">
+              <label for="r-time" data-i18n="form.time">Vreme</label>
+              <select id="r-time" name="time" required></select>
+              <p class="field__error" id="r-time-err" aria-live="polite"></p>
+            </div>
+          </div>
+          <div class="field">
+            <label for="r-guests" data-i18n="form.guests">Broj osoba</label>
+            <select id="r-guests" name="guests" required></select>
+          </div>
+          <fieldset class="field">
+            <legend data-i18n="reserve.seating">Gde bi voleo/la da sediš?</legend>
+            <div class="seg">
+              <label><input type="radio" name="seating" value="any" checked><span data-i18n="reserve.seatAny">Svejedno</span></label>
+              <label><input type="radio" name="seating" value="terrace"><span data-i18n="reserve.seatTerrace">Terasa</span></label>
+              <label><input type="radio" name="seating" value="inside"><span data-i18n="reserve.seatInside">Unutra</span></label>
+            </div>
+          </fieldset>
+          <div class="checks">
+            <label class="check"><input type="checkbox" name="kids"><span data-i18n="reserve.kids">Treba nam Kids Corner</span></label>
+            <label class="check"><input type="checkbox" name="pet"><span data-i18n="reserve.pet">Dolazimo sa ljubimcem</span></label>
+          </div>
+          <div class="field">
+            <label for="r-note" data-i18n="form.noteOptional">Napomena (opciono)</label>
+            <textarea id="r-note" name="note" rows="2"></textarea>
+          </div>
+          <button class="btn btn--primary btn--block" type="submit">
+            <svg class="icon" aria-hidden="true"><use href="#i-whatsapp"/></svg><span data-i18n="reserve.submit">Pošalji zahtev na WhatsApp</span>
+          </button>
+          <p class="form__done" data-form-done hidden tabindex="-1" data-i18n="reserve.done">Zahtev je pripremljen u WhatsApp-u. Pošalji poruku i sačekaj potvrdu od Vide.</p>
+        </form>
+      </div>
+    </section>
+
+    <!-- ===================== PROSLAVE ===================== -->
+    <section class="section celebrate" id="proslave" data-feature="celebrations" aria-labelledby="cel-title">
+      <div class="container form-grid">
+        <header class="form-grid__head">
+          <p class="eyebrow" data-i18n="cel.eyebrow">Rođendani i okupljanja</p>
+          <h2 class="section-title" id="cel-title" data-i18n="cel.title">Proslave &amp; rođendani</h2>
+          <p class="section-lead" data-i18n="cel.lead">Planiraš rođendan ili proslavu? Pošalji upit i javićemo ti se.</p>
+          <!-- TODO: vlasnik da potvrdi šta nude za proslave (prostor, meni, torte, cene) -->
+        </header>
+        <form class="form card" data-cel-form novalidate>
+          <div class="field">
+            <label for="c-type" data-i18n="cel.type">Vrsta događaja</label>
+            <select id="c-type" name="type" required>
+              <option value="kids" data-i18n="cel.typeKids">Dečiji rođendan</option>
+              <option value="birthday" data-i18n="cel.typeBirthday">Rođendan</option>
+              <option value="party" data-i18n="cel.typeParty">Proslava</option>
+              <option value="business" data-i18n="cel.typeBusiness">Poslovno okupljanje</option>
+              <option value="other" data-i18n="cel.typeOther">Drugo</option>
+            </select>
+          </div>
+          <div class="field-row">
+            <div class="field">
+              <label for="c-date" data-i18n="form.date">Datum</label>
+              <input id="c-date" name="date" type="date" required>
+              <p class="field__error" id="c-date-err" aria-live="polite"></p>
+            </div>
+            <div class="field">
+              <label for="c-time" data-i18n="form.time">Vreme</label>
+              <select id="c-time" name="time" required></select>
+              <p class="field__error" id="c-time-err" aria-live="polite"></p>
+            </div>
+          </div>
+          <div class="field-row">
+            <div class="field">
+              <label for="c-adults" data-i18n="cel.adults">Broj odraslih</label>
+              <input id="c-adults" name="adults" type="number" min="0" max="200" inputmode="numeric" value="2">
+              <p class="field__error" id="c-adults-err" aria-live="polite"></p>
+            </div>
+            <div class="field">
+              <label for="c-kids" data-i18n="cel.kids">Broj dece</label>
+              <input id="c-kids" name="kids" type="number" min="0" max="200" inputmode="numeric" value="0">
+            </div>
+          </div>
+          <div class="checks">
+            <label class="check"><input type="checkbox" name="kidsCorner"><span data-i18n="cel.kidsCorner">Kids Corner</span></label>
+            <label class="check"><input type="checkbox" name="cake" data-cake-toggle><span data-i18n="cel.cake">Želimo celu raw tortu / tortu</span></label>
+          </div>
+          <div class="field" data-cake-wishes hidden>
+            <label for="c-cake" data-i18n="cel.cakeWishes">Želje za tortu</label>
+            <textarea id="c-cake" name="cakeWishes" rows="2"></textarea>
+          </div>
+          <div class="field">
+            <label for="c-budget" data-i18n="cel.budget">Budžet po osobi (opciono, RSD)</label>
+            <input id="c-budget" name="budget" inputmode="numeric">
+          </div>
+          <div class="field-row">
+            <div class="field">
+              <label for="c-name" data-i18n="form.name">Ime i prezime</label>
+              <input id="c-name" name="name" autocomplete="name" required>
+              <p class="field__error" id="c-name-err" aria-live="polite"></p>
+            </div>
+            <div class="field">
+              <label for="c-phone" data-i18n="form.phone">Telefon</label>
+              <input id="c-phone" name="phone" type="tel" autocomplete="tel" inputmode="tel" required placeholder="06x xxx xxxx">
+              <p class="field__error" id="c-phone-err" aria-live="polite"></p>
+            </div>
+          </div>
+          <div class="field">
+            <label for="c-note" data-i18n="form.noteOptional">Napomena (opciono)</label>
+            <textarea id="c-note" name="note" rows="2"></textarea>
+          </div>
+          <button class="btn btn--primary btn--block" type="submit">
+            <svg class="icon" aria-hidden="true"><use href="#i-whatsapp"/></svg><span data-i18n="cel.submit">Pošalji upit na WhatsApp</span>
+          </button>
+          <p class="form__done" data-form-done hidden tabindex="-1" data-i18n="cel.done">Upit je pripremljen u WhatsApp-u. Pošalji poruku — javićemo ti se.</p>
+        </form>
+      </div>
+    </section>
+
+    <!-- ===================== O NAMA ===================== -->
+    <section class="section about" id="o-nama" aria-labelledby="about-title">
+      <div class="container about__grid">
+        <div>
+          <p class="eyebrow" data-i18n="about.eyebrow">Od 2016.</p>
+          <h2 class="section-title" id="about-title" data-i18n="about.title">O nama</h2>
+        </div>
+        <div class="about__copy">
+          <p class="about__big" data-i18n="about.p1">Vida je „The Feel Good Place“ u Novom Sadu — od 2016. godine.</p>
+          <p data-i18n="about.p2">Zdrava hrana koja je i zabavna: brunch, bowls, coconut smoothie bowls, wrapovi, ceđeni sokovi, matcha i dobra kafa. Uveče — kokteli na terasi.</p>
+          <!-- TODO: vlasnik — kratka lična priča (ko je osnovao Vidu, filozofija, namirnice). -->
+          <ul class="badges">
+            <li><svg class="icon" aria-hidden="true"><use href="#i-sun"/></svg><span data-i18n="about.badgeTerrace">Terasa</span></li>
+            <li><svg class="icon" aria-hidden="true"><use href="#i-kids"/></svg><span>Kids Corner</span></li>
+            <li><svg class="icon" aria-hidden="true"><use href="#i-paw"/></svg><span>Pet Friendly</span></li>
+            <li><svg class="icon" aria-hidden="true"><use href="#i-vegan"/></svg><span data-i18n="about.badgeVegan">Veganske opcije</span></li>
+            <li><svg class="icon" aria-hidden="true"><use href="#i-cocktail"/></svg><span data-i18n="about.badgeCocktails">Kokteli</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== KIDS & PETS ===================== -->
+    <section class="section family" id="deca-ljubimci" aria-labelledby="family-title">
+      <div class="container">
+        <h2 class="visually-hidden" id="family-title" data-i18n="family.title">Kids Corner i Pet Friendly</h2>
+        <div class="family__grid">
+          <article class="family__card family__card--kids">
+            <svg class="family__icon" aria-hidden="true"><use href="#i-kids"/></svg>
+            <h3 class="h3">Kids Corner</h3>
+            <p data-i18n="family.kids">Kutak za najmlađe, da i roditelji uživaju u kafi.</p>
+          </article>
+          <article class="family__card family__card--pets">
+            <svg class="family__icon" aria-hidden="true"><use href="#i-paw"/></svg>
+            <h3 class="h3">Pet Friendly</h3>
+            <p data-i18n="family.pets">Ljubimci su dobrodošli.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== RECENZIJE ===================== -->
+    <section class="section reviews" id="recenzije" aria-labelledby="reviews-title">
+      <div class="container reviews__inner">
+        <h2 class="visually-hidden" id="reviews-title" data-i18n="reviews.title">Recenzije</h2>
+        <p class="reviews__score"><span data-rating-value>4,5</span> <svg class="icon icon--fill" aria-hidden="true"><use href="#i-star"/></svg></p>
+        <p class="reviews__count" data-rating-count>3.000+ recenzija na Google-u</p>
+        <a class="btn btn--ghost" href="https://www.google.com/maps/search/?api=1&amp;query=Vida+Novi+Sad+Rumena%C4%8Dka+148a" target="_blank" rel="noopener" data-rating-link>
+          <span data-i18n="reviews.read">Pročitaj recenzije</span><svg class="icon" aria-hidden="true"><use href="#i-external"/></svg>
+        </a>
+        <ul class="reviews__quotes" data-reviews hidden></ul>
+      </div>
+    </section>
+
+    <!-- ===================== GALERIJA ===================== -->
+    <section class="section gallery" id="galerija" aria-labelledby="gallery-title">
+      <div class="container section-head section-head--row">
+        <div>
+          <p class="eyebrow" data-i18n="gallery.eyebrow">Atmosfera</p>
+          <h2 class="section-title" id="gallery-title" data-i18n="gallery.title">Galerija</h2>
+        </div>
+        <div class="gallery__arrows">
+          <button type="button" class="icon-btn icon-btn--outline" data-gal-prev aria-label="Prethodna fotografija" data-i18n-attr="aria-label:gallery.prev"><svg class="icon" aria-hidden="true"><use href="#i-arrow-left"/></svg></button>
+          <button type="button" class="icon-btn icon-btn--outline" data-gal-next aria-label="Sledeća fotografija" data-i18n-attr="aria-label:gallery.next"><svg class="icon" aria-hidden="true"><use href="#i-arrow-right"/></svg></button>
+        </div>
+      </div>
+      <div class="gallery__track" data-gal-track tabindex="0" role="region" aria-roledescription="carousel" aria-label="Galerija fotografija" data-i18n-attr="aria-label:gallery.label"></div>
+      <div class="container">
+        <div class="gallery__progress" aria-hidden="true"><span data-gal-progress></span></div>
+        <p class="gallery__follow">
+          <a class="btn btn--primary" href="https://www.instagram.com/vidanovisad/" target="_blank" rel="noopener">
+            <svg class="icon" aria-hidden="true"><use href="#i-instagram"/></svg><span data-i18n="gallery.follow">Prati nas @vidanovisad</span>
+          </a>
+        </p>
+      </div>
+    </section>
+
+    <!-- ===================== KONTAKT ===================== -->
+    <section class="section contact" id="kontakt" aria-labelledby="contact-title">
+      <div class="container contact__grid">
+        <div class="contact__info">
+          <p class="eyebrow" data-i18n="contact.eyebrow">Svratite</p>
+          <h2 class="section-title" id="contact-title" data-i18n="contact.title">Kontakt &amp; lokacija</h2>
+          <ul class="contact__list">
+            <li><svg class="icon" aria-hidden="true"><use href="#i-pin"/></svg><span>Rumenačka 148a, 21000 Novi Sad</span></li>
+            <li><svg class="icon" aria-hidden="true"><use href="#i-phone"/></svg><a href="tel:+381695332067">069 533 2067</a></li>
+            <li><svg class="icon" aria-hidden="true"><use href="#i-clock"/></svg><span data-i18n="contact.hours">Svaki dan 07:00–23:00</span></li>
+          </ul>
+          <div class="contact__actions">
+            <a class="btn btn--primary" href="https://wa.me/381695332067" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-whatsapp"/></svg><span>WhatsApp</span></a>
+            <a class="btn btn--ghost" href="https://www.google.com/maps/dir/?api=1&amp;destination=Vida+Novi+Sad+Rumena%C4%8Dka+148a+Novi+Sad" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-pin"/></svg><span data-i18n="contact.navigate">Navigacija</span></a>
+          </div>
+          <ul class="social">
+            <li><a href="https://www.instagram.com/vidanovisad/" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-instagram"/></svg>Instagram</a></li>
+            <li><a href="https://www.facebook.com/vidanovisad2016" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-facebook"/></svg>Facebook</a></li>
+            <li><a href="https://wolt.com/sr/srb/novi_sad/restaurant/vida" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-bike"/></svg>Wolt</a></li>
+          </ul>
+        </div>
+        <div class="contact__map" data-map>
+          <button type="button" class="contact__map-load" data-map-load>
+            <svg class="icon" aria-hidden="true"><use href="#i-pin"/></svg>
+            <span data-i18n="contact.loadMap">Prikaži mapu</span>
+          </button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="site-footer">
+    <div class="container footer__grid">
+      <div class="footer__brand">
+        <img src="assets/img/logo/vida-logo-white-256.webp" alt="Vida — Foods &amp; Coffee" width="256" height="256" loading="lazy">
+        <p class="footer__tagline">The Feel Good Place</p>
+      </div>
+      <div>
+        <h2 class="footer__h" data-i18n="footer.hours">Radno vreme</h2>
+        <p data-i18n="contact.hours">Svaki dan 07:00–23:00</p>
+        <p>Rumenačka 148a, Novi Sad</p>
+        <p><a href="tel:+381695332067">069 533 2067</a></p>
+      </div>
+      <div>
+        <h2 class="footer__h" data-i18n="footer.links">Linkovi</h2>
+        <ul class="footer__links">
+          <li><a href="#meni" data-i18n="nav.menu">Meni</a></li>
+          <li><a href="#rezervisi" data-i18n="nav.reserve">Rezerviši</a></li>
+          <li><a href="https://www.instagram.com/vidanovisad/" target="_blank" rel="noopener">Instagram</a></li>
+          <li><a href="https://www.facebook.com/vidanovisad2016" target="_blank" rel="noopener">Facebook</a></li>
+          <li><a href="https://wolt.com/sr/srb/novi_sad/restaurant/vida" target="_blank" rel="noopener">Wolt</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer__bottom">
+      <p>© <span data-year>2026</span> Vida Novi Sad</p>
+      <p class="footer__credit" data-credit hidden></p>
+      <!-- TODO: "Made by" potpis — upisati u data/site.json → credit -->
+    </div>
+  </footer>
+
+  <!-- ===================== FAB (mobilni) ===================== -->
+  <div class="fab" data-fab>
+    <a class="fab__btn fab__btn--wa" href="https://wa.me/381695332067" target="_blank" rel="noopener" aria-label="WhatsApp">
+      <svg class="icon" aria-hidden="true"><use href="#i-whatsapp"/></svg>
+    </a>
+    <button type="button" class="fab__btn fab__btn--cart" data-open-cart>
+      <svg class="icon" aria-hidden="true"><use href="#i-cart"/></svg>
+      <span data-i18n="nav.order">Poruči</span>
+      <span class="fab__count" data-cart-count>0</span>
+    </button>
+  </div>
+
+  <!-- ===================== KORPA ===================== -->
+  <div class="drawer" data-cart-drawer hidden>
+    <div class="drawer__scrim" data-close-cart></div>
+    <aside class="drawer__panel" role="dialog" aria-modal="true" aria-labelledby="cart-title" tabindex="-1">
+      <header class="drawer__head">
+        <h2 class="h3" id="cart-title" data-i18n="cart.title">Tvoja porudžbina</h2>
+        <button type="button" class="icon-btn" data-close-cart aria-label="Zatvori korpu" data-i18n-attr="aria-label:cart.close"><svg class="icon" aria-hidden="true"><use href="#i-close"/></svg></button>
+      </header>
+      <div class="drawer__body">
+        <div data-cart-view="items">
+          <ul class="cart__items" data-cart-items></ul>
+          <p class="cart__empty" data-cart-empty data-i18n="cart.empty">Korpa je prazna. Dodaj nešto iz menija.</p>
+          <form class="form cart__form" data-checkout novalidate>
+            <h3 class="h4" data-i18n="cart.details">Podaci za porudžbinu</h3>
+            <p class="notice notice--closed" data-closed-notice hidden data-i18n="order.closedNotice">Trenutno smo zatvoreni. Porudžbinu možeš da pripremiš i pošalješ — videćemo je od 07:00.</p>
+            <div class="field">
+              <label for="o-name" data-i18n="form.name">Ime i prezime</label>
+              <input id="o-name" name="name" autocomplete="name" required>
+              <p class="field__error" id="o-name-err" aria-live="polite"></p>
+            </div>
+            <div class="field">
+              <label for="o-phone" data-i18n="form.phone">Telefon</label>
+              <input id="o-phone" name="phone" type="tel" autocomplete="tel" inputmode="tel" required placeholder="06x xxx xxxx">
+              <p class="field__error" id="o-phone-err" aria-live="polite"></p>
+            </div>
+            <fieldset class="field" data-ordertype>
+              <legend data-i18n="cart.type">Način preuzimanja</legend>
+              <div class="seg">
+                <label data-feature="delivery"><input type="radio" name="type" value="delivery"><span data-i18n="cart.delivery">Dostava</span></label>
+                <label data-feature="pickup"><input type="radio" name="type" value="pickup"><span data-i18n="cart.pickup">Preuzimanje u lokalu</span></label>
+              </div>
+              <p class="field__error" id="o-type-err" aria-live="polite"></p>
+            </fieldset>
+            <div class="field" data-address hidden>
+              <label for="o-address" data-i18n="cart.address">Adresa za dostavu</label>
+              <input id="o-address" name="address" autocomplete="street-address">
+              <p class="field__error" id="o-address-err" aria-live="polite"></p>
+              <p class="field__help" data-delivery-note hidden></p>
+            </div>
+            <div class="field">
+              <label for="o-time" data-i18n="cart.when">Vreme</label>
+              <select id="o-time" name="time"></select>
+            </div>
+            <fieldset class="field">
+              <legend data-i18n="cart.payment">Plaćanje</legend>
+              <div class="seg">
+                <label><input type="radio" name="payment" value="cash" checked><span data-i18n="cart.cash">Gotovina</span></label>
+                <label><input type="radio" name="payment" value="card"><span data-i18n="cart.card">Kartica</span></label>
+              </div>
+              <p class="field__help" data-i18n="cart.paymentHelp">Plaćanje pri preuzimanju ili dostavi.</p>
+            </fieldset>
+            <div class="field">
+              <label for="o-note" data-i18n="form.noteOptional">Napomena (opciono)</label>
+              <textarea id="o-note" name="note" rows="2"></textarea>
+            </div>
+          </form>
+        </div>
+        <div class="cart__done" data-cart-view="done" hidden tabindex="-1">
+          <svg class="cart__done-icon" aria-hidden="true"><use href="#i-check"/></svg>
+          <p class="h3" data-i18n="cart.doneTitle">Porudžbina je pripremljena u WhatsApp-u.</p>
+          <p data-i18n="cart.doneText">Pošalji poruku da je potvrdiš.</p>
+          <a class="link-arrow" href="#" data-cart-reopen-wa data-i18n="cart.doneReopen">WhatsApp se nije otvorio? Klikni ovde.</a>
+          <div class="cart__done-actions">
+            <button type="button" class="btn btn--primary" data-cart-clear data-i18n="cart.clear">Isprazni korpu</button>
+            <button type="button" class="btn btn--ghost" data-cart-back data-i18n="cart.back">Nazad na korpu</button>
+          </div>
+        </div>
+      </div>
+      <footer class="drawer__foot" data-cart-foot>
+        <div class="cart__total">
+          <span data-i18n="cart.total">Ukupno</span>
+          <strong data-cart-total>0 RSD</strong>
+        </div>
+        <p class="cart__total-note" data-cart-total-note hidden data-i18n="cart.onRequestNote">+ stavke sa cenom na upit</p>
+        <button type="button" class="btn btn--primary btn--block" data-cart-send>
+          <svg class="icon" aria-hidden="true"><use href="#i-whatsapp"/></svg><span data-i18n="cart.send">Pošalji porudžbinu</span>
+        </button>
+        <a class="btn btn--text btn--block" href="https://wolt.com/sr/srb/novi_sad/restaurant/vida" target="_blank" rel="noopener" data-wolt data-i18n="cta.wolt">Poruči preko Wolt-a</a>
+      </footer>
+    </aside>
+  </div>
+
+  <div class="toast" data-toast role="status" aria-live="polite" hidden></div>
+
+  <noscript><p class="noscript">Za porudžbine i rezervacije uključi JavaScript ili nas pozovi: <a href="tel:+381695332067">069 533 2067</a>.</p></noscript>
+
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>

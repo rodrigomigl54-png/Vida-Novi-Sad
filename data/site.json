@@ -1,0 +1,70 @@
+{
+  "siteUrl": "https://www.DOMEN.rs/",
+  "_siteUrlNote": "TODO: upisati pravi domen (i u index.html, sitemap.xml, robots.txt)",
+  "name": "Vida Novi Sad",
+  "brand": "VIDA",
+  "tagline": "The Feel Good Place",
+  "since": 2016,
+  "contact": {
+    "phoneDisplay": "069 533 2067",
+    "phoneIntl": "+381695332067",
+    "whatsapp": "381695332067",
+    "street": "Rumenačka 148a",
+    "postalCode": "21000",
+    "city": "Novi Sad",
+    "country": "RS",
+    "countryName": { "sr": "Srbija", "en": "Serbia" },
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Vida+Novi+Sad+Rumena%C4%8Dka+148a",
+    "mapsEmbed": "https://www.google.com/maps?q=Vida%20Novi%20Sad%2C%20Rumena%C4%8Dka%20148a%2C%2021000%20Novi%20Sad&output=embed",
+    "directionsUrl": "https://www.google.com/maps/dir/?api=1&destination=Vida+Novi+Sad+Rumena%C4%8Dka+148a+Novi+Sad"
+  },
+  "social": {
+    "instagram": "https://www.instagram.com/vidanovisad/",
+    "instagramHandle": "@vidanovisad",
+    "facebook": "https://www.facebook.com/vidanovisad2016",
+    "wolt": "https://wolt.com/sr/srb/novi_sad/restaurant/vida"
+  },
+  "rating": {
+    "value": "4,5",
+    "valueEn": "4.5",
+    "count": "3.000+",
+    "countEn": "3,000+",
+    "url": "https://www.google.com/maps/search/?api=1&query=Vida+Novi+Sad+Rumena%C4%8Dka+148a"
+  },
+  "reviews": [],
+  "hours": {
+    "timezone": "Europe/Belgrade",
+    "open": "07:00",
+    "close": "23:00",
+    "days": ["mon", "tue", "wed", "thu", "fri", "sat", "sun"]
+  },
+  "priceRange": "RSD 500–2000",
+  "features": {
+    "intro": true,
+    "bowlBuilder": false,
+    "celebrations": true,
+    "moodFilter": true,
+    "timeOfDayHero": true,
+    "delivery": true,
+    "pickup": true
+  },
+  "_featuresNote": "bowlBuilder je false dok vlasnik ne potvrdi sastojke i cene (vidi REVIEW.md). Za pregled: dodati ?preview=bowlBuilder na adresu.",
+  "timeOfDay": [
+    { "id": "morning", "from": "07:00", "to": "11:00", "categories": ["kafa", "dorucak", "brunch"], "image": "we-celebrate-life" },
+    { "id": "lunch", "from": "11:00", "to": "17:00", "categories": ["healthy-bowls", "wrap", "salate"], "image": "enterijer-biljke" },
+    { "id": "evening", "from": "17:00", "to": "23:00", "categories": ["spritz", "smoothie-bowls", "topla-cokolada"], "image": "terasa-vece" },
+    { "id": "closed", "from": "23:00", "to": "07:00", "categories": ["kafa", "dorucak"], "image": "spolja" }
+  ],
+  "ordering": {
+    "deliveryMinOrder": null,
+    "deliveryNote": null,
+    "timeStepMinutes": 15,
+    "paymentMethods": ["cash", "card"]
+  },
+  "reservation": {
+    "maxGuests": 20,
+    "stepMinutes": 30,
+    "lastSlot": "22:30"
+  },
+  "credit": { "name": null, "url": null }
+}
