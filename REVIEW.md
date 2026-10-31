@@ -1,6 +1,6 @@
 # REVIEW — šta treba proveriti sa vlasnikom
 
-> Radna verzija posle koraka 1–3 (asseti, intro obrada, prepis menija). Dopunjava se u narednim koracima.
+> Sve što treba proveriti ili potvrditi sa vlasnikom pre objave. Ništa od ovoga nije izmišljeno na sajtu — nepoznato je ostavljeno prazno ili označeno.
 
 ## 1. ⚠️ Tri različite verzije menija za piće (najvažnije)
 
@@ -157,9 +157,12 @@ Sve su **predlog** (`moodNeedsReview: true`). Odobriti ili izmeniti:
 
 Svi opisi jela na engleskom imaju `needsReview: true` (u objektu `description`). Nazivi jela ostaju u originalu.
 
-## 6. Bowl builder
+## 6. Bowl builder (Napravi svoj bowl)
 
-Meni **nema** "napravi svoj bowl" (baze / toppinzi / cene dodataka). Jedino slično je smoothie **Pick Me** (ceđeni mix/smoothie po izboru do 4 sastojka, 590 din). Zato će `bowl.json` imati primer sastojke sa `price: null`, a **`features.bowlBuilder` treba da ostane `false` na lansiranju** dok vlasnik ne potvrdi ponudu i cene.
+- Meni **nema** ponudu "napravi svoj bowl" (baze / toppinzi / cene dodataka). Jedino slično je smoothie **Pick Me** (ceđeni mix/smoothie po izboru do 4 sastojka, 590 din).
+- `data/bowl.json` zato sadrži **primer** sastojke preuzete iz postojećih smoothie bowl-ova (acai, mango & plava spirulina, banana, jagoda, kivi, šumsko voće, granola, kokos, orasi, bademi, urme, med, javorov sirup, bademov puter) sa `price: null` i `placeholder: true`. Sajt tada prikazuje **"Cena na upit"**.
+- **`features.bowlBuilder` je `false` i treba da ostane `false` na lansiranju** dok vlasnik ne potvrdi da nudi ovu opciju, sastojke i cene (`basePrice` + cena svakog sastojka).
+- Za pregled vlasniku: otvoriti sajt sa `?preview=bowlBuilder` na kraju adrese.
 
 ## 7. Intro – kadrovi i obrada
 
@@ -239,10 +242,28 @@ Ubaciti fajl `<id>.webp` (ili `.jpg` / `.png`):
 **Aperitiv (0,03l):** `zlatna-kajsija`, `zlatna-dunja`
 
 
-## 9. Ostali TODO (biće dopunjeno)
+## 9. Ostali TODO (potvrditi sa vlasnikom)
 
-- Minimalna porudžbina i zone dostave (`deliveryMinOrder`, `deliveryNote` = `null`).
-- Ponuda za proslave i rođendane.
-- Tekst "O nama" – detalji priče.
-- "Made by" potpis u futeru.
+| Šta | Gde se menja | Trenutno |
+|---|---|---|
+| **Domen sajta** | `index.html` (canonical, hreflang, og:url, og:image, JSON-LD), `sitemap.xml`, `robots.txt`, `data/site.json → siteUrl` | `https://www.DOMEN.rs/` (zameniti svuda) |
+| Minimalna porudžbina za dostavu | `data/site.json → ordering.deliveryMinOrder` | `null` (ništa se ne prikazuje) |
+| Zone dostave / napomena o dostavi | `data/site.json → ordering.deliveryNote` (`{"sr": "...", "en": "..."}`) | `null` |
+| Da li se plaća i karticom pri dostavi | tekst `cart.paymentHelp` u `data/i18n/*.json` | gotovina / kartica (samo tekst) |
+| Ponuda za proslave i rođendane (prostor, meni, torte, cene) | `cel.lead` u i18n | neutralan tekst „Pošalji upit i javićemo ti se.“ |
+| Da li prave cele raw torte po porudžbini | `cel.cake` u i18n / `index.html` | polje postoji u upitu, bez obećanja |
+| Tekst „O nama“ (lična priča) | `about.p1`, `about.p2` u i18n | samo proverene činjenice |
+| Kids Corner / Pet Friendly opis | `family.kids`, `family.pets` u i18n | „Imamo kutak za najmlađe.“ / „Ljubimci su dobrodošli.“ |
+| Deserti / raw kolači (cene) | `data/menu.json` | nisu na fotografijama menija |
+| Stvarne recenzije (citati) | `data/site.json → reviews` | prazno → sekcija citata sakrivena |
+| Potpis „Made by“ u futeru | `data/site.json → credit` | `null` (sakriveno) |
+| Hero fotografije po dobu dana | `data/site.json → timeOfDay[].image` **i** `index.html` (`data-tod-images`) | fotografije iz galerije |
+| Alergeni | — | sajt ne navodi alergene; napomena „pitaj osoblje“ |
+
+## 10. Napomene o tehničkoj proveri
+
+- **Fotografije jela** se pronalaze automatski preko listinga foldera `assets/dishes/` (fajl `assets/dishes/.htaccess` uključuje `Options +Indexes`). Ako Hostinger ne dozvoli listing, u konzoli će biti jedna 404 greška i fotografije se neće same pojaviti — tada upisati putanju ručno u `menu.json` (`"image": "assets/dishes/acai-bowl.webp"`).
+- **Google mapa** se učitava tek kad posetilac dođe do sekcije Kontakt.
+- **Lighthouse (mobilno, lokalno sa gzip kompresijom):** Performance 90–92, Accessibility 100, Best Practices 100, SEO 100 (CLS 0). Najveći deo vremena je učitavanje hero fotografije na simuliranoj sporoj mreži.
+- **Automatski testovi** (`tools/test-site.mjs`, 98 provera): intro (pušta se, „Preskoči“, ne ponavlja se, reduced-motion), status otvoreno/zatvoreno i hero za 06:59, 07:00, 10:59, 11:00, 16:59, 17:00, 22:59, 23:00 (Europe/Belgrade), korpa (dodavanje, +/−, uklanjanje, čuvanje), WhatsApp poruke (porudžbina, rezervacija, proslava) sa č/ć/ž/š/đ, bowl builder (dodavanje, uklanjanje, cena, PNG), SR/EN (bez nedostajućih ključeva), galerija (swipe, drag, strelice, trackpad), feature flagovi, bez grešaka u konzoli — **sve prolazi**.
 

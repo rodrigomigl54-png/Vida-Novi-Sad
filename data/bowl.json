@@ -1,0 +1,34 @@
+{
+  "_note": "PRIMER. Meni nema 'napravi svoj bowl' – sastojci su preuzeti iz postojećih smoothie bowl-ova, cene NISU poznate (price: null, placeholder: true). Ne uključivati features.bowlBuilder dok vlasnik ne potvrdi.",
+  "placeholder": true,
+  "basePrice": null,
+  "maxPerStep": { "base": 1, "fruit": 3, "toppings": 3, "drizzle": 1 },
+  "steps": [
+    { "id": "base", "name": { "sr": "Baza", "en": "Base" } },
+    { "id": "fruit", "name": { "sr": "Voće", "en": "Fruit" } },
+    { "id": "toppings", "name": { "sr": "Toppings & superfoods", "en": "Toppings & superfoods" } },
+    { "id": "drizzle", "name": { "sr": "Preliv", "en": "Drizzle" } }
+  ],
+  "ingredients": [
+    { "id": "acai", "step": "base", "name": { "sr": "Acai", "en": "Acai" }, "price": null, "placeholder": true, "shape": "base", "color": "#5B2A5E" },
+    { "id": "mango-spirulina", "step": "base", "name": { "sr": "Mango & plava spirulina", "en": "Mango & blue spirulina" }, "price": null, "placeholder": true, "shape": "base", "color": "#4FA3C7" },
+    { "id": "kakao-banana", "step": "base", "name": { "sr": "Kakao & banana", "en": "Cocoa & banana" }, "price": null, "placeholder": true, "shape": "base", "color": "#6B4632" },
+    { "id": "spirulina-avokado", "step": "base", "name": { "sr": "Spirulina & avokado", "en": "Spirulina & avocado" }, "price": null, "placeholder": true, "shape": "base", "color": "#5E8C4A" },
+
+    { "id": "banana", "step": "fruit", "name": { "sr": "Banana", "en": "Banana" }, "price": null, "placeholder": true, "shape": "slices", "color": "#F6E3A1", "accent": "#C9B26B" },
+    { "id": "jagoda", "step": "fruit", "name": { "sr": "Jagoda", "en": "Strawberry" }, "price": null, "placeholder": true, "shape": "halves", "color": "#E0475A", "accent": "#F6C9C6" },
+    { "id": "kivi", "step": "fruit", "name": { "sr": "Kivi", "en": "Kiwi" }, "price": null, "placeholder": true, "shape": "slices", "color": "#8DBA45", "accent": "#2F2A1E" },
+    { "id": "sumsko-voce", "step": "fruit", "name": { "sr": "Šumsko voće", "en": "Forest berries" }, "price": null, "placeholder": true, "shape": "berries", "color": "#3B3F78", "accent": "#7A2E4F" },
+    { "id": "mango", "step": "fruit", "name": { "sr": "Mango", "en": "Mango" }, "price": null, "placeholder": true, "shape": "cubes", "color": "#F5A623", "accent": "#E58A12" },
+
+    { "id": "granola", "step": "toppings", "name": { "sr": "Domaća VIDA granola", "en": "Homemade VIDA granola" }, "price": null, "placeholder": true, "shape": "clusters", "color": "#C08A4A", "accent": "#8E5E2C" },
+    { "id": "kokos", "step": "toppings", "name": { "sr": "Kokos", "en": "Coconut" }, "price": null, "placeholder": true, "shape": "flakes", "color": "#FBF7EF", "accent": "#E6DDCB" },
+    { "id": "orasi", "step": "toppings", "name": { "sr": "Orasi", "en": "Walnuts" }, "price": null, "placeholder": true, "shape": "clusters", "color": "#A8743F", "accent": "#7A4F27" },
+    { "id": "bademi", "step": "toppings", "name": { "sr": "Bademi", "en": "Almonds" }, "price": null, "placeholder": true, "shape": "almonds", "color": "#D8A973", "accent": "#A87A45" },
+    { "id": "urme", "step": "toppings", "name": { "sr": "Urme", "en": "Dates" }, "price": null, "placeholder": true, "shape": "cubes", "color": "#6A3B22", "accent": "#4A2716" },
+
+    { "id": "med", "step": "drizzle", "name": { "sr": "Med", "en": "Honey" }, "price": null, "placeholder": true, "shape": "drizzle", "color": "#E3A428" },
+    { "id": "javorov-sirup", "step": "drizzle", "name": { "sr": "Javorov sirup", "en": "Maple syrup" }, "price": null, "placeholder": true, "shape": "drizzle", "color": "#B5651D" },
+    { "id": "bademov-puter", "step": "drizzle", "name": { "sr": "Bademov puter", "en": "Almond butter" }, "price": null, "placeholder": true, "shape": "drizzle", "color": "#C9935A" }
+  ]
+}

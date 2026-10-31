@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+Disallow: /tools/
+Disallow: /assets/source/
+
+# TODO: zameniti DOMEN pravim domenom
+Sitemap: https://www.DOMEN.rs/sitemap.xml

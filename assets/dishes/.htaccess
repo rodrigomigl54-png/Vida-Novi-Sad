@@ -1,0 +1,4 @@
+# Sajt čita spisak fotografija jela iz ovog foldera (listing),
+# tako da je za novu fotografiju dovoljno ubaciti fajl <id-jela>.webp
+Options +Indexes
+IndexOptions -FancyIndexing
