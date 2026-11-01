@@ -164,27 +164,15 @@ Svi opisi jela na engleskom imaju `needsReview: true` (u objektu `description`).
 - **`features.bowlBuilder` je `false` i treba da ostane `false` na lansiranju** dok vlasnik ne potvrdi da nudi ovu opciju, sastojke i cene (`basePrice` + cena svakog sastojka).
 - Za pregled vlasniku: otvoriti sajt sa `?preview=bowlBuilder` na kraju adrese.
 
-## 7. Intro – kadrovi i obrada
+## 7. Intro i video na početnoj
 
-Izabrani redosled (u `data/intro.json` → `order`):
-
-1. `01-ulica.jpg` – Ulica (exterior), cilj kamere: manual, nebo zamenjeno: da (5.7%)
-2. `02-fasada-ulaz.jpg` – Fasada i ulaz (exterior), cilj kamere: manual, nebo zamenjeno: da (2.0%)
-3. `03-enterijer.jpg` – Enterijer (interior), cilj kamere: manual, nebo zamenjeno: ne
-4. `04-sank.jpg` – Šank (interior), cilj kamere: manual, nebo zamenjeno: ne
-5. `05-sank-logo.jpg` – Šank sa logom (interior), cilj kamere: end, nebo zamenjeno: ne
-
-- **Preskočeno:** nijedan kadar iz `intro/` (ukupno ih je 5). Fotografije `we-celebrate-life`, `enterijer-gosti`, `terasa-vece`, `basta-dan` nisu u introu (druga perspektiva / noć / ljudi u kadru) – idu u galeriju.
-
-- **Automatsko poravnanje (ORB/SIFT + homografija) nije uspelo ni za jedan par** – fotografije su slikane iz potpuno različitih uglova, pa nema dovoljno zajedničkih tačaka. Koriste se ručne tačke fokusa (`manualFocus`, `zoom` u `intro.json`) – mogu se menjati.
-
-- **Rezolucija:** originali su mali (330–516 px visine). Landscape set je izvezen na 1280 px širine (blago povećanje + izoštravanje), portrait na 720×1280 max. Na velikim ekranima će biti blago mekano. **Za finalnu verziju trebaju originalne fotografije u punoj rezoluciji (min. 2000 px).**
-
-- **Zamena neba:** urađena na `01-ulica` i `02-fasada-ulaz` (heuristička segmentacija). Proveriti ivice zgrade na `01-ulica` – ako izgleda neprirodno, u `intro.json` staviti `"skyReplace": false` za taj kadar. Rezervne verzije (samo kolor korekcija) su u `assets/img/intro/fallback/`.
-
-- **Lokacija:** proveriti da li su SVE intro fotografije iz lokala na **Rumenačkoj 148a**. Kadrovi `04-sank` (šank sa belim pločicama) i `05-sank-logo` (šank sa ciglom i vitrinom) deluju kao **dva različita enterijera**.
-
-- Težina: portrait WebP ukupno 225 KB, landscape 471 KB (cilj < 2,5 MB ✔).
+- Intro i hero su napravljeni od **15 Vida reels snimaka** (720×1280, bez zvuka). Montaža je u `tools/video-edit.json`.
+- **Telefon:** 7,5 s, AI uveličanje (Real-ESRGAN) na 1080×1920. Ritam: sipanja (affogato, raspberry, pistachio, pumpkin, Disneyland) → lomljenja (isotonic, matcha, cookies) → otkrivanje (babke) → čaša Disneyland odozgo + logo.
+- **Računar:** triptih, AI uveličan, u dve verzije: 1920×1080 i 2560×1440 (veliki i retina ekrani). Rezovi „domino talasom“, na kraju ostaje srednji panel sa logom.
+- **Početna (hero):** glavni video je AI uveličan (1080×1920). Petlje po dobu dana — jutro: Affogato + Babke, podne: Isotonic + Matcha, veče: Disneyland + Dark Chocolate SS, zatvoreno: Isotonic + Matilda.
+- **Proveriti sa vlasnikom:** u snimcima se vide proizvodi koji **nisu** na fotografijama menija (San Sebastian cheesecake u više verzija, cinnamon rolls, babke, cookies, Matilda torta, Vida Isotonic, matcha čokolada) — to su specijali; za meni trebaju nazivi i cene.
+- **Kvalitet:** snimci su sa Instagrama (720p). AI ih izoštrava, ali originali sa telefona (1080p/4K) bi dali bolji rezultat — ista skripta, samo zameniti fajlove u `assets/source/video/`.
+- Stare intro fotografije (ulica → šank) više se ne koriste u introu.
 
 ## 8. Očekivani nazivi fotografija jela (`/assets/dishes/`)
 
@@ -255,9 +243,9 @@ Ubaciti fajl `<id>.webp` (ili `.jpg` / `.png`):
 | Tekst „O nama“ (lična priča) | `about.p1`, `about.p2` u i18n | samo proverene činjenice |
 | Kids Corner / Pet Friendly opis | `family.kids`, `family.pets` u i18n | „Imamo kutak za najmlađe.“ / „Ljubimci su dobrodošli.“ |
 | Deserti / raw kolači (cene) | `data/menu.json` | nisu na fotografijama menija |
-| Stvarne recenzije (citati) | `data/site.json → reviews` | prazno → sekcija citata sakrivena |
+| **Stvarne recenzije** (tekst, ime, ocena) — poslati prave, npr. screenshot sa Google-a | `data/site.json → reviews` | prazno → kartice sakrivene (dizajn je spreman) |
 | Potpis „Made by“ u futeru | `data/site.json → credit` | `null` (sakriveno) |
-| Hero fotografije po dobu dana | `data/site.json → timeOfDay[].image` **i** `index.html` (`data-tod-images`) | fotografije iz galerije |
+| Galerija: dozvola za korišćenje fotografija jela i pića | `assets/source/gallery/` | 17 fotografija + mural; male su AI-uveličane |
 | Alergeni | — | sajt ne navodi alergene; napomena „pitaj osoblje“ |
 
 ## 10. Napomene o tehničkoj proveri
@@ -265,5 +253,5 @@ Ubaciti fajl `<id>.webp` (ili `.jpg` / `.png`):
 - **Fotografije jela** se pronalaze automatski preko listinga foldera `assets/dishes/` (fajl `assets/dishes/.htaccess` uključuje `Options +Indexes`). Ako Hostinger ne dozvoli listing, u konzoli će biti jedna 404 greška i fotografije se neće same pojaviti — tada upisati putanju ručno u `menu.json` (`"image": "assets/dishes/acai-bowl.webp"`).
 - **Google mapa** se učitava tek kad posetilac dođe do sekcije Kontakt.
 - **Lighthouse (mobilno, lokalno sa gzip kompresijom):** Performance 90–92, Accessibility 100, Best Practices 100, SEO 100 (CLS 0). Najveći deo vremena je učitavanje hero fotografije na simuliranoj sporoj mreži.
-- **Automatski testovi** (`tools/test-site.mjs`, 98 provera): intro (pušta se, „Preskoči“, ne ponavlja se, reduced-motion), status otvoreno/zatvoreno i hero za 06:59, 07:00, 10:59, 11:00, 16:59, 17:00, 22:59, 23:00 (Europe/Belgrade), korpa (dodavanje, +/−, uklanjanje, čuvanje), WhatsApp poruke (porudžbina, rezervacija, proslava) sa č/ć/ž/š/đ, bowl builder (dodavanje, uklanjanje, cena, PNG), SR/EN (bez nedostajućih ključeva), galerija (swipe, drag, strelice, trackpad), feature flagovi, bez grešaka u konzoli — **sve prolazi**.
+- **Automatski testovi** (`tools/test-site.mjs`, 104 provere): intro (pušta se, „Preskoči“, ne ponavlja se, reduced-motion), status otvoreno/zatvoreno i hero za 06:59, 07:00, 10:59, 11:00, 16:59, 17:00, 22:59, 23:00 (Europe/Belgrade), korpa (dodavanje, +/−, uklanjanje, čuvanje), WhatsApp poruke (porudžbina, rezervacija, proslava) sa č/ć/ž/š/đ, bowl builder (dodavanje, uklanjanje, cena, PNG), SR/EN (bez nedostajućih ključeva), galerija (swipe, drag, strelice, trackpad), feature flagovi, bez grešaka u konzoli — **sve prolazi**.
 

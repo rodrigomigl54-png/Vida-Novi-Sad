@@ -1,4 +1,8 @@
-__pycache__/
 *.pyc
 .DS_Store
+__pycache__/
+_pregled/
+assets/source/video/
 node_modules/
+tools/models/
+*.master.mp4

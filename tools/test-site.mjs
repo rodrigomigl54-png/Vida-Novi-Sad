@@ -25,48 +25,68 @@ async function newPage(opts = {}, time) {
 const ready = (page) => page.waitForFunction(() => window.__vida?.ready, null, { timeout: 15000 });
 const lastWa = async (page) => decodeURIComponent((await page.evaluate(() => window.__opened.at(-1) || "")).split("?text=")[1] || "");
 
-// ------------------------------------------------------------------ 1. INTRO
+// ------------------------------------------------------------------ 1. INTRO (video)
 {
   const { ctx, page } = await newPage({}, "2026-10-31T10:00:00+01:00");
   await page.goto(BASE);
   ok("intro: overlay je prikazan pri prvoj poseti", await page.evaluate(() => document.documentElement.classList.contains("intro-pending")));
-  await page.waitForSelector("#intro.is-playing", { timeout: 6000 });
-  ok("intro: kadrovi učitani i reprodukcija krenula", true);
-  const scrollLocked = await page.evaluate(() => getComputedStyle(document.body).overflow === "hidden");
-  ok("intro: scroll je zaključan", scrollLocked);
-  await page.clock.runFor(2000);
-  const nonBlank = await page.evaluate(() => {
-    const c = document.querySelector(".intro__canvas"); const d = c.getContext("2d").getImageData(c.width / 2, c.height / 2, 1, 1).data;
-    return d[0] + d[1] + d[2] > 30;
-  });
-  ok("intro: canvas iscrtava fotografiju", nonBlank);
+  await page.waitForSelector("#intro.is-playing", { timeout: 8000 });
+  ok("intro (telefon): koristi vertikalni video", (await page.$eval(".intro__video", (v) => v.currentSrc)).includes("intro-mobile"));
+  ok("intro: scroll je zaključan", await page.evaluate(() => getComputedStyle(document.body).overflow === "hidden"));
+  await page.waitForTimeout(1200);
+  ok("intro: video se reprodukuje", await page.$eval(".intro__video", (v) => v.currentTime > 0.5 && !v.paused));
   await page.click(".intro__skip");
-  await page.clock.runFor(600);
+  await page.waitForTimeout(500);
   ok("intro: 'Preskoči' uklanja intro", (await page.$("#intro")) === null && !(await page.evaluate(() => document.documentElement.classList.contains("intro-pending"))));
+  await page.waitForTimeout(800);
+  ok("hero: posle intro-a kreće video petlja", await page.$eval("[data-hero-main]", (v) => !!v.currentSrc && v.currentSrc.includes("hero-morning-main")));
   await page.reload();
   await ready(page);
   ok("intro: ne ponavlja se u istoj sesiji", (await page.$("#intro")) === null);
   await ctx.close();
 }
 {
-  // ceo intro bez preskakanja + logo
-  const { ctx, page } = await newPage({ viewport: { width: 1280, height: 800 } }, "2026-10-31T10:00:00+01:00");
+  // ceo intro bez preskakanja + logo (računar)
+  const { ctx, page } = await newPage({ viewport: { width: 1440, height: 900 } }, "2026-10-31T10:00:00+01:00");
   await page.goto(BASE);
-  await page.waitForSelector("#intro.is-playing", { timeout: 6000 });
-  await page.clock.runFor(5200);
-  ok("intro: logo se pojavljuje na kraju (šank)", await page.evaluate(() => !!document.querySelector("#intro.is-logo")));
+  await page.waitForSelector("#intro.is-playing", { timeout: 8000 });
+  ok("intro (računar): koristi triptih video", (await page.$eval(".intro__video", (v) => v.currentSrc)).includes("intro-desktop"));
+  await page.waitForSelector("#intro.is-logo", { timeout: 9000 });
+  ok("intro: logo se pojavljuje na kraju", true);
+  await page.waitForTimeout(900);
   await page.screenshot({ path: "/tmp/pw/t-intro-logo.png" });
-  await page.clock.runFor(3000);
-  ok("intro: završava se sam i otvara sajt", (await page.$("#intro")) === null);
+  await page.waitForSelector("#intro", { state: "detached", timeout: 8000 });
+  ok("intro: završava se sam i otvara sajt", true);
   await ctx.close();
 }
 {
   const { ctx, page } = await newPage({ reducedMotion: "reduce" }, "2026-10-31T10:00:00+01:00");
   await page.goto(BASE);
   await page.waitForSelector("#intro.is-logo", { timeout: 6000 });
-  ok("intro: reduced-motion → statičan šank + logo", true);
-  await page.clock.runFor(2200);
-  ok("intro: reduced-motion → posle ~1s sajt", (await page.$("#intro")) === null);
+  ok("intro: reduced-motion → statičan kadar + logo", true);
+  await page.waitForSelector("#intro", { state: "detached", timeout: 4000 });
+  ok("intro: reduced-motion → posle ~1s sajt", true);
+  ok("hero: reduced-motion → bez videa (samo poster)", await page.$eval("[data-hero-main]", (v) => !v.currentSrc));
+  await ctx.close();
+}
+
+// ------------------------------------------------------------------ POZIV
+{
+  const { ctx, page } = await newPage({}, "2026-10-31T12:00:00+01:00");
+  await page.goto(BASE + "?nointro");
+  await ready(page);
+  const tels = await page.$$eval('a[href="tel:+381695332067"]', (as) => as.length);
+  ok("poziv: tel: link u headeru, heroju, FAB-u, rezervaciji, proslavama, kontaktu", tels >= 7, String(tels));
+  await page.evaluate(() => scrollTo(0, document.querySelector("#meni").offsetTop));
+  await page.waitForTimeout(500);
+  ok("poziv: dugme 'Pozovi' u donjoj traci na telefonu", await page.isVisible(".fab__btn--call") && (await page.textContent(".fab__btn--call")).includes("Pozovi"));
+  await ctx.close();
+}
+{
+  const { ctx, page } = await newPage({}, "2026-10-31T23:30:00+01:00");
+  await page.goto(BASE + "?nointro");
+  await ready(page);
+  ok("poziv: van radnog vremena 'Zovi od 07:00'", (await page.textContent(".fab__btn--call")).includes("Zovi od 07:00"));
   await ctx.close();
 }
 
@@ -296,6 +316,10 @@ for (const [hhmm, open, tod] of times) {
   ok("galerija: strelica napred", a > 50, String(a));
   await page.click("[data-gal-prev]"); await page.waitForTimeout(700);
   ok("galerija: strelica nazad", (await sl()) < a);
+  // sačekaj da se scroll potpuno smiri pre prevlačenja
+  for (let prev = -1, i = 0; i < 30; i++) { const cur = await sl(); if (cur === prev) break; prev = cur; await page.waitForTimeout(150); }
+  await page.$eval("[data-gal-track]", (t) => t.scrollIntoView({ behavior: "instant", block: "center" }));
+  await page.waitForTimeout(300);
   const box = await track.boundingBox();
   await page.mouse.move(box.x + box.width * 0.7, box.y + box.height / 2);
   await page.mouse.down();

@@ -22,17 +22,27 @@ DATA = os.path.join(ROOT, "data")
 
 # Redosled i opisi (alt) galerije. Novi fajlovi koji nisu ovde dodaju se na kraj.
 GALLERY_META = {
-    "we-celebrate-life.jpg": {"sr": "Zid sa muralom i natpisom We Celebrate Life", "en": "Mural wall with the words We Celebrate Life"},
-    "vitrina-kolaci.jpg": {"sr": "Vitrina sa kolačima ispred šanka sa Vida logom", "en": "Cake display in front of the bar with the Vida logo"},
-    "terasa-vece.jpg": {"sr": "Terasa uveče pod svetlećim girlandama", "en": "The terrace in the evening under string lights"},
-    "enterijer-biljke.jpg": {"sr": "Svetao enterijer sa policama punim biljaka", "en": "Bright interior with shelves full of plants"},
-    "basta-dan.jpg": {"sr": "Bašta sa drvenim klupama tokom dana", "en": "Garden seating with wooden benches during the day"},
-    "sank.jpg": {"sr": "Šank sa aparatom za espresso i Vida logom", "en": "The bar with the espresso machine and Vida logo"},
-    "enterijer-gosti.jpg": {"sr": "Gosti za stolovima ispod pletenih lampi", "en": "Guests at tables beneath woven lamps"},
-    "ulaz.jpg": {"sr": "Ulaz u Vidu sa stolovima ispred", "en": "The Vida entrance with tables outside"},
-    "spolja.jpg": {"sr": "Vida spolja, sa terasom", "en": "Vida from the outside, with the terrace"},
+    "01-wrap-jaja-avokado.jpg": {"sr": "Wrap sa jajima, avokadom, zelenom salatom i kiselim lukom", "en": "Wrap with eggs, avocado, lettuce and pickled onion"},
+    "02-zeleni-tuna-wrap.jpg": {"sr": "Zeleni wrap sa tunom, kinoom i crvenim kupusom", "en": "Green wrap with tuna, quinoa and red cabbage"},
+    "03-cinnamon-rolls.jpg": {"sr": "Cinnamon rolls sa pistaći i karamel prelivom", "en": "Cinnamon rolls with pistachio and caramel glaze"},
+    "04-vida-infused-water.jpg": {"sr": "Voda sa limetom, pomorandžom i nanom u Vida čaši", "en": "Water with lime, orange and mint in a Vida glass"},
+    "00-we-celebrate-life.jpg": {"sr": "Zid sa muralom i natpisom We Celebrate Life", "en": "Mural wall with the words We Celebrate Life"},
+    "05-daska-hleb-namazi.jpg": {"sr": "Daska sa domaćim hlebom, pršutom, namazima i orašastim plodovima", "en": "Board with homemade bread, prosciutto, spreads and nuts"},
+    "06-napitak-grozdje-lavanda.jpg": {"sr": "Osvežavajući napitak sa grožđem, nanom i lavandom", "en": "Refreshing drink with grapes, mint and lavender"},
+    "07-coconut-acai-bowl.jpg": {"sr": "Coconut bowl sa voćem i granolom", "en": "Coconut bowl with fruit and granola"},
+    "08-ube-kasa-plavi-smoothie.jpg": {"sr": "Ljubičasta ovsena kaša i plavi smoothie", "en": "Purple oat bowl and a blue smoothie"},
+    "09-pistachio-latte.jpg": {"sr": "Kafa sa srcem u peni i pistaći ivicom", "en": "Coffee with latte art and a pistachio rim"},
+    "10-smoothie-jagoda.jpg": {"sr": "Smoothie sa jagodama", "en": "Strawberry smoothie"},
+    "11-pumpkin-latte.jpg": {"sr": "Jesenja kafa sa cimetom", "en": "Autumn coffee with cinnamon"},
+    "12-smoothie-jabuka-cimet.jpg": {"sr": "Smoothie sa jabukom i cimetom", "en": "Apple and cinnamon smoothie"},
+    "13-cvekla-jabuka-sok.jpg": {"sr": "Slojeviti sok u čašama sa jabukom", "en": "Layered juice with apple garnish"},
+    "14-krem-corba-bundeva.jpg": {"sr": "Krem čorba od bundeve sa integralnim hlebom", "en": "Pumpkin cream soup with wholegrain bread"},
+    "15-ledena-kafa-vida.jpg": {"sr": "Ledena kafa u Vida limenci", "en": "Iced coffee in a Vida can"},
+    "16-cinnamon-rolls-izbor.jpg": {"sr": "Izbor cinnamon rolls-a", "en": "A selection of cinnamon rolls"},
+    "17-palacinke-banana.jpg": {"sr": "Palačinke sa bananom i voćem", "en": "Pancakes with banana and fruit"},
 }
 SIZES = (480, 960)
+AI_BELOW = 1400  # fotografije čija je duža strana manja od ovoga idu kroz AI uveličanje (Real-ESRGAN)
 
 
 def ensure(p):
@@ -82,6 +92,24 @@ def favicons(alpha_img):
     Image.open(os.path.join(out, "favicon-32.png")).save(os.path.join(ROOT, "favicon.ico"), sizes=[(16, 16), (32, 32)])
 
 
+def ai_upscale(im):
+    """AI 4x (Real-ESRGAN) za male fotografije; bez torch-a — klasično (Lanczos)."""
+    try:
+        import sys
+        sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+        import torch
+        from sr_model import load, upscale
+        torch.set_num_threads(os.cpu_count() or 4)
+        global _SR
+        if "_SR" not in globals():
+            _SR = load(os.environ.get("VIDA_SR_WEIGHTS", os.path.join(ROOT, "tools", "models", "realesr-general-x4v3.pth")))
+        print(f"  AI uveličanje {im.size} → {(im.width * 4, im.height * 4)}", flush=True)
+        return upscale(_SR, im)
+    except Exception as e:  # noqa: BLE001
+        print("  (AI nije dostupan, klasično uveličanje)", e)
+        return im.resize((im.width * 3, im.height * 3), Image.LANCZOS).filter(ImageFilter.UnsharpMask(1.2, 60, 2))
+
+
 def gallery():
     out = ensure(os.path.join(IMG, "gallery"))
     files = [f for f in os.listdir(os.path.join(SRC, "gallery")) if f.lower().endswith((".jpg", ".jpeg", ".png", ".webp"))]
@@ -89,12 +117,14 @@ def gallery():
     items = []
     for f in order:
         im = ImageOps.exif_transpose(Image.open(os.path.join(SRC, "gallery", f))).convert("RGB")
-        # blaga, ujednačena korekcija (toplije, malo svetlije)
-        im = ImageOps.autocontrast(im, cutoff=0.5)
+        if max(im.size) < AI_BELOW:
+            im = ai_upscale(im)
+        # blaga korekcija kontrasta
+        im = ImageOps.autocontrast(im, cutoff=0.3)
         name = os.path.splitext(f)[0]
         srcs = []
         for w in SIZES:
-            tw = min(w, int(im.width * 1.6))
+            tw = min(w, im.width)
             th = round(tw * im.height / im.width)
             r = im.resize((tw, th), Image.LANCZOS)
             if tw > im.width:
@@ -110,7 +140,7 @@ def gallery():
 
 
 def og_image():
-    src = os.path.join(SRC, "gallery", "terasa-vece.jpg")
+    src = os.path.join(SRC, "venue-archive", "terasa-vece.jpg")
     if not os.path.exists(src):
         return
     im = Image.open(src).convert("RGB")

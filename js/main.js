@@ -2,7 +2,7 @@
 import { $, $$, loadJSON, lockScroll, unlockScroll, trapFocus, reducedMotion, escapeHtml } from "./util.js";
 import { initI18n, onLangChange, t, L, getLang, missing } from "./i18n.js";
 import { initOpenStatus } from "./open-status.js";
-import { initTimeOfDay } from "./time-of-day.js";
+import { initTimeOfDay, startHeroVideos } from "./time-of-day.js";
 import { initMenu } from "./menu.js";
 import { initMood } from "./mood.js";
 import { initCart } from "./cart.js";
@@ -120,10 +120,19 @@ function renderSiteTexts(site) {
     credit.hidden = false;
     credit.innerHTML = `${escapeHtml(t("footer.madeBy"))} ${site.credit.url ? `<a href="${escapeHtml(site.credit.url)}" target="_blank" rel="noopener">${escapeHtml(site.credit.name)}</a>` : escapeHtml(site.credit.name)}`;
   }
-  // stvarne recenzije (prazno → sakriveno)
+  // stvarne recenzije (prazno → sakriveno). Format u site.json:
+  // { "text": { "sr": "…", "en": "…" } ili "tekst", "author": "Ime", "rating": 5, "source": "Google" }
   const list = $("[data-reviews]");
-  list.hidden = !(site.reviews && site.reviews.length);
-  list.innerHTML = (site.reviews || []).map((q) => `<li><blockquote>${escapeHtml(L(q.text))}</blockquote><cite>${escapeHtml(q.author || "")}</cite></li>`).join("");
+  const reviews = (site.reviews || []).filter((q) => q && q.text);
+  list.hidden = !reviews.length;
+  list.innerHTML = reviews.map((q) => {
+    const stars = Math.max(0, Math.min(5, Math.round(q.rating || 5)));
+    return `<li class="review">
+      <p class="review__stars" aria-label="${stars}/5">${"★".repeat(stars)}${"☆".repeat(5 - stars)}</p>
+      <blockquote class="review__text">„${escapeHtml(L(q.text))}“</blockquote>
+      <p class="review__by">${escapeHtml(q.author || "")}${q.source ? ` · ${escapeHtml(q.source)}` : ""}</p>
+    </li>`;
+  }).join("");
 }
 
 async function main() {
@@ -139,8 +148,8 @@ async function main() {
   await initI18n();
   initOpenStatus(site);
   initCart(site);
-  await initMenu(menu);
-  initTimeOfDay(site, menu, gallery);
+  await initMenu(menu, site.githubPages);
+  initTimeOfDay(site, menu);
   if (site.features.moodFilter) initMood();
   if (site.features.bowlBuilder) {
     const [{ initBowl }, bowl] = await Promise.all([import("./bowl-builder.js"), loadJSON("data/bowl.json")]);
@@ -153,7 +162,7 @@ async function main() {
   initMap(site);
   renderSiteTexts(site);
   onLangChange(() => renderSiteTexts(site));
-  introDone.then(initReveal);
+  introDone.then(() => { initReveal(); startHeroVideos(); });
 
   window.__vida = { site, menu, missing, ready: true };
   document.documentElement.classList.add("is-ready");

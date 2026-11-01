@@ -24,6 +24,9 @@ function render() {
       : t("status.closed", { time: s.opensAt });
   });
   $$("[data-closed-notice]").forEach((el) => { el.hidden = s.open; });
+  // dugmad za poziv: van radnog vremena „Zovi od 07:00“ (WhatsApp ostaje glavna opcija)
+  $$("[data-call]").forEach((el) => el.classList.toggle("is-closed", !s.open));
+  $$("[data-call-label]").forEach((el) => { el.textContent = s.open ? t("call.label") : t("call.closed", { time: s.opensAt }); });
   subs.forEach((fn) => fn(s));
 }
 

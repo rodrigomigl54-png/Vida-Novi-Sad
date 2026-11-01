@@ -144,8 +144,7 @@
 
   <!-- ===================== INTRO ===================== -->
   <div id="intro" class="intro" data-feature="intro" role="dialog" aria-modal="true" aria-label="Intro" hidden>
-    <canvas class="intro__canvas" aria-hidden="true"></canvas>
-    <div class="intro__vignette" aria-hidden="true"></div>
+    <video class="intro__video" muted playsinline preload="none" aria-hidden="true" tabindex="-1"></video>
     <div class="intro__loader" aria-hidden="true"><span></span></div>
     <div class="intro__brand" aria-hidden="true">
       <img class="intro__logo" src="assets/img/logo/vida-logo-white.webp" alt="" width="993" height="993">
@@ -174,6 +173,9 @@
 
       <div class="header-tools">
         <span class="status-pill" data-status aria-live="polite"><span class="status-pill__dot" aria-hidden="true"></span><span data-status-text>…</span></span>
+        <a class="call-link" href="tel:+381695332067" data-call aria-label="Pozovi Vidu: 069 533 2067" data-i18n-attr="aria-label:call.aria">
+          <svg class="icon" aria-hidden="true"><use href="#i-phone"/></svg><span class="call-link__num">069 533 2067</span>
+        </a>
         <div class="lang" role="group" aria-label="Jezik / Language">
           <button type="button" class="lang__btn" data-lang="sr" aria-pressed="true" lang="sr">SR</button>
           <span aria-hidden="true">/</span>
@@ -227,39 +229,41 @@
           <div class="hero__cta">
             <a class="btn btn--primary" href="#poruci" data-i18n="cta.order">Poruči</a>
             <a class="btn btn--ghost" href="#rezervisi" data-i18n="cta.reserve">Rezerviši sto</a>
+            <a class="btn btn--call" href="tel:+381695332067" data-call aria-label="Pozovi Vidu: 069 533 2067" data-i18n-attr="aria-label:call.aria">
+              <svg class="icon" aria-hidden="true"><use href="#i-phone"/></svg><span data-call-label>Pozovi</span>
+            </a>
           </div>
           <p class="hero__closed" data-hero-closed hidden>
             <a class="link-arrow" href="https://wolt.com/sr/srb/novi_sad/restaurant/vida" target="_blank" rel="noopener" data-wolt data-i18n="cta.wolt">Poruči preko Wolt-a</a>
           </p>
         </div>
-        <figure class="hero__media">
-          <picture data-hero-picture data-tod-images='{"morning":"we-celebrate-life","lunch":"enterijer-biljke","evening":"terasa-vece","closed":"spolja"}'>
-            <source type="image/webp" srcset="assets/img/gallery/we-celebrate-life-480.webp 480w, assets/img/gallery/we-celebrate-life-940.webp 940w" sizes="(min-width: 900px) 46vw, 92vw">
-            <img src="assets/img/gallery/we-celebrate-life-940.jpg" alt="Zid sa muralom i natpisom We Celebrate Life" width="940" height="628" fetchpriority="high" decoding="async">
-          </picture>
-          <script>
-            // Izbor hero fotografije pre učitavanja (bez kasnije zamene → brži LCP).
-            // Vremena moraju da prate data/site.json → timeOfDay; js/time-of-day.js svakako ispravlja ako se razlikuju.
-            (function () {
-              try {
-                var p = document.currentScript.previousElementSibling, map = JSON.parse(p.dataset.todImages);
-                var h = +new Intl.DateTimeFormat("en-GB", { timeZone: "Europe/Belgrade", hour: "2-digit", hourCycle: "h23" }).format(new Date());
-                var id = h < 7 || h >= 23 ? map.closed : h < 11 ? map.morning : h < 17 ? map.lunch : map.evening;
-                var sizes = { "we-celebrate-life": [940, 628], "enterijer-biljke": [875, 584], "terasa-vece": [636, 778], "spolja": [940, 528] }[id];
-                if (!sizes || id === "we-celebrate-life") return;
-                p.querySelector("source").srcset = "assets/img/gallery/" + id + "-480.webp 480w, assets/img/gallery/" + id + "-" + sizes[0] + ".webp " + sizes[0] + "w";
-                var img = p.querySelector("img"); img.src = "assets/img/gallery/" + id + "-" + sizes[0] + ".jpg"; img.width = sizes[0]; img.height = sizes[1];
-                p.dataset.current = id;
-              } catch (e) {}
-            })();
-          </script>
-          <figcaption class="hero__badge">
+        <div class="hero__media">
+          <div class="hero__arch">
+            <video class="hero__video" data-hero-main muted playsinline loop preload="none" aria-hidden="true" tabindex="-1"
+                   poster="assets/video/hero-morning-main-poster.webp" width="1080" height="1920"></video>
+            <script>
+              // Poster za doba dana pre prvog iscrtavanja (vremena prate data/site.json → timeOfDay).
+              (function () {
+                try {
+                  var v = document.currentScript.previousElementSibling;
+                  var h = +new Intl.DateTimeFormat("en-GB", { timeZone: "Europe/Belgrade", hour: "2-digit", hourCycle: "h23" }).format(new Date());
+                  var id = h < 7 || h >= 23 ? "closed" : h < 11 ? "morning" : h < 17 ? "lunch" : "evening";
+                  v.poster = "assets/video/hero-" + id + "-main-poster.webp";
+                  v.dataset.tod = id;
+                } catch (e) {}
+              })();
+            </script>
+          </div>
+          <div class="hero__side" aria-hidden="true">
+            <video class="hero__video" data-hero-side muted playsinline loop preload="none" tabindex="-1" width="540" height="960"></video>
+          </div>
+          <p class="hero__badge">
             <a href="https://www.google.com/maps/search/?api=1&amp;query=Vida+Novi+Sad+Rumena%C4%8Dka+148a" target="_blank" rel="noopener" data-rating-link>
               <svg class="icon icon--fill" aria-hidden="true"><use href="#i-star"/></svg>
               <span data-rating-short>4,5 · 3.000+ Google recenzija</span>
             </a>
-          </figcaption>
-        </figure>
+          </p>
+        </div>
       </div>
     </section>
 
@@ -437,6 +441,9 @@
           <button class="btn btn--primary btn--block" type="submit">
             <svg class="icon" aria-hidden="true"><use href="#i-whatsapp"/></svg><span data-i18n="reserve.submit">Pošalji zahtev na WhatsApp</span>
           </button>
+          <a class="btn btn--ghost btn--block" href="tel:+381695332067" data-call>
+            <svg class="icon" aria-hidden="true"><use href="#i-phone"/></svg><span data-i18n="call.orCall">Radije pozovi · 069 533 2067</span>
+          </a>
           <p class="form__done" data-form-done hidden tabindex="-1" data-i18n="reserve.done">Zahtev je pripremljen u WhatsApp-u. Pošalji poruku i sačekaj potvrdu od Vide.</p>
         </form>
       </div>
@@ -516,6 +523,9 @@
           <button class="btn btn--primary btn--block" type="submit">
             <svg class="icon" aria-hidden="true"><use href="#i-whatsapp"/></svg><span data-i18n="cel.submit">Pošalji upit na WhatsApp</span>
           </button>
+          <a class="btn btn--ghost btn--block" href="tel:+381695332067" data-call>
+            <svg class="icon" aria-hidden="true"><use href="#i-phone"/></svg><span data-i18n="call.orCall">Radije pozovi · 069 533 2067</span>
+          </a>
           <p class="form__done" data-form-done hidden tabindex="-1" data-i18n="cel.done">Upit je pripremljen u WhatsApp-u. Pošalji poruku — javićemo ti se.</p>
         </form>
       </div>
@@ -579,7 +589,7 @@
     <section class="section gallery" id="galerija" aria-labelledby="gallery-title">
       <div class="container section-head section-head--row">
         <div>
-          <p class="eyebrow" data-i18n="gallery.eyebrow">Atmosfera</p>
+          <p class="eyebrow" data-i18n="gallery.eyebrow">Iz Vidine kuhinje</p>
           <h2 class="section-title" id="gallery-title" data-i18n="gallery.title">Galerija</h2>
         </div>
         <div class="gallery__arrows">
@@ -610,7 +620,8 @@
             <li><svg class="icon" aria-hidden="true"><use href="#i-clock"/></svg><span data-i18n="contact.hours">Svaki dan 07:00–23:00</span></li>
           </ul>
           <div class="contact__actions">
-            <a class="btn btn--primary" href="https://wa.me/381695332067" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-whatsapp"/></svg><span>WhatsApp</span></a>
+            <a class="btn btn--primary" href="tel:+381695332067" data-call><svg class="icon" aria-hidden="true"><use href="#i-phone"/></svg><span data-call-label>Pozovi</span></a>
+            <a class="btn btn--ghost" href="https://wa.me/381695332067" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-whatsapp"/></svg><span>WhatsApp</span></a>
             <a class="btn btn--ghost" href="https://www.google.com/maps/dir/?api=1&amp;destination=Vida+Novi+Sad+Rumena%C4%8Dka+148a+Novi+Sad" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-pin"/></svg><span data-i18n="contact.navigate">Navigacija</span></a>
           </div>
           <ul class="social">
@@ -662,12 +673,15 @@
 
   <!-- ===================== FAB (mobilni) ===================== -->
   <div class="fab" data-fab>
-    <a class="fab__btn fab__btn--wa" href="https://wa.me/381695332067" target="_blank" rel="noopener" aria-label="WhatsApp">
+    <a class="fab__btn fab__btn--call" href="tel:+381695332067" data-call aria-label="Pozovi Vidu: 069 533 2067" data-i18n-attr="aria-label:call.aria">
+      <svg class="icon" aria-hidden="true"><use href="#i-phone"/></svg><span data-call-label>Pozovi</span>
+    </a>
+    <a class="fab__btn fab__btn--round" href="https://wa.me/381695332067" target="_blank" rel="noopener" aria-label="WhatsApp">
       <svg class="icon" aria-hidden="true"><use href="#i-whatsapp"/></svg>
     </a>
-    <button type="button" class="fab__btn fab__btn--cart" data-open-cart>
+    <button type="button" class="fab__btn fab__btn--round fab__btn--cart" data-open-cart>
       <svg class="icon" aria-hidden="true"><use href="#i-cart"/></svg>
-      <span data-i18n="nav.order">Poruči</span>
+      <span class="visually-hidden" data-i18n="cart.open">Korpa</span>
       <span class="fab__count" data-cart-count>0</span>
     </button>
   </div>
