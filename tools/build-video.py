@@ -335,7 +335,7 @@ def build_hero(only=None):
         for role, size, crf in (("main", (1080, 1920), 26), ("side", (540, 960), 28)):
             s = it[role]
             fr = graded(s["clip"], s["from"], s["dur"])
-            if role == "main" and cfg.get("aiMain", True):
+            if role == "main" and cfg.get("aiMain", True) and it.get("ai", True):
                 d = os.path.join(CACHE, "hero", it["id"])
                 os.makedirs(d, exist_ok=True)
                 out = []
