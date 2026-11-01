@@ -168,8 +168,8 @@ Svi opisi jela na engleskom imaju `needsReview: true` (u objektu `description`).
 
 - Intro i hero su napravljeni od **15 Vida reels snimaka** (720×1280, bez zvuka). Montaža je u `tools/video-edit.json`.
 - **Telefon:** 7,5 s, AI uveličanje (Real-ESRGAN) na 1080×1920. Ritam: sipanja (affogato, raspberry, pistachio, pumpkin, Disneyland) → lomljenja (isotonic, matcha, cookies) → otkrivanje (babke) → čaša Disneyland odozgo + logo.
-- **Računar:** triptih 1920×1080, rezovi „domino talasom“, na kraju ostaje srednji panel sa logom.
-- **Početna (hero):** video petlje po dobu dana — jutro: Affogato + Babke, podne: Isotonic + Matcha, veče: Disneyland + Dark Chocolate SS, zatvoreno: Isotonic + Matilda.
+- **Računar:** triptih, AI uveličan, u dve verzije: 1920×1080 i 2560×1440 (veliki i retina ekrani). Rezovi „domino talasom“, na kraju ostaje srednji panel sa logom.
+- **Početna (hero):** glavni video je AI uveličan (1080×1920). Petlje po dobu dana — jutro: Affogato + Babke, podne: Isotonic + Matcha, veče: Disneyland + Dark Chocolate SS, zatvoreno: Isotonic + Matilda.
 - **Proveriti sa vlasnikom:** u snimcima se vide proizvodi koji **nisu** na fotografijama menija (San Sebastian cheesecake u više verzija, cinnamon rolls, babke, cookies, Matilda torta, Vida Isotonic, matcha čokolada) — to su specijali; za meni trebaju nazivi i cene.
 - **Kvalitet:** snimci su sa Instagrama (720p). AI ih izoštrava, ali originali sa telefona (1080p/4K) bi dali bolji rezultat — ista skripta, samo zameniti fajlove u `assets/source/video/`.
 - Stare intro fotografije (ulica → šank) više se ne koriste u introu.
@@ -243,9 +243,9 @@ Ubaciti fajl `<id>.webp` (ili `.jpg` / `.png`):
 | Tekst „O nama“ (lična priča) | `about.p1`, `about.p2` u i18n | samo proverene činjenice |
 | Kids Corner / Pet Friendly opis | `family.kids`, `family.pets` u i18n | „Imamo kutak za najmlađe.“ / „Ljubimci su dobrodošli.“ |
 | Deserti / raw kolači (cene) | `data/menu.json` | nisu na fotografijama menija |
-| Stvarne recenzije (citati) | `data/site.json → reviews` | prazno → sekcija citata sakrivena |
+| **Stvarne recenzije** (tekst, ime, ocena) — poslati prave, npr. screenshot sa Google-a | `data/site.json → reviews` | prazno → kartice sakrivene (dizajn je spreman) |
 | Potpis „Made by“ u futeru | `data/site.json → credit` | `null` (sakriveno) |
-| Hero fotografije po dobu dana | `data/site.json → timeOfDay[].image` **i** `index.html` (`data-tod-images`) | fotografije iz galerije |
+| Galerija: dozvola za korišćenje fotografija jela i pića | `assets/source/gallery/` | 17 fotografija + mural; male su AI-uveličane |
 | Alergeni | — | sajt ne navodi alergene; napomena „pitaj osoblje“ |
 
 ## 10. Napomene o tehničkoj proveri

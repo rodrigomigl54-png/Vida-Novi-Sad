@@ -1,7 +1,87 @@
 {
   "items": [
     {
-      "id": "we-celebrate-life",
+      "id": "01-wrap-jaja-avokado",
+      "alt": {
+        "sr": "Wrap sa jajima, avokadom, zelenom salatom i kiselim lukom",
+        "en": "Wrap with eggs, avocado, lettuce and pickled onion"
+      },
+      "sizes": [
+        {
+          "w": 480,
+          "h": 640,
+          "base": "assets/img/gallery/01-wrap-jaja-avokado-480"
+        },
+        {
+          "w": 960,
+          "h": 1280,
+          "base": "assets/img/gallery/01-wrap-jaja-avokado-960"
+        }
+      ],
+      "ratio": 0.75
+    },
+    {
+      "id": "02-zeleni-tuna-wrap",
+      "alt": {
+        "sr": "Zeleni wrap sa tunom, kinoom i crvenim kupusom",
+        "en": "Green wrap with tuna, quinoa and red cabbage"
+      },
+      "sizes": [
+        {
+          "w": 480,
+          "h": 640,
+          "base": "assets/img/gallery/02-zeleni-tuna-wrap-480"
+        },
+        {
+          "w": 960,
+          "h": 1280,
+          "base": "assets/img/gallery/02-zeleni-tuna-wrap-960"
+        }
+      ],
+      "ratio": 0.75
+    },
+    {
+      "id": "03-cinnamon-rolls",
+      "alt": {
+        "sr": "Cinnamon rolls sa pistaći i karamel prelivom",
+        "en": "Cinnamon rolls with pistachio and caramel glaze"
+      },
+      "sizes": [
+        {
+          "w": 480,
+          "h": 640,
+          "base": "assets/img/gallery/03-cinnamon-rolls-480"
+        },
+        {
+          "w": 960,
+          "h": 1280,
+          "base": "assets/img/gallery/03-cinnamon-rolls-960"
+        }
+      ],
+      "ratio": 0.75
+    },
+    {
+      "id": "04-vida-infused-water",
+      "alt": {
+        "sr": "Voda sa limetom, pomorandžom i nanom u Vida čaši",
+        "en": "Water with lime, orange and mint in a Vida glass"
+      },
+      "sizes": [
+        {
+          "w": 480,
+          "h": 640,
+          "base": "assets/img/gallery/04-vida-infused-water-480"
+        },
+        {
+          "w": 960,
+          "h": 1280,
+          "base": "assets/img/gallery/04-vida-infused-water-960"
+        }
+      ],
+      "ratio": 0.75
+    },
+    {
+      "id": "00-we-celebrate-life",
       "alt": {
         "sr": "Zid sa muralom i natpisom We Celebrate Life",
         "en": "Mural wall with the words We Celebrate Life"
@@ -10,175 +90,275 @@
         {
           "w": 480,
           "h": 321,
-          "base": "assets/img/gallery/we-celebrate-life-480"
+          "base": "assets/img/gallery/00-we-celebrate-life-480"
         },
         {
-          "w": 940,
-          "h": 628,
-          "base": "assets/img/gallery/we-celebrate-life-940"
+          "w": 960,
+          "h": 642,
+          "base": "assets/img/gallery/00-we-celebrate-life-960"
         }
       ],
       "ratio": 1.4962
     },
     {
-      "id": "vitrina-kolaci",
+      "id": "05-daska-hleb-namazi",
       "alt": {
-        "sr": "Vitrina sa kolačima ispred šanka sa Vida logom",
-        "en": "Cake display in front of the bar with the Vida logo"
+        "sr": "Daska sa domaćim hlebom, pršutom, namazima i orašastim plodovima",
+        "en": "Board with homemade bread, prosciutto, spreads and nuts"
+      },
+      "sizes": [
+        {
+          "w": 480,
+          "h": 646,
+          "base": "assets/img/gallery/05-daska-hleb-namazi-480"
+        },
+        {
+          "w": 960,
+          "h": 1293,
+          "base": "assets/img/gallery/05-daska-hleb-namazi-960"
+        }
+      ],
+      "ratio": 0.7426
+    },
+    {
+      "id": "06-napitak-grozdje-lavanda",
+      "alt": {
+        "sr": "Osvežavajući napitak sa grožđem, nanom i lavandom",
+        "en": "Refreshing drink with grapes, mint and lavender"
       },
       "sizes": [
         {
           "w": 480,
           "h": 640,
-          "base": "assets/img/gallery/vitrina-kolaci-480"
+          "base": "assets/img/gallery/06-napitak-grozdje-lavanda-480"
         },
         {
-          "w": 619,
-          "h": 825,
-          "base": "assets/img/gallery/vitrina-kolaci-619"
+          "w": 960,
+          "h": 1280,
+          "base": "assets/img/gallery/06-napitak-grozdje-lavanda-960"
         }
       ],
       "ratio": 0.75
     },
     {
-      "id": "terasa-vece",
+      "id": "07-coconut-acai-bowl",
       "alt": {
-        "sr": "Terasa uveče pod svetlećim girlandama",
-        "en": "The terrace in the evening under string lights"
+        "sr": "Coconut bowl sa voćem i granolom",
+        "en": "Coconut bowl with fruit and granola"
       },
       "sizes": [
         {
           "w": 480,
-          "h": 587,
-          "base": "assets/img/gallery/terasa-vece-480"
+          "h": 480,
+          "base": "assets/img/gallery/07-coconut-acai-bowl-480"
         },
         {
-          "w": 636,
-          "h": 778,
-          "base": "assets/img/gallery/terasa-vece-636"
+          "w": 960,
+          "h": 960,
+          "base": "assets/img/gallery/07-coconut-acai-bowl-960"
         }
       ],
-      "ratio": 0.8172
+      "ratio": 1.0
     },
     {
-      "id": "enterijer-biljke",
+      "id": "08-ube-kasa-plavi-smoothie",
       "alt": {
-        "sr": "Svetao enterijer sa policama punim biljaka",
-        "en": "Bright interior with shelves full of plants"
+        "sr": "Ljubičasta ovsena kaša i plavi smoothie",
+        "en": "Purple oat bowl and a blue smoothie"
       },
       "sizes": [
         {
           "w": 480,
-          "h": 320,
-          "base": "assets/img/gallery/enterijer-biljke-480"
+          "h": 850,
+          "base": "assets/img/gallery/08-ube-kasa-plavi-smoothie-480"
         },
         {
-          "w": 875,
-          "h": 584,
-          "base": "assets/img/gallery/enterijer-biljke-875"
+          "w": 960,
+          "h": 1700,
+          "base": "assets/img/gallery/08-ube-kasa-plavi-smoothie-960"
         }
       ],
-      "ratio": 1.4986
+      "ratio": 0.5647
     },
     {
-      "id": "basta-dan",
+      "id": "09-pistachio-latte",
       "alt": {
-        "sr": "Bašta sa drvenim klupama tokom dana",
-        "en": "Garden seating with wooden benches during the day"
+        "sr": "Kafa sa srcem u peni i pistaći ivicom",
+        "en": "Coffee with latte art and a pistachio rim"
       },
       "sizes": [
         {
           "w": 480,
-          "h": 639,
-          "base": "assets/img/gallery/basta-dan-480"
+          "h": 637,
+          "base": "assets/img/gallery/09-pistachio-latte-480"
         },
         {
-          "w": 768,
-          "h": 1022,
-          "base": "assets/img/gallery/basta-dan-768"
+          "w": 960,
+          "h": 1274,
+          "base": "assets/img/gallery/09-pistachio-latte-960"
         }
       ],
-      "ratio": 0.7512
+      "ratio": 0.7534
     },
     {
-      "id": "sank",
+      "id": "10-smoothie-jagoda",
       "alt": {
-        "sr": "Šank sa aparatom za espresso i Vida logom",
-        "en": "The bar with the espresso machine and Vida logo"
+        "sr": "Smoothie sa jagodama",
+        "en": "Strawberry smoothie"
       },
       "sizes": [
         {
           "w": 480,
-          "h": 320,
-          "base": "assets/img/gallery/sank-480"
+          "h": 640,
+          "base": "assets/img/gallery/10-smoothie-jagoda-480"
         },
         {
-          "w": 875,
-          "h": 584,
-          "base": "assets/img/gallery/sank-875"
+          "w": 960,
+          "h": 1280,
+          "base": "assets/img/gallery/10-smoothie-jagoda-960"
         }
       ],
-      "ratio": 1.4986
+      "ratio": 0.75
     },
     {
-      "id": "enterijer-gosti",
+      "id": "11-pumpkin-latte",
       "alt": {
-        "sr": "Gosti za stolovima ispod pletenih lampi",
-        "en": "Guests at tables beneath woven lamps"
+        "sr": "Jesenja kafa sa cimetom",
+        "en": "Autumn coffee with cinnamon"
       },
       "sizes": [
         {
           "w": 480,
-          "h": 321,
-          "base": "assets/img/gallery/enterijer-gosti-480"
+          "h": 640,
+          "base": "assets/img/gallery/11-pumpkin-latte-480"
         },
         {
-          "w": 940,
-          "h": 628,
-          "base": "assets/img/gallery/enterijer-gosti-940"
+          "w": 960,
+          "h": 1280,
+          "base": "assets/img/gallery/11-pumpkin-latte-960"
         }
       ],
-      "ratio": 1.4962
+      "ratio": 0.75
     },
     {
-      "id": "ulaz",
+      "id": "12-smoothie-jabuka-cimet",
       "alt": {
-        "sr": "Ulaz u Vidu sa stolovima ispred",
-        "en": "The Vida entrance with tables outside"
+        "sr": "Smoothie sa jabukom i cimetom",
+        "en": "Apple and cinnamon smoothie"
       },
       "sizes": [
         {
           "w": 480,
-          "h": 360,
-          "base": "assets/img/gallery/ulaz-480"
+          "h": 646,
+          "base": "assets/img/gallery/12-smoothie-jabuka-cimet-480"
         },
         {
-          "w": 800,
-          "h": 600,
-          "base": "assets/img/gallery/ulaz-800"
+          "w": 960,
+          "h": 1293,
+          "base": "assets/img/gallery/12-smoothie-jabuka-cimet-960"
         }
       ],
-      "ratio": 1.3333
+      "ratio": 0.7426
     },
     {
-      "id": "spolja",
+      "id": "13-cvekla-jabuka-sok",
       "alt": {
-        "sr": "Vida spolja, sa terasom",
-        "en": "Vida from the outside, with the terrace"
+        "sr": "Slojeviti sok u čašama sa jabukom",
+        "en": "Layered juice with apple garnish"
       },
       "sizes": [
         {
           "w": 480,
-          "h": 269,
-          "base": "assets/img/gallery/spolja-480"
+          "h": 640,
+          "base": "assets/img/gallery/13-cvekla-jabuka-sok-480"
         },
         {
-          "w": 940,
-          "h": 528,
-          "base": "assets/img/gallery/spolja-940"
+          "w": 960,
+          "h": 1280,
+          "base": "assets/img/gallery/13-cvekla-jabuka-sok-960"
         }
       ],
-      "ratio": 1.7818
+      "ratio": 0.75
+    },
+    {
+      "id": "14-krem-corba-bundeva",
+      "alt": {
+        "sr": "Krem čorba od bundeve sa integralnim hlebom",
+        "en": "Pumpkin cream soup with wholegrain bread"
+      },
+      "sizes": [
+        {
+          "w": 480,
+          "h": 640,
+          "base": "assets/img/gallery/14-krem-corba-bundeva-480"
+        },
+        {
+          "w": 960,
+          "h": 1280,
+          "base": "assets/img/gallery/14-krem-corba-bundeva-960"
+        }
+      ],
+      "ratio": 0.75
+    },
+    {
+      "id": "15-ledena-kafa-vida",
+      "alt": {
+        "sr": "Ledena kafa u Vida limenci",
+        "en": "Iced coffee in a Vida can"
+      },
+      "sizes": [
+        {
+          "w": 480,
+          "h": 640,
+          "base": "assets/img/gallery/15-ledena-kafa-vida-480"
+        },
+        {
+          "w": 960,
+          "h": 1280,
+          "base": "assets/img/gallery/15-ledena-kafa-vida-960"
+        }
+      ],
+      "ratio": 0.75
+    },
+    {
+      "id": "16-cinnamon-rolls-izbor",
+      "alt": {
+        "sr": "Izbor cinnamon rolls-a",
+        "en": "A selection of cinnamon rolls"
+      },
+      "sizes": [
+        {
+          "w": 480,
+          "h": 640,
+          "base": "assets/img/gallery/16-cinnamon-rolls-izbor-480"
+        },
+        {
+          "w": 960,
+          "h": 1280,
+          "base": "assets/img/gallery/16-cinnamon-rolls-izbor-960"
+        }
+      ],
+      "ratio": 0.75
+    },
+    {
+      "id": "17-palacinke-banana",
+      "alt": {
+        "sr": "Palačinke sa bananom i voćem",
+        "en": "Pancakes with banana and fruit"
+      },
+      "sizes": [
+        {
+          "w": 480,
+          "h": 597,
+          "base": "assets/img/gallery/17-palacinke-banana-480"
+        },
+        {
+          "w": 804,
+          "h": 1000,
+          "base": "assets/img/gallery/17-palacinke-banana-804"
+        }
+      ],
+      "ratio": 0.804
     }
   ]
 }

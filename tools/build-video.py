@@ -219,54 +219,103 @@ def rounded_mask(w, h, r):
     return cv2.GaussianBlur(m, (3, 3), 0).astype(np.float32)[..., None] / 255
 
 
-def build_desktop():
-    cfg = EDIT["introDesktop"]
-    W, H = cfg["size"]
-    P = cfg["panel"]
-    pw, ph, gap = P["width"], P["height"], P["gap"]
-    bg = np.array([int(cfg["background"][i:i + 2], 16) for i in (1, 3, 5)], np.float32)
-    x0 = (W - (3 * pw + 2 * gap)) // 2
-    y0 = (H - ph) // 2
-    mask = rounded_mask(pw, ph, P["radius"])
+_MODEL = None
 
-    # kadrovi po panelu (sa „hold“ i push-in na kraju)
-    tracks = []
-    for segs in cfg["panels"]:
-        tr = []
-        for s in segs:
+
+def ai_model():
+    """Real-ESRGAN (učitava se jednom)."""
+    global _MODEL
+    if _MODEL is None:
+        sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+        import torch
+        from sr_model import load  # noqa: E402
+        torch.set_num_threads(os.cpu_count() or 4)
+        _MODEL = load(SR_WEIGHTS)
+    return _MODEL
+
+
+def ai4x(frame):
+    model = ai_model()
+    from sr_model import upscale  # noqa: E402
+    return np.asarray(upscale(model, Image.fromarray(frame)))
+
+
+def cached(path, make):
+    if os.path.exists(path):
+        return np.asarray(Image.open(path).convert("RGB"))
+    img = make()
+    Image.fromarray(img).save(path, compress_level=1)
+    return img
+
+
+def build_desktop():
+    """Triptih za računar, AI uveličanje; izvozi 1920x1080 i 2560x1440 (veliki / retina ekrani)."""
+    cfg = EDIT["introDesktop"]
+    W0, H0 = cfg["size"]
+    P = cfg["panel"]
+    sizes = [(W0, H0, ""), (2560, 1440, "-2k")]
+    bg = np.array([int(cfg["background"][i:i + 2], 16) for i in (1, 3, 5)], np.float32)
+    use_ai = cfg.get("ai", True)
+
+    # 1) kadrovi panela (AI 4x jednom po izvornom kadru, pa isečak za svaku veličinu)
+    tracks = {suf: [] for _, _, suf in sizes}
+    for pi, segs in enumerate(cfg["panels"]):
+        per = {suf: [] for _, _, suf in sizes}
+        for si, s in enumerate(segs):
             fr = graded(s["clip"], s["from"], s["dur"])
             hold = round(s.get("holdSeconds", 0) * FPS)
             total = len(fr) + hold
+            big = None
             for k in range(total):
-                src = fr[min(k, len(fr) - 1)]
                 zoom = 1 + (s.get("pushIn", 1) - 1) * (k / max(total - 1, 1))
-                tr.append(sharpen(zoom_crop(src, zoom, (pw, ph)), 0.2, 0.8))
-        tracks.append(tr)
-    n = max(len(t) for t in tracks)
+                need = []
+                for W, H, suf in sizes:
+                    f = W / W0
+                    pw, ph = round(P["width"] * f), round(P["height"] * f)
+                    d = os.path.join(CACHE, "desktop" + (suf or "-hd"), f"p{pi}")
+                    os.makedirs(d, exist_ok=True)
+                    need.append((os.path.join(d, f"{si:02d}_{k:04d}.png"), (pw, ph), suf))
+                if any(not os.path.exists(pth) for pth, _, _ in need) and (k < len(fr) or big is None):
+                    src = fr[min(k, len(fr) - 1)]
+                    big = ai4x(src) if use_ai else src
+                for pth, size, suf in need:
+                    per[suf].append(cached(pth, lambda: sharpen(zoom_crop(big, zoom, size), 0.22, 1.0)))
+            print(f"  panel {pi + 1}/3, segment {si + 1}/{len(segs)} ({s['clip']})", flush=True)
+        for suf in per:
+            tracks[suf].append(per[suf])
+
+    # 2) sklapanje i kodiranje za svaku veličinu
     f0, f1 = (round(v * FPS) for v in cfg["sideFadeOut"])
-    base = np.ones((H, W, 3), np.float32) * bg
+    for W, H, suf in sizes:
+        f = W / W0
+        pw, ph, gap = round(P["width"] * f), round(P["height"] * f), round(P["gap"] * f)
+        x0 = (W - (3 * pw + 2 * gap)) // 2
+        y0 = (H - ph) // 2
+        mask = rounded_mask(pw, ph, round(P["radius"] * f))
+        trs = tracks[suf]
+        n = max(len(t) for t in trs)
+        base = np.ones((H, W, 3), np.float32) * bg
 
-    def frames():
-        for i in range(n):
-            canvas = base.copy()
-            for pi, tr in enumerate(tracks):
-                img = tr[min(i, len(tr) - 1)].astype(np.float32)
-                a = mask
-                if pi != 1 and i >= f0:
-                    fade = max(0.0, 1 - (i - f0) / max(f1 - f0, 1))
-                    if fade <= 0:
-                        continue
-                    a = mask * fade
-                x = x0 + pi * (pw + gap)
-                region = canvas[y0:y0 + ph, x:x + pw]
-                canvas[y0:y0 + ph, x:x + pw] = region * (1 - a) + img * a
-            yield canvas.astype(np.uint8)
+        def frames(trs=trs, n=n, base=base, mask=mask, pw=pw, ph=ph, gap=gap, x0=x0, y0=y0):
+            for i in range(n):
+                canvas = base.copy()
+                for pi, tr in enumerate(trs):
+                    img = tr[min(i, len(tr) - 1)].astype(np.float32)
+                    a = mask
+                    if pi != 1 and i >= f0:
+                        fade = max(0.0, 1 - (i - f0) / max(f1 - f0, 1))
+                        if fade <= 0:
+                            continue
+                        a = mask * fade
+                    x = x0 + pi * (pw + gap)
+                    region = canvas[y0:y0 + ph, x:x + pw]
+                    canvas[y0:y0 + ph, x:x + pw] = region * (1 - a) + img * a
+                yield canvas.astype(np.uint8)
 
-    print("Kodiram intro (računar)…")
-    encode(frames(), (W, H), os.path.join(OUT, "intro-desktop"), crf_mp4=23, crf_webm=35, poster_index=-1)
+        print(f"Kodiram intro (računar {W}x{H})…")
+        encode(frames(), (W, H), os.path.join(OUT, "intro-desktop" + suf), crf_mp4=23, crf_webm=35, poster_index=-1)
 
 
-# ----------------------------------------------------------------- HERO petlje
 def seamless(frames, xf):
     X = round(xf * FPS)
     N = len(frames)
@@ -277,22 +326,35 @@ def seamless(frames, xf):
     return out
 
 
-def build_hero():
+def build_hero(only=None):
+    """Petlje za početnu. Glavni video (telefon preko celog ekrana / računar luk) ide kroz AI uveličanje."""
     cfg = EDIT["hero"]
     for it in cfg["items"]:
+        if only and it["id"] not in only:
+            continue
         for role, size, crf in (("main", (1080, 1920), 26), ("side", (540, 960), 28)):
             s = it[role]
             fr = graded(s["clip"], s["from"], s["dur"])
-            fr = [sharpen(cv2.resize(f, size, interpolation=cv2.INTER_LANCZOS4), 0.3 if size[0] > 720 else 0.15, 1.0) for f in fr]
+            if role == "main" and cfg.get("aiMain", True):
+                d = os.path.join(CACHE, "hero", it["id"])
+                os.makedirs(d, exist_ok=True)
+                out = []
+                for k, f in enumerate(fr):
+                    out.append(cached(os.path.join(d, f"{k:04d}.png"), lambda f=f: sharpen(cv2.resize(ai4x(f), size, interpolation=cv2.INTER_AREA), 0.22, 1.1)))
+                    if k % 30 == 0:
+                        print(f"  hero {it['id']}: kadar {k + 1}/{len(fr)}", flush=True)
+                fr = out
+            else:
+                fr = [sharpen(cv2.resize(f, size, interpolation=cv2.INTER_LANCZOS4), 0.15, 1.0) for f in fr]
             fr = seamless(fr, cfg["loopCrossfade"])
-            print(f"Hero {it['id']} / {role}")
+            print(f"Hero {it['id']} / {role}", flush=True)
             encode(iter(fr), size, os.path.join(OUT, f"hero-{it['id']}-{role}"), crf_mp4=crf, crf_webm=crf + 10, poster_index=0)
 
 
 if __name__ == "__main__":
     what = sys.argv[1] if len(sys.argv) > 1 else "all"
     if what in ("hero", "all"):
-        build_hero()
+        build_hero([a for a in sys.argv[2:] if not a.startswith("-")] or None)
     if what in ("desktop", "all"):
         build_desktop()
     if what in ("mobile", "all"):

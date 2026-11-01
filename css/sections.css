@@ -357,7 +357,16 @@ html.intro-pending .intro { display: block !important; }
 .reviews .btn--ghost { --btn-fg: var(--cream); --btn-bd: color-mix(in srgb, var(--cream) 45%, transparent); }
 .reviews .btn--ghost:hover { --btn-bd: var(--cream); }
 .reviews :focus-visible { outline-color: var(--peach); }
-.reviews__quotes { list-style: none; display: grid; gap: 1rem; margin-top: var(--s-6); max-width: 60rem; }
+.reviews__quotes {
+  list-style: none; display: flex; gap: 1rem; margin-top: var(--s-6); width: 100%;
+  overflow-x: auto; scroll-snap-type: x mandatory; padding-bottom: 0.5rem; scrollbar-width: none; text-align: left;
+}
+.reviews__quotes::-webkit-scrollbar { display: none; }
+.review { flex: 0 0 min(86%, 360px); scroll-snap-align: start; display: flex; flex-direction: column; gap: 0.6rem; padding: 1.4rem 1.5rem; border-radius: var(--r-lg); background: rgb(255 255 255 / 7%); border: 1px solid rgb(255 255 255 / 14%); }
+.review__stars { margin: 0; color: var(--peach); letter-spacing: 0.12em; }
+.review__text { margin: 0; font-family: var(--font-display); font-size: var(--fs-lg); line-height: 1.45; color: var(--cream); }
+.review__by { margin: auto 0 0; font-size: var(--fs-sm); font-weight: 700; color: color-mix(in srgb, var(--cream) 75%, transparent); }
+@media (min-width: 1000px) { .reviews__quotes { justify-content: center; } }
 
 /* ---------------------------------------------------------------- GALLERY */
 .gallery__arrows { display: none; gap: 0.5rem; }
@@ -372,7 +381,7 @@ html.intro-pending .intro { display: block !important; }
 .gallery__track::-webkit-scrollbar { display: none; }
 .gallery__track.is-dragging { cursor: grabbing; scroll-snap-type: none; scroll-behavior: auto; }
 .gallery__track.is-dragging img { pointer-events: none; }
-.gal-item { flex: none; margin: 0; scroll-snap-align: start; height: clamp(300px, 52vw, 520px); border-radius: var(--r-lg); overflow: hidden; background: var(--sand); }
+.gal-item { flex: none; margin: 0; scroll-snap-align: start; height: clamp(400px, 52vw, 560px); border-radius: var(--r-lg); overflow: hidden; background: var(--sand); }
 .gal-item img { height: 100%; width: auto; max-width: none; object-fit: cover; user-select: none; -webkit-user-drag: none; }
 .gallery__progress { height: 2px; background: var(--line); border-radius: 2px; overflow: hidden; margin-top: var(--s-3); }
 .gallery__progress span { display: block; height: 100%; width: 20%; background: var(--ink); transform-origin: left; transition: transform 120ms linear; }

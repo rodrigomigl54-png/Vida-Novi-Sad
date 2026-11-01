@@ -86,10 +86,10 @@ Svaka stavka izgleda ovako:
 - `contact`: telefon, WhatsApp broj (format `381…` bez `+` i bez razmaka), adresa.
 - `ordering.deliveryMinOrder`: npr. `1000` → prikazuje se „Minimalna porudžbina za dostavu: 1.000 RSD“. `null` = ništa.
 - `ordering.deliveryNote`: npr. `{ "sr": "Dostava na Novom naselju i Detelinari.", "en": "…" }`.
-- `reviews`: stvarni citati recenzija (prazno = sekcija citata je sakrivena):
-  `[{ "text": { "sr": "…", "en": "…" }, "author": "Ime" }]`
+- `reviews`: **stvarne** recenzije gostiju (npr. prepisane sa Google-a), prikazuju se kao kartice ispod ocene 4,5. Prazno = sakriveno.
+  `[{ "text": { "sr": "…", "en": "…" }, "author": "Marija P.", "rating": 5, "source": "Google" }]`
 - `credit`: potpis u futeru, npr. `{ "name": "Studio X", "url": "https://…" }`.
-- `timeOfDay`: koje kategorije i koja fotografija se ističu ujutru / za ručak / uveče / kad je zatvoreno. Ako menjaš fotografiju, promeni je i u `index.html` (atribut `data-tod-images`).
+- `timeOfDay`: koje kategorije se ističu ujutru / za ručak / uveče / kad je zatvoreno. Video za svako doba dana je `assets/video/hero-<doba>-main|side` (montaža u `tools/video-edit.json`).
 
 ### Tekstovi — `data/i18n/sr.json` i `en.json`
 

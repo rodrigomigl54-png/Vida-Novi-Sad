@@ -3,7 +3,14 @@
   "playMode": "session",
   "skipIfLoadingLongerThanMs": 3000,
   "endHoldMs": 250,
-  "mobile": { "src": "assets/video/intro-mobile", "logoAt": 5.9 },
-  "desktop": { "src": "assets/video/intro-desktop", "logoAt": 5.4 },
+  "mobile": {
+    "src": "assets/video/intro-mobile",
+    "logoAt": 5.9
+  },
+  "desktop": {
+    "src": "assets/video/intro-desktop",
+    "logoAt": 5.4,
+    "src2k": "assets/video/intro-desktop-2k"
+  },
   "_info": "Video se pravi skriptom tools/build-video.py (montaža u tools/video-edit.json). logoAt = sekunda videa kada se pojavljuje logo."
 }

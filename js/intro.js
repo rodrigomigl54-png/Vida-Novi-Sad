@@ -53,7 +53,8 @@ export function runIntro(cfg, features) {
 
   return new Promise((resolve) => {
     const portrait = innerHeight >= innerWidth || innerWidth < 900;
-    const conf = portrait ? cfg.mobile : cfg.desktop;
+    const big = innerWidth * Math.min(devicePixelRatio || 1, 2) > 2100; // veliki / retina ekrani → 2560x1440
+    const conf = portrait ? cfg.mobile : { ...cfg.desktop, src: big && cfg.desktop.src2k ? cfg.desktop.src2k : cfg.desktop.src };
     root.classList.add(portrait ? "is-portrait" : "is-landscape");
     const video = $(".intro__video", root);
     const bar = $(".intro__loader span", root);
